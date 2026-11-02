@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <title data-logo>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-brand">
+          <a href="./index.html" class="header-company-name"> NEXORA </a>
+          <p class="header-subtitle">COMPUTER SERVICE</p>
+        </div>
+
+        <a href="./index.html" class="header-logo" aria-label="Nexora home">
+          <svg
+            class="header-logo-icon"
+            width="140"
+            height="140"
+            viewBox="0 0 140 140"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <!-- Outer frame -->
+            <path
+              d="M70 8L124 39V101L70 132L16 101V39L70 8Z"
+              stroke="url(#logo-gradient)"
+              stroke-width="3"
+            />
+
+            <!-- Inner chip -->
+            <rect
+              x="39"
+              y="39"
+              width="62"
+              height="62"
+              rx="8"
+              stroke="url(#logo-gradient)"
+              stroke-width="4"
+            />
+
+            <!-- Chip connections -->
+            <path
+              d="M70 24V39M70 101V116M24 70H39M101 70H116
+             M39 48L29 38M101 48L111 38
+             M39 92L29 102M101 92L111 102"
+              stroke="#FFC400"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+
+            <!-- Central symbol -->
+            <path
+              d="M54 85V55L86 85V55"
+              stroke="url(#logo-gradient)"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+
+            <defs>
+              <linearGradient
+                id="logo-gradient"
+                x1="16"
+                y1="8"
+                x2="124"
+                y2="132"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#FFC400" />
+                <stop offset="1" stop-color="#FF7A00" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </a>
+
+        <nav class="header-nav" aria-label="Main navigation">
+          <ul class="header-list">
+            <li>
+              <a href="./index.html" class="header-link active">Home</a>
+            </li>
+            <li>
+              <a href="./services.html" class="header-link">Services</a>
+            </li>
+            <li>
+              <a href="./about.html" class="header-link">About Us</a>
+            </li>
+            <li>
+              <a href="./contact.html" class="header-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>
