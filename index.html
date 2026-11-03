@@ -9,13 +9,15 @@
     />
     <link rel="stylesheet" href="./style/style.css" />
 
-    <title data-logo>Document</title>
+    <title data-title>Document</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header-brand">
-          <a href="./index.html" class="header-company-name"> NEXORA </a>
+          <a href="./index.html" class="header-company-name" data-logo>
+            NEXORA
+          </a>
           <p class="header-subtitle">COMPUTER SERVICE</p>
         </div>
 
@@ -100,5 +102,30 @@
         </nav>
       </div>
     </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="wrapper">
+            <p class="hero-label">PROFESSIONAL TECH SERVICE</p>
+
+            <h1 class="hero-title">
+              Your Technology.
+              <span>Our Expertise.</span>
+            </h1>
+
+            <h2 class="hero-subTitle">
+              Welcome to <span data-logo>NEXORA</span>
+            </h2>
+
+            <p class="hero-description">
+              Professional computer repair, diagnostics and technical support.
+              We bring your devices back to life.
+            </p>
+
+            <a href="./pages/contact.html" class="hero-button"> Contact Us </a>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

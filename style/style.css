@@ -139,6 +139,7 @@ section {
   padding: 24px 0 0;
   background-color: var(--background-color);
   border-bottom: var(--border);
+  box-shadow: var(--shadow);
 }
 
 .header .container {
@@ -258,5 +259,139 @@ section {
     gap: 64px;
     padding: 24px 0;
   }
+}
+/* #endregion */
+
+/* #region Hero */
+
+.hero {
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+
+  background-image:
+    linear-gradient(rgba(7, 7, 7, 0.55), rgba(7, 7, 7, 0.75)),
+    url("../image/hero.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+
+  padding: 60px 0;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  text-align: center;
+
+  background: rgba(7, 7, 7, 0.75);
+  backdrop-filter: var(--blur);
+
+  border: var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+@media (min-width: 768px) {
+  .hero {
+    min-height: 700px;
+    background-position: center center;
+  }
+
+  .wrapper {
+    padding: 48px 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero {
+    min-height: 800px;
+  }
+
+  .wrapper {
+    padding: 56px 48px;
+  }
+}
+
+.hero-label {
+  color: var(--color-primary);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.hero-label {
+  color: var(--color-primary);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--color-text-secondary);
+}
+
+.hero-title span {
+  background: var(--gradient-primary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero-subTitle {
+  font-size: 20px;
+  color: var(--color-text-secondary);
+}
+
+.hero-subTitle span {
+  color: var(--color-primary);
+}
+
+.hero-description {
+  max-width: 460px;
+  color: var(--color-text-secondary);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.hero-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 180px;
+  padding: 14px 28px;
+
+  border-radius: var(--radius-md);
+  background: var(--gradient-primary);
+
+  color: #1a0f00;
+  font-weight: 700;
+
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.hero-button:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-accent);
 }
 /* #endregion */
