@@ -90,7 +90,7 @@
               <a href="./index.html" class="header-link active">Home</a>
             </li>
             <li>
-              <a href="./services.html" class="header-link">Services</a>
+              <a href="#services" class="header-link">Services</a>
             </li>
             <li>
               <a href="./about.html" class="header-link">About Us</a>
@@ -105,7 +105,7 @@
     <main>
       <section class="hero">
         <div class="container">
-          <div class="wrapper">
+          <div class="hero-wrapper">
             <p class="hero-label">PROFESSIONAL TECH SERVICE</p>
 
             <h1 class="hero-title">
@@ -126,6 +126,364 @@
           </div>
         </div>
       </section>
+
+      <section id="services" class="services">
+        <div class="container">
+          <div class="services-header">
+            <p class="services-label">WHAT WE DO</p>
+            <h2 class="services-title">Our Services</h2>
+            <p class="services-description">
+              From everyday computer issues to complex hardware repairs, we
+              provide reliable solutions to keep your technology running
+              smoothly.
+            </p>
+          </div>
+
+          <div class="services-content">
+            <div class="services-tabs" role="tablist" aria-label="Our services">
+              <button
+                class="services-tab active"
+                type="button"
+                role="tab"
+                id="tab-computer"
+                aria-selected="true"
+                aria-controls="panel-computer"
+              >
+                <span class="services-tab-number">01</span>
+                <span class="services-tab-name">Computer & Laptop</span>
+                <span class="services-tab-arrow">↗</span>
+              </button>
+
+              <button
+                class="services-tab"
+                type="button"
+                role="tab"
+                id="tab-upgrade"
+                aria-selected="false"
+                aria-controls="panel-upgrade"
+                tabindex="-1"
+              >
+                <span class="services-tab-number">02</span>
+                <span class="services-tab-name">Hardware Upgrade</span>
+                <span class="services-tab-arrow">↗</span>
+              </button>
+
+              <button
+                class="services-tab"
+                type="button"
+                role="tab"
+                id="tab-security"
+                aria-selected="false"
+                aria-controls="panel-security"
+                tabindex="-1"
+              >
+                <span class="services-tab-number">03</span>
+                <span class="services-tab-name">Virus & Security</span>
+                <span class="services-tab-arrow">↗</span>
+              </button>
+
+              <button
+                class="services-tab"
+                type="button"
+                role="tab"
+                id="tab-data"
+                aria-selected="false"
+                aria-controls="panel-data"
+                tabindex="-1"
+              >
+                <span class="services-tab-number">04</span>
+                <span class="services-tab-name">Data & Diagnostics</span>
+                <span class="services-tab-arrow">↗</span>
+              </button>
+            </div>
+
+            <div class="services-panels">
+              <article
+                class="services-panel active"
+                id="panel-computer"
+                role="tabpanel"
+                aria-labelledby="tab-computer"
+              >
+                <div class="services-panel-visual">
+                  <img
+                    src="./image/computer-reapair.webp"
+                    alt="Computer hardware repair"
+                  />
+                </div>
+
+                <div class="services-panel-info">
+                  <span class="services-panel-label"
+                    >01 — COMPUTER SERVICE</span
+                  >
+
+                  <h3 class="services-panel-title">Computer & Laptop Repair</h3>
+
+                  <p class="services-panel-description">
+                    Professional repair solutions for desktop computers and
+                    laptops. We identify hardware issues and get your devices
+                    working again.
+                  </p>
+
+                  <ul class="services-features">
+                    <li>Hardware troubleshooting</li>
+                    <li>Component replacement</li>
+                    <li>Laptop repair</li>
+                  </ul>
+
+                  <a
+                    href="./pages/computer-repair.html"
+                    class="services-panel-link"
+                  >
+                    Learn More →
+                  </a>
+                </div>
+              </article>
+
+              <article
+                class="services-panel"
+                id="panel-upgrade"
+                role="tabpanel"
+                aria-labelledby="tab-upgrade"
+                hidden
+              >
+                <div class="services-panel-visual">
+                  <img
+                    src="./image/hardwear.jpg"
+                    alt="Computer hardware upgrade"
+                  />
+                </div>
+
+                <div class="services-panel-info">
+                  <span class="services-panel-label"
+                    >02 — HARDWARE UPGRADE</span
+                  >
+
+                  <h3 class="services-panel-title">Hardware Upgrade</h3>
+
+                  <p class="services-panel-description">
+                    Improve your computer's speed and performance with modern
+                    hardware upgrades tailored to your needs.
+                  </p>
+
+                  <ul class="services-features">
+                    <li>RAM installation</li>
+                    <li>SSD upgrades</li>
+                    <li>Graphics card replacement</li>
+                  </ul>
+
+                  <a
+                    href="./pages/hardware-upgrade.html"
+                    class="services-panel-link"
+                  >
+                    Learn More →
+                  </a>
+                </div>
+              </article>
+
+              <article
+                class="services-panel"
+                id="panel-security"
+                role="tabpanel"
+                aria-labelledby="tab-security"
+                hidden
+              >
+                <div class="services-panel-visual">
+                  <img
+                    src="./image/virus-security.jpg"
+                    alt="Computer security service"
+                  />
+                </div>
+
+                <div class="services-panel-info">
+                  <span class="services-panel-label">03 — SYSTEM SECURITY</span>
+
+                  <h3 class="services-panel-title">Virus & Security</h3>
+
+                  <p class="services-panel-description">
+                    Protect your computer from malware, viruses and unwanted
+                    software with professional security solutions.
+                  </p>
+
+                  <ul class="services-features">
+                    <li>Virus and malware removal</li>
+                    <li>System cleanup</li>
+                    <li>Security configuration</li>
+                  </ul>
+
+                  <a href="./pages/security.html" class="services-panel-link">
+                    Learn More →
+                  </a>
+                </div>
+              </article>
+
+              <article
+                class="services-panel"
+                id="panel-data"
+                role="tabpanel"
+                aria-labelledby="tab-data"
+                hidden
+              >
+                <div class="services-panel-visual">
+                  <img
+                    src="./image/diagnostic.webp"
+                    alt="Data recovery service"
+                  />
+                </div>
+
+                <div class="services-panel-info">
+                  <span class="services-panel-label"
+                    >04 — DATA & DIAGNOSTICS</span
+                  >
+
+                  <h3 class="services-panel-title">
+                    Data Recovery & Diagnostics
+                  </h3>
+
+                  <p class="services-panel-description">
+                    Identify hardware problems and recover important files
+                    whenever recovery is technically possible.
+                  </p>
+
+                  <ul class="services-features">
+                    <li>Hardware diagnostics</li>
+                    <li>Drive testing</li>
+                    <li>Data recovery</li>
+                  </ul>
+
+                  <a href="./pages/data.html" class="services-panel-link">
+                    Learn More →
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container about-container">
+          <div class="about-wrapper">
+            <p class="about-label">
+              WHO WE ARE · <span data-logo>NEXORA</span>
+            </p>
+
+            <h2 class="about-title">Technology Deserves Expert Care</h2>
+
+            <p class="about-description">
+              At <span data-logo>NEXORA</span>, we help keep your technology
+              running smoothly. From computer and laptop repairs to hardware
+              upgrades and system troubleshooting, we focus on practical
+              solutions tailored to your needs. Whether you're dealing with a
+              technical issue or looking to improve your setup, we're here to
+              make the process simple, clear, and reliable.
+            </p>
+          </div>
+
+          <div class="about-image-wrapper">
+            <img
+              src="./image/about-01.jpg"
+              alt="Computer repair"
+              class="about-image about-image-01"
+            />
+
+            <img
+              src="./image/about-02.jpg"
+              alt="Technician repairing a computer"
+              class="about-image about-image-02"
+            />
+
+            <img
+              src="./image/about-03.jpg"
+              alt="Computer components"
+              class="about-image about-image-03"
+            />
+
+            <img
+              src="./image/about-04.jpg"
+              alt="Computer on a worktable"
+              class="about-image about-image-04"
+            />
+
+            <img
+              src="./image/about-05.jpg"
+              alt="Technician working on a computer"
+              class="about-image about-image-05"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="why-us">
+        <div class="container">
+          <div class="why-us-header">
+            <div class="why-us-heading">
+              <p class="why-us-label">THE NEXORA ADVANTAGE</p>
+              <h2 class="why-us-title">
+                Why Choose <span data-logo>NEXORA</span>?
+              </h2>
+            </div>
+
+            <p class="why-us-description">
+              Great service is about more than fixing a problem. It's about
+              understanding your needs, finding the right solution, and making
+              technology easier for you.
+            </p>
+          </div>
+
+          <div class="why-us-grid">
+            <article class="why-us-card why-us-card-featured">
+              <span class="why-us-number">01 / 04</span>
+              <span class="why-us-icon" aria-hidden="true">✦</span>
+
+              <h3 class="why-us-card-title">Solutions That Fit Your Needs</h3>
+
+              <p class="why-us-card-description">
+                Every device and every issue is different. We focus on finding
+                practical solutions that match your situation instead of
+                offering one-size-fits-all fixes.
+              </p>
+            </article>
+
+            <article class="why-us-card">
+              <span class="why-us-number">02 / 04</span>
+              <span class="why-us-icon" aria-hidden="true">⌕</span>
+
+              <h3 class="why-us-card-title">Careful Diagnostics</h3>
+
+              <p class="why-us-card-description">
+                Understanding the cause of a problem is the first step toward
+                solving it. We focus on identifying issues before recommending
+                the next steps.
+              </p>
+            </article>
+
+            <article class="why-us-card">
+              <span class="why-us-number">03 / 04</span>
+              <span class="why-us-icon" aria-hidden="true">↗</span>
+
+              <h3 class="why-us-card-title">Clear Communication</h3>
+
+              <p class="why-us-card-description">
+                Technical problems can be confusing. We explain what needs
+                attention and help you understand the available repair options.
+              </p>
+            </article>
+
+            <article class="why-us-card">
+              <span class="why-us-number">04 / 04</span>
+              <span class="why-us-icon" aria-hidden="true">⌘</span>
+
+              <h3 class="why-us-card-title">One Place for Your Tech Needs</h3>
+
+              <p class="why-us-card-description">
+                From computer repairs and hardware upgrades to troubleshooting
+                and data recovery, get help with different technology needs in
+                one place.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
+    <script src="./js/services.js" defer></script>
   </body>
 </html>
