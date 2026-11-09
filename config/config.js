@@ -8,13 +8,6 @@ const CONFIG = {
   disclaimer:
     "The information provided on this website is for general informational purposes only.",
 
-  nav: {
-    home: "Home",
-    about: "About Us",
-    services: "Services",
-    contact: "Get a Free Quote",
-  },
-
   pageTitles: {
     index: "Computer Repair Services | NEXORA",
     about: "About Us | NEXORA",
