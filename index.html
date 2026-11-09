@@ -3,15 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./image/favicon.ico" sizes="any" />
+    <link
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+      href="./image/favicon.png"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <title data-title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>NEXORA|HOME</title>
+
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
-  <body>
+  <body data-page="index">
+    <div class="preloader" id="preloader">
+      <div class="preloader-content">
+        <div class="preloader-logo"><span data-logo>NEXORA .</span></div>
+
+        <div class="preloader-loader">
+          <span></span>
+        </div>
+
+        <p class="preloader-text">Preparing your experience...</p>
+      </div>
+    </div>
+
+    <div
+      class="cookie-consent"
+      id="cookieConsent"
+      role="dialog"
+      aria-labelledby="cookie-title"
+      aria-describedby="cookie-description"
+      aria-modal="false"
+      hidden
+    >
+      <div class="cookie-icon" aria-hidden="true">🍪</div>
+
+      <div class="cookie-content">
+        <h2 class="cookie-title" id="cookie-title">We value your privacy</h2>
+
+        <p class="cookie-description" id="cookie-description">
+          We use cookies to improve your browsing experience and understand how
+          our website is used. You can accept all cookies or keep only the
+          essential ones.
+        </p>
+
+        <a href="./pages/cookies.html" class="cookie-link">
+          Learn more about cookies
+          <span aria-hidden="true">↗</span>
+        </a>
+
+        <div class="cookie-actions">
+          <button
+            class="cookie-button cookie-button-primary"
+            type="button"
+            id="acceptCookies"
+          >
+            Accept all
+          </button>
+        </div>
+      </div>
+
+      <button
+        class="cookie-close"
+        type="button"
+        id="closeCookies"
+        aria-label="Close cookie notice"
+      >
+        &times;
+      </button>
+    </div>
     <header class="header">
       <div class="container">
         <div class="header-brand">
@@ -80,7 +154,11 @@
           </svg>
         </a>
 
-        <nav class="header-nav" aria-label="Main navigation">
+        <nav
+          class="header-nav"
+          aria-label="Main navigation"
+          data-animation="title"
+        >
           <ul class="header-list">
             <li>
               <a href="./index.html" class="header-link active">Home</a>
@@ -89,10 +167,10 @@
               <a href="#services" class="header-link">Services</a>
             </li>
             <li>
-              <a href="./about.html" class="header-link">About Us</a>
+              <a href="#about" class="header-link">About Us</a>
             </li>
             <li>
-              <a href="./contact.html" class="header-link">Contact</a>
+              <a href="./pages/contact.html" class="header-link">Contact</a>
             </li>
           </ul>
         </nav>
@@ -102,9 +180,11 @@
       <section class="hero">
         <div class="container">
           <div class="hero-wrapper">
-            <p class="hero-label">PROFESSIONAL TECH SERVICE</p>
+            <p class="hero-label" data-animation="label">
+              PROFESSIONAL TECH SERVICE
+            </p>
 
-            <h1 class="hero-title">
+            <h1 class="hero-title" data-animation="title">
               Your Technology.
               <span>Our Expertise.</span>
             </h1>
@@ -113,7 +193,7 @@
               Welcome to <span data-logo>NEXORA</span>
             </h2>
 
-            <p class="hero-description">
+            <p class="hero-description" data-animation="description">
               Professional computer repair, diagnostics and technical support.
               We bring your devices back to life.
             </p>
@@ -123,12 +203,12 @@
         </div>
       </section>
 
-      <section id="services" class="services">
+      <section id="services" class="services" data-animation="section">
         <div class="container">
-          <p class="services-label">WHAT WE DO</p>
+          <p class="services-label" data-animation="label">WHAT WE DO</p>
           <div class="services-header">
-            <h2 class="services-title">Our Services</h2>
-            <p class="services-description">
+            <h2 class="services-title" data-animation="title">Our Services</h2>
+            <p class="services-description" data-animation="description">
               From everyday computer issues to complex hardware repairs, we
               provide reliable solutions to keep your technology running
               smoothly.
@@ -359,13 +439,15 @@
       <section id="about" class="about">
         <div class="container about-container">
           <div class="about-wrapper">
-            <p class="about-label">
+            <p class="about-label" data-animation="label">
               WHO WE ARE · <span data-logo>NEXORA</span>
             </p>
 
-            <h2 class="about-title">Technology Deserves Expert Care</h2>
+            <h2 class="about-title" data-animation="title">
+              Technology Deserves Expert Care
+            </h2>
 
-            <p class="about-description">
+            <p class="about-description" data-animation="description">
               At <span data-logo>NEXORA</span>, we help keep your technology
               running smoothly. From computer and laptop repairs to hardware
               upgrades and system troubleshooting, we focus on practical
@@ -380,44 +462,51 @@
               src="./image/about-01.jpg"
               alt="Computer repair"
               class="about-image about-image-01"
+              data-animation="card"
             />
 
             <img
               src="./image/about-02.jpg"
               alt="Technician repairing a computer"
               class="about-image about-image-02"
+              data-animation="card"
             />
 
             <img
               src="./image/about-03.jpg"
               alt="Computer components"
               class="about-image about-image-03"
+              data-animation="card"
             />
 
             <img
               src="./image/about-04.jpg"
               alt="Computer on a worktable"
               class="about-image about-image-04"
+              data-animation="card"
             />
 
             <img
               src="./image/about-05.jpg"
               alt="Technician working on a computer"
               class="about-image about-image-05"
+              data-animation="card"
             />
           </div>
         </div>
       </section>
 
-      <section id="why-us" class="why-us">
+      <section id="why-us" class="why-us" data-animation="section">
         <div class="container">
-          <p class="why-us-label">THE NEXORA ADVANTAGE</p>
+          <p class="why-us-label" data-animation="label">
+            THE <span data-logo>NEXORA</span> ADVANTAGE
+          </p>
           <div class="why-us-header">
-            <h2 class="why-us-title">
+            <h2 class="why-us-title" data-animation="title">
               Why Choose <span data-logo>NEXORA</span>?
             </h2>
 
-            <p class="why-us-description">
+            <p class="why-us-description" data-animation="description">
               Great service is about more than fixing a problem. It's about
               understanding your needs, finding the right solution, and making
               technology easier for you.
@@ -425,7 +514,10 @@
           </div>
 
           <div class="why-us-grid">
-            <article class="why-us-card why-us-card-featured">
+            <article
+              class="why-us-card why-us-card-featured"
+              data-animation="card"
+            >
               <span class="why-us-number">01 / 04</span>
               <span class="why-us-icon" aria-hidden="true">✦</span>
 
@@ -438,7 +530,7 @@
               </p>
             </article>
 
-            <article class="why-us-card">
+            <article class="why-us-card" data-animation="card">
               <span class="why-us-number">02 / 04</span>
               <span class="why-us-icon" aria-hidden="true">⌕</span>
 
@@ -451,7 +543,7 @@
               </p>
             </article>
 
-            <article class="why-us-card">
+            <article class="why-us-card" data-animation="card">
               <span class="why-us-number">03 / 04</span>
               <span class="why-us-icon" aria-hidden="true">↗</span>
 
@@ -463,7 +555,7 @@
               </p>
             </article>
 
-            <article class="why-us-card">
+            <article class="why-us-card" data-animation="card">
               <span class="why-us-number">04 / 04</span>
               <span class="why-us-icon" aria-hidden="true">⌘</span>
 
@@ -481,11 +573,11 @@
 
       <section id="our-work" class="our-work">
         <div class="container">
-          <p class="our-work-label">OUR PORTFOLIO</p>
+          <p class="our-work-label" data-animation="label">OUR PORTFOLIO</p>
           <div class="our-work-header">
-            <h2 class="our-work-title">Our Work</h2>
+            <h2 class="our-work-title" data-animation="title">Our Work</h2>
 
-            <p class="our-work-description">
+            <p class="our-work-description" data-animation="description">
               Take a look at some examples of computer repairs, upgrades, and
               technical solutions. Every project starts with understanding the
               problem.
@@ -493,7 +585,7 @@
           </div>
 
           <div class="our-work-grid">
-            <article class="work-card">
+            <article class="work-card" data-animation="card">
               <div class="work-card-image">
                 <img
                   src="./image/work-01.png"
@@ -513,7 +605,7 @@
               </div>
             </article>
 
-            <article class="work-card">
+            <article class="work-card" data-animation="card">
               <div class="work-card-image">
                 <img
                   src="./image/work-02.png"
@@ -533,7 +625,7 @@
               </div>
             </article>
 
-            <article class="work-card">
+            <article class="work-card" data-animation="card">
               <div class="work-card-image">
                 <img
                   src="./image/work-03.png"
@@ -556,14 +648,16 @@
         </div>
       </section>
 
-      <section class="stats">
+      <section class="stats" id="stats">
         <div class="container">
-          <p class="stats-label">OUR ACHIEVEMENTS</p>
+          <p class="stats-label" data-animation="label">OUR ACHIEVEMENTS</p>
 
           <div class="stats-header">
-            <h2 class="stats-title">Numbers That Speak for Themselves</h2>
+            <h2 class="stats-title" data-animation="title">
+              Numbers That Speak for Themselves
+            </h2>
 
-            <p class="stats-description">
+            <p class="stats-description" data-animation="description">
               We combine technical expertise with reliable service to keep your
               devices running at their best. Every repair reflects our
               commitment to quality and customer satisfaction.
@@ -595,12 +689,16 @@
         </div>
       </section>
 
-      <section id="testimonial" class="testimonials">
+      <section id="testimonials" class="testimonials">
         <div class="container">
-          <p class="testimonials-label">CUSTOMER FEEDBACK</p>
+          <p class="testimonials-label" data-animation="label">
+            CUSTOMER FEEDBACK
+          </p>
           <div class="testimonials-header">
-            <h2 class="testimonials-title">What Our Clients Say</h2>
-            <p class="testimonials-description">
+            <h2 class="testimonials-title" data-animation="title">
+              What Our Clients Say
+            </h2>
+            <p class="testimonials-description" data-animation="description">
               We believe good service starts with listening. Here's what
               customers have to say about their experience.
             </p>
@@ -741,13 +839,72 @@
         </div>
       </section>
 
-      <section id="faq" class="faq">
+      <section class="brands" data-animation="section">
         <div class="container">
-          <p class="faq-label">NEED MORE INFORMATION?</p>
-          <div class="faq-header">
-            <h2 class="faq-title">Frequently Asked Questions</h2>
+          <p class="brands-label" data-animation="label">BRANDS WE SERVICE</p>
 
-            <p class="faq-description">
+          <div class="brands-header">
+            <h2 class="brands-title" data-animation="title">
+              We Repair All Major Computer Brands
+            </h2>
+
+            <p class="brands-description" data-animation="description">
+              Our experienced technicians work with leading computer
+              manufacturers to provide reliable repairs and professional
+              support.
+            </p>
+          </div>
+
+          <div class="brands-grid">
+            <div class="brand-card">
+              <span class="brand-logo apple">Apple</span>
+            </div>
+
+            <div class="brand-card" data-animation="card">
+              <span class="brand-logo asus">ASUS</span>
+            </div>
+
+            <div class="brand-card" data-animation="card">
+              <span class="brand-logo dell">DELL</span>
+            </div>
+
+            <div class="brand-card" data-animation="card">
+              <span class="brand-logo hp">HP</span>
+            </div>
+
+            <div class="brand-card" data-animation="card">
+              <span class="brand-logo lenovo">Lenovo</span>
+            </div>
+
+            <div class="brand-card" data-animation="card">
+              <span class="brand-logo acer">acer</span>
+            </div>
+
+            <div class="brand-card" data-animation="card">
+              <span class="brand-logo msi">MSI</span>
+            </div>
+
+            <div class="brand-card" data-animation="card">
+              <span class="brand-logo samsung">SAMSUNG</span>
+            </div>
+          </div>
+
+          <p class="brands-footer">
+            Don't see your brand?
+            <a href="./pages/contact.html">Contact us</a> — we're happy to help!
+          </p>
+        </div>
+      </section>
+
+      <section id="faq" class="faq" data-animation="section">
+        <div class="container">
+          <p class="faq-label" data-animation="label">NEED MORE INFORMATION?</p>
+          <div class="faq-header">
+            <h2 class="faq-title" data-animation="title">
+              Frequently Asked Questions
+            </h2>
+
+            <p class="faq-description" data-animation="description">
               Have questions about our computer repair services? Find answers to
               common questions and learn how we can help you get your technology
               back on track.
@@ -758,7 +915,7 @@
             <details class="faq-item" open>
               <summary class="faq-question">
                 What types of computers do you repair?
-                <span class="faq-icon" aria-hidden="true">+</span>
+                <span class="faq-toggle" aria-hidden="true"></span>
               </summary>
 
               <div class="faq-answer">
@@ -773,7 +930,7 @@
             <details class="faq-item">
               <summary class="faq-question">
                 How long does a computer repair take?
-                <span class="faq-icon" aria-hidden="true">+</span>
+                <span class="faq-toggle" aria-hidden="true"></span>
               </summary>
 
               <div class="faq-answer">
@@ -789,7 +946,7 @@
             <details class="faq-item">
               <summary class="faq-question">
                 Do you offer free diagnostics?
-                <span class="faq-icon" aria-hidden="true">+</span>
+                <span class="faq-toggle" aria-hidden="true"></span>
               </summary>
 
               <div class="faq-answer">
@@ -803,7 +960,7 @@
             <details class="faq-item">
               <summary class="faq-question">
                 Can you upgrade my computer's performance?
-                <span class="faq-icon" aria-hidden="true">+</span>
+                <span class="faq-toggle" aria-hidden="true"></span>
               </summary>
 
               <div class="faq-answer">
@@ -817,7 +974,7 @@
             <details class="faq-item">
               <summary class="faq-question">
                 Can you recover lost or deleted data?
-                <span class="faq-icon" aria-hidden="true">+</span>
+                <span class="faq-toggle" aria-hidden="true"></span>
               </summary>
 
               <div class="faq-answer">
@@ -832,7 +989,7 @@
             <details class="faq-item">
               <summary class="faq-question">
                 How can I request a repair?
-                <span class="faq-icon" aria-hidden="true">+</span>
+                <span class="faq-toggle" aria-hidden="true"></span>
               </summary>
 
               <div class="faq-answer">
@@ -850,7 +1007,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-brand">
-          <div>
+          <div data-animation="title">
             <a href="./index.html" class="footer-logo" aria-label="Nexora home">
               <svg
                 class="footer-logo-icon"
@@ -909,11 +1066,13 @@
               <a href="./index.html" class="footer-company-name" data-logo>
                 NEXORA
               </a>
-              <p class="footer-subtitle">COMPUTER SERVICE</p>
+              <p class="footer-subtitle" data-animation="label">
+                COMPUTER SERVICE
+              </p>
             </div>
           </div>
 
-          <p class="footer-brand-description">
+          <p class="footer-brand-description" data-animation="label">
             Reliable computer repair and technical support for your devices.
           </p>
         </div>
@@ -961,7 +1120,9 @@
               <li><a href="#services">Services</a></li>
               <li><a href="#stats">Our Achievements</a></li>
               <li><a href="./pages/contact.html">Contact Us</a></li>
-              <li><a href="./pages/contact.html">Request a Repair</a></li>
+              <li>
+                <a href="./pages/contact.html#contact">Request a Repair</a>
+              </li>
             </ul>
           </div>
 
@@ -985,7 +1146,11 @@
             </ul>
           </div>
         </nav>
-
+        <div class="emailwrapper">
+          <a href="mailto:info@nexora.com" class="email-link" data-email>
+            info@nexora.com
+          </a>
+        </div>
         <div class="footer-bottom">
           <p class="footer-copyright">
             © 2026 <span data-logo>NEXORA</span>. All rights reserved.
@@ -1003,7 +1168,12 @@
 
     <script src="./js/services.js" defer></script>
     <script src="./js/testimonials.js"></script>
+    <script type="module" src="./js/config.js"></script>
+
     <script src="./js/faq.js"></script>
+    <script src="./js/animation.js"></script>
     <script src="./js/stats.js"></script>
+    <script src="./js/cookie.js"></script>
+    <script src="./js/loader.js"></script>
   </body>
 </html>

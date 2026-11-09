@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../image/favicon.ico" sizes="any" />
+    <link
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+      href="../image/favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/sevice.css" />
+
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+
+    <title>Computer|Repair</title>
+  </head>
+  <body data-page="repairComputer">
+    <div class="preloader" id="preloader">
+      <div class="preloader-content">
+        <div class="preloader-logo"><span data-logo>NEXORA .</span></div>
+
+        <div class="preloader-loader">
+          <span></span>
+        </div>
+
+        <p class="preloader-text">Preparing your experience...</p>
+      </div>
+    </div>
+
+    <div
+      class="cookie-consent"
+      id="cookieConsent"
+      role="dialog"
+      aria-labelledby="cookie-title"
+      aria-describedby="cookie-description"
+      aria-modal="false"
+      hidden
+    >
+      <div class="cookie-icon" aria-hidden="true">🍪</div>
+
+      <div class="cookie-content">
+        <h2 class="cookie-title" id="cookie-title">We value your privacy</h2>
+
+        <p class="cookie-description" id="cookie-description">
+          We use cookies to improve your browsing experience and understand how
+          our website is used. You can accept all cookies or keep only the
+          essential ones.
+        </p>
+
+        <a href="./cookies.html" class="cookie-link">
+          Learn more about cookies
+          <span aria-hidden="true">↗</span>
+        </a>
+
+        <div class="cookie-actions">
+          <button
+            class="cookie-button cookie-button-primary"
+            type="button"
+            id="acceptCookies"
+          >
+            Accept all
+          </button>
+        </div>
+      </div>
+
+      <button
+        class="cookie-close"
+        type="button"
+        id="closeCookies"
+        aria-label="Close cookie notice"
+      >
+        &times;
+      </button>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <div class="header-brand">
+          <a href="../index.html" class="header-company-name" data-logo>
+            NEXORA
+          </a>
+          <p class="header-subtitle">COMPUTER SERVICE</p>
+        </div>
+
+        <a href="../index.html" class="header-logo" aria-label="Nexora home">
+          <svg
+            class="header-logo-icon"
+            width="140"
+            height="140"
+            viewBox="0 0 140 140"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              d="M70 8L124 39V101L70 132L16 101V39L70 8Z"
+              stroke="url(#logo-gradient)"
+              stroke-width="3"
+            />
+
+            <rect
+              x="39"
+              y="39"
+              width="62"
+              height="62"
+              rx="8"
+              stroke="url(#logo-gradient)"
+              stroke-width="4"
+            />
+
+            <path
+              d="M70 24V39M70 101V116M24 70H39M101 70H116
+             M39 48L29 38M101 48L111 38
+             M39 92L29 102M101 92L111 102"
+              stroke="#FFC400"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+
+            <path
+              d="M54 85V55L86 85V55"
+              stroke="url(#logo-gradient)"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+
+            <defs>
+              <linearGradient
+                id="logo-gradient"
+                x1="16"
+                y1="8"
+                x2="124"
+                y2="132"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#FFC400" />
+                <stop offset="1" stop-color="#FF7A00" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </a>
+
+        <nav
+          class="header-nav"
+          aria-label="Main navigation"
+          data-animation="title"
+        >
+          <ul class="header-list">
+            <li>
+              <a href="../index.html" class="header-link">Home</a>
+            </li>
+            <li>
+              <a href="../index.html#services" class="header-link active"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="../index.html#about" class="header-link">About Us</a>
+            </li>
+            <li>
+              <a href="./contact.html" class="header-link" active>Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="service-page" id="main">
+      <section data-animation="section">
+        <div class="container">
+          <div class="service-hero">
+            <div class="service-hero-content">
+              <nav class="service-breadcrumb" aria-label="Breadcrumb">
+                <a href="../index.html">Home</a>
+                <span>/</span>
+                <span aria-current="page">Computer Repair</span>
+              </nav>
+
+              <p class="service-label" data-animation="label">
+                01 — COMPUTER & LAPTOP REPAIR
+              </p>
+
+              <h1 class="service-hero-title" data-animation="title">
+                Computer Problems?
+                <span>We've Got You Covered.</span>
+              </h1>
+
+              <p class="service-hero-description" data-animation="description">
+                From unexpected shutdowns to hardware failures, we provide
+                professional computer and laptop repair solutions to get your
+                device working again.
+              </p>
+
+              <div class="service-hero-actions">
+                <a href="#contact" class="service-button">
+                  Request a Repair
+                  <span aria-hidden="true">→</span>
+                </a>
+
+                <a href="#common-problems" class="service-text-link">
+                  Explore Our Services
+                </a>
+              </div>
+
+              <div class="service-hero-note">
+                <span class="service-status-dot"></span>
+                Professional Computer Repair & Technical Support
+              </div>
+            </div>
+
+            <div class="service-hero-visual">
+              <img
+                src="../image/service-repair.jpg"
+                alt="Technician repairing computer hardware"
+                class="service-hero-image"
+              />
+
+              <div class="service-image-caption">
+                <span>01</span>
+                <p>Expert Computer Care</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="service-overview">
+        <div class="container">
+          <div class="service-section-heading">
+            <p class="service-label" data-animation="label">WHAT WE DO</p>
+
+            <h2 class="service-section-title" data-animation="title">
+              Reliable Solutions for
+              <span>Everyday Tech Problems.</span>
+            </h2>
+
+            <p class="service-section-description" data-animation="description">
+              Whether your computer is running slowly, experiencing hardware
+              problems or refusing to start, our repair service helps identify
+              the issue and find the right solution.
+            </p>
+          </div>
+
+          <div class="overview-grid">
+            <article class="overview-card" data-animation="card">
+              <span class="overview-number">01</span>
+              <h3>Desktop Repair</h3>
+              <p>
+                Troubleshooting and repair for desktop computers, including
+                hardware failures and system issues.
+              </p>
+            </article>
+
+            <article class="overview-card" data-animation="card">
+              <span class="overview-number">02</span>
+              <h3>Laptop Repair</h3>
+              <p>
+                Professional laptop troubleshooting, component replacement and
+                hardware repair.
+              </p>
+            </article>
+
+            <article class="overview-card" data-animation="card">
+              <span class="overview-number">03</span>
+              <h3>Hardware Diagnostics</h3>
+              <p>
+                Identifying faulty components and performance issues through
+                systematic hardware testing.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="common-problems"
+        id="common-problems"
+        data-animation="section"
+      >
+        <div class="container">
+          <div class="service-section-heading">
+            <p class="service-label" data-animation="label">
+              COMMON COMPUTER ISSUES
+            </p>
+
+            <h2 class="service-section-title" data-animation="title">
+              What's Wrong With
+              <span>Your Computer?</span>
+            </h2>
+
+            <p class="service-section-description" data-animation="description">
+              Computer problems can appear in many different ways. Here are some
+              of the most common issues we can help diagnose.
+            </p>
+          </div>
+
+          <div class="problems-slider" data-slider>
+            <div
+              class="problems-grid"
+              data-slider-track
+              tabindex="0"
+              aria-label="Common computer issues"
+            >
+              <article class="problem-card">
+                <span class="problem-number">01 / 06</span>
+                <div class="problem-icon" aria-hidden="true">⚡</div>
+                <h3>Won't Turn On</h3>
+                <p>
+                  Your computer doesn't start, shows no display or shuts down
+                  unexpectedly.
+                </p>
+              </article>
+
+              <article class="problem-card">
+                <span class="problem-number">02 / 06</span>
+                <div class="problem-icon" aria-hidden="true">🌡</div>
+                <h3>Overheating</h3>
+                <p>
+                  Excessive heat, loud fans and unexpected shutdowns during
+                  operation.
+                </p>
+              </article>
+
+              <article class="problem-card">
+                <span class="problem-number">03 / 06</span>
+                <div class="problem-icon" aria-hidden="true">🐢</div>
+                <h3>Slow Performance</h3>
+                <p>
+                  Long loading times, freezing and poor overall computer
+                  performance.
+                </p>
+              </article>
+
+              <article class="problem-card">
+                <span class="problem-number">04 / 06</span>
+                <div class="problem-icon" aria-hidden="true">🔧</div>
+                <h3>Hardware Failure</h3>
+                <p>
+                  Faulty components, connection problems and unexpected hardware
+                  errors.
+                </p>
+              </article>
+
+              <article class="problem-card">
+                <span class="problem-number">05 / 06</span>
+                <div class="problem-icon" aria-hidden="true">🖥</div>
+                <h3>Display Problems</h3>
+                <p>
+                  Screen issues, flickering, visual artifacts or display
+                  connection failures.
+                </p>
+              </article>
+
+              <article class="problem-card">
+                <span class="problem-number">06 / 06</span>
+                <div class="problem-icon" aria-hidden="true">⌨</div>
+                <h3>Keyboard & Ports</h3>
+                <p>
+                  Unresponsive keys, damaged ports and connectivity problems.
+                </p>
+              </article>
+            </div>
+            <div class="problems-controls">
+              <button
+                class="problems-control"
+                type="button"
+                data-slider-prev
+                aria-label="Previous cards"
+                disabled
+              >
+                &#8592;
+              </button>
+
+              <button
+                class="problems-control"
+                type="button"
+                data-slider-next
+                aria-label="Next cards"
+              >
+                &#8594;
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="service-included">
+        <div class="container">
+          <div class="included-grid">
+            <div class="included-content">
+              <p class="service-label" data-animation="label">
+                OUR REPAIR APPROACH
+              </p>
+
+              <h2 class="service-section-title" data-animation="title">
+                More Than Just
+                <span>Fixing Computers.</span>
+              </h2>
+
+              <p
+                class="service-section-description"
+                data-animation="description"
+              >
+                We focus on identifying the actual cause of the problem instead
+                of simply treating the symptoms. Every repair starts with
+                understanding what your device needs.
+              </p>
+
+              <a href="./contact.html" class="service-button">
+                Discuss Your Repair
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+
+            <div class="included-list">
+              <article class="included-item">
+                <span class="included-index">01</span>
+                <div>
+                  <h3>Hardware Inspection</h3>
+                  <p>
+                    Checking components and identifying possible hardware
+                    issues.
+                  </p>
+                </div>
+              </article>
+
+              <article class="included-item">
+                <span class="included-index">02</span>
+                <div>
+                  <h3>Problem Diagnosis</h3>
+                  <p>
+                    Investigating symptoms to determine the cause of the
+                    malfunction.
+                  </p>
+                </div>
+              </article>
+
+              <article class="included-item">
+                <span class="included-index">03</span>
+                <div>
+                  <h3>Repair Recommendations</h3>
+                  <p>
+                    Explaining possible repair options and recommended
+                    solutions.
+                  </p>
+                </div>
+              </article>
+
+              <article class="included-item">
+                <span class="included-index">04</span>
+                <div>
+                  <h3>Performance Testing</h3>
+                  <p>Testing the device after repair to check its operation.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="service-why" data-animation="section">
+        <div class="container">
+          <div class="service-section-heading">
+            <p class="service-label" data-animation="label">
+              WHY <span data-logo>NEXORA</span>
+            </p>
+
+            <h2 class="service-section-title" data-animation="title">
+              Computer Repair
+              <span>You Can Rely On.</span>
+            </h2>
+
+            <p class="service-section-description" data-animation="description">
+              We believe technical support should be straightforward,
+              transparent and focused on solving the real problem.
+            </p>
+          </div>
+
+          <div class="why-grid">
+            <article class="why-card" data-animation="card">
+              <div class="why-icon" aria-hidden="true">⌕</div>
+              <h3>Careful Diagnostics</h3>
+              <p>
+                We investigate the source of the problem before recommending a
+                repair.
+              </p>
+            </article>
+
+            <article class="why-card" data-animation="card">
+              <div class="why-icon" aria-hidden="true">⚙</div>
+              <h3>Practical Solutions</h3>
+              <p>
+                Repair recommendations based on your device and its actual
+                condition.
+              </p>
+            </article>
+
+            <article class="why-card" data-animation="card">
+              <div class="why-icon" aria-hidden="true">◇</div>
+              <h3>Clear Communication</h3>
+              <p>
+                We explain the problem and available options in understandable
+                language.
+              </p>
+            </article>
+
+            <article class="why-card" data-animation="card">
+              <div class="why-icon" aria-hidden="true">✓</div>
+              <h3>Quality Testing</h3>
+              <p>We check device operation after completing the repair work.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="service-faq">
+        <div class="container">
+          <div class="service-faq-grid">
+            <div class="service-faq-heading">
+              <p class="service-label" data-animation="label">GOT QUESTIONS?</p>
+
+              <h2 class="service-section-title" data-animation="title">
+                Frequently Asked
+                <span>Questions.</span>
+              </h2>
+
+              <p
+                class="service-section-description"
+                data-animation="description"
+              >
+                Find answers to common questions about our computer and laptop
+                repair services.
+              </p>
+
+              <a href="./contact.html" class="service-text-link">
+                Still have questions? Contact us →
+              </a>
+            </div>
+
+            <div class="faq-list">
+              <details class="faq-item" open>
+                <summary class="faq-question">
+                  What types of computers do you repair?
+                  <span class="faq-toggle" aria-hidden="true"></span>
+                </summary>
+
+                <p class="faq-answer">
+                  We work with desktop computers and laptops, including hardware
+                  troubleshooting, component replacement and general computer
+                  diagnostics.
+                </p>
+              </details>
+
+              <details class="faq-item">
+                <summary class="faq-question">
+                  How long does a computer repair take?
+                  <span class="faq-toggle" aria-hidden="true"></span>
+                </summary>
+
+                <p class="faq-answer">
+                  Repair time depends on the type of issue, device condition and
+                  availability of replacement components. We can provide a more
+                  accurate estimate after inspecting your device.
+                </p>
+              </details>
+
+              <details class="faq-item">
+                <summary class="faq-question">
+                  Do I need to describe the problem before bringing my device?
+                  <span class="faq-toggle" aria-hidden="true"></span>
+                </summary>
+
+                <p class="faq-answer">
+                  It is helpful to describe the symptoms when contacting us.
+                  This gives our technicians a better understanding of the
+                  issue.
+                </p>
+              </details>
+
+              <details class="faq-item">
+                <summary class="faq-question">
+                  Can you repair a computer that won't turn on?
+                  <span class="faq-toggle" aria-hidden="true"></span>
+                </summary>
+
+                <p class="faq-answer">
+                  Yes, we can investigate possible causes, including power
+                  supply problems, motherboard issues and other hardware
+                  failures.
+                </p>
+              </details>
+
+              <details class="faq-item">
+                <summary class="faq-question">
+                  Will my files be safe during the repair?
+                  <span class="faq-toggle" aria-hidden="true"></span>
+                </summary>
+
+                <p class="faq-answer">
+                  We understand how important your data is. However, some
+                  repairs may involve risks to stored information. We recommend
+                  backing up important files whenever possible before service.
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="service-cta" id="contact" data-animation="section">
+        <div class="container">
+          <div class="service-cta-content">
+            <p class="service-label" data-animation="label">
+              LET'S GET STARTED
+            </p>
+
+            <h2 data-animation="title">
+              Ready to Get Your
+              <span>Computer Working Again?</span>
+            </h2>
+
+            <p data-animation="description">
+              Tell us what's happening with your device. We'll help you find the
+              right repair solution.
+            </p>
+
+            <a href="./contact.html" class="service-button">
+              Get in Touch
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="related-services">
+        <div class="container">
+          <div class="related-header">
+            <div>
+              <p class="service-label" data-animation="label">EXPLORE MORE</p>
+              <h2 class="service-section-title" data-animation="title">
+                Other Services
+              </h2>
+            </div>
+
+            <a href="../index.html#services" class="service-text-link">
+              All Services →
+            </a>
+          </div>
+
+          <div class="related-grid">
+            <a href="./hardware-upgrade.html" class="related-card">
+              <span>02 — HARDWARE UPGRADE</span>
+              <h3>Hardware Upgrade</h3>
+              <span class="related-arrow">↗</span>
+            </a>
+
+            <a href="./security.html" class="related-card">
+              <span>03 — SYSTEM SECURITY</span>
+              <h3>Virus & Security</h3>
+              <span class="related-arrow">↗</span>
+            </a>
+
+            <a href="./data.html" class="related-card">
+              <span>04 — DATA & DIAGNOSTICS</span>
+              <h3>Data Recovery</h3>
+              <span class="related-arrow">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" data-animation="section">
+      <div class="container">
+        <div class="footer-brand">
+          <div data-animation="title">
+            <a
+              href="../index.html"
+              class="footer-logo"
+              aria-label="Nexora home"
+            >
+              <svg
+                class="footer-logo-icon"
+                width="100"
+                height="100"
+                viewBox="0 0 140 140"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M70 8L124 39V101L70 132L16 101V39L70 8Z"
+                  stroke="url(#logo-gradient)"
+                  stroke-width="3"
+                />
+                <rect
+                  x="39"
+                  y="39"
+                  width="62"
+                  height="62"
+                  rx="8"
+                  stroke="url(#logo-gradient)"
+                  stroke-width="4"
+                />
+                <path
+                  d="M70 24V39M70 101V116M24 70H39M101 70H116
+               M39 48L29 38M101 48L111 38
+               M39 92L29 102M101 92L111 102"
+                  stroke="#FFC400"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M54 85V55L86 85V55"
+                  stroke="url(#logo-gradient)"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <defs>
+                  <linearGradient
+                    id="logo-gradient"
+                    x1="16"
+                    y1="8"
+                    x2="124"
+                    y2="132"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FFC400" />
+                    <stop offset="1" stop-color="#FF7A00" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </a>
+            <div class="footer-brand-info">
+              <a href="../index.html" class="footer-company-name" data-logo>
+                NEXORA
+              </a>
+              <p class="footer-subtitle" data-animation="label">
+                COMPUTER SERVICE
+              </p>
+            </div>
+          </div>
+
+          <p class="footer-brand-description">
+            Reliable computer repair and technical support for your devices.
+          </p>
+        </div>
+
+        <nav
+          class="footer-navigation"
+          aria-label="Footer navigation"
+          data-animation="description"
+        >
+          <div class="footer-column">
+            <h3 class="footer-heading">Home</h3>
+
+            <ul class="footer-list">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../index.html#about">About Us</a></li>
+              <li><a href="../index.html#services">Our Services</a></li>
+              <li><a href="../index.html#our-work">Our Works</a></li>
+              <li><a href="../index.html#testimonials">Testimonials</a></li>
+              <li><a href="../index.html#faq">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-heading">Our Services</h3>
+
+            <ul class="footer-list">
+              <li>
+                <a href="#main"> Computer & Laptop Repair </a>
+              </li>
+              <li>
+                <a href="./hardware-upgrade.html"> Hardware Upgrade </a>
+              </li>
+              <li>
+                <a href="./security.html">Virus & Security</a>
+              </li>
+              <li>
+                <a href="./data.html"> Data Recovery & Diagnostics </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-heading">Quick Links</h3>
+
+            <ul class="footer-list">
+              <li><a href="../index.html#about">About Us</a></li>
+              <li><a href="../index.html#services">Services</a></li>
+              <li><a href="../index.html#stats">Our Achievements</a></li>
+              <li><a href="./contact.html#contact">Contact Us</a></li>
+              <li><a href="./contact.html#contact">Request a Repair</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-heading">Support</h3>
+
+            <ul class="footer-list">
+              <li>
+                <a href="../index.html#faq">Frequently Asked Questions</a>
+              </li>
+              <li><a href="./contact.html#contact">Contact Support</a></li>
+              <li><a href="../index.html#service">Service Information</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-heading">Legal</h3>
+
+            <ul class="footer-list">
+              <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="./terms.html">Terms of Service</a></li>
+              <li><a href="./cookies.html">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="emailwrapper">
+          <a href="mailto:info@nexora.com" class="email-link" data-email>
+            info@nexora.com
+          </a>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            © 2026 <span data-logo>NEXORA</span>. All rights reserved.
+          </p>
+
+          <p class="footer-disclaimer" data-disclaimer>
+            All services are subject to inspection and availability. Data
+            recovery results are not guaranteed.
+          </p>
+
+          <a href="#top" class="footer-back-to-top">Back to top ↑</a>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/faq.js"></script>
+    <script src="../js/service-problem.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script src="../js/loader.js"></script>
+    <script src="../js/animation.js"></script>
+    <script type="module" src="../js/config.js"></script>
+  </body>
+</html>

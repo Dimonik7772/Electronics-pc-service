@@ -3,6 +3,8 @@ const faqItems = document.querySelectorAll(".faq-item");
 const openAnswer = (details) => {
   const answer = details.querySelector(".faq-answer");
 
+  if (!answer) return;
+
   details.open = true;
 
   answer.style.height = "0px";
@@ -25,6 +27,8 @@ const openAnswer = (details) => {
 const closeAnswer = (details) => {
   const answer = details.querySelector(".faq-answer");
 
+  if (!answer) return;
+
   answer.style.height = `${answer.scrollHeight}px`;
 
   answer.offsetHeight;
@@ -43,13 +47,12 @@ const closeAnswer = (details) => {
 };
 
 faqItems.forEach((details) => {
+  const summary = details.querySelector(".faq-question");
   const answer = details.querySelector(".faq-answer");
 
-  answer.style.height = details.open ? "auto" : "0px";
-});
+  if (!summary || !answer) return;
 
-faqItems.forEach((details) => {
-  const summary = details.querySelector(".faq-question");
+  answer.style.height = details.open ? "auto" : "0px";
 
   summary.addEventListener("click", (event) => {
     event.preventDefault();
