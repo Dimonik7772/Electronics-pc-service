@@ -271,6 +271,7 @@
 .problems-grid {
   display: flex;
   gap: 16px;
+  padding: 10px;
 
   overflow-x: auto;
   overscroll-behavior-x: contain;
