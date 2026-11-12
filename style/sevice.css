@@ -280,7 +280,7 @@
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
 
-  touch-action: pan-y;
+  touch-action: pan-x;
 }
 
 .problems-grid::-webkit-scrollbar {
