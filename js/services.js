@@ -1,28 +1,66 @@
-const tabs = document.querySelectorAll(".services-tab");
-const panels = document.querySelectorAll(".services-panel");
-tabs.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    const targetId = tab.getAttribute("aria-controls");
+const services = document.querySelector(".services");
 
-    const targetPanel = document.getElementById(targetId);
+if (services) {
+  const tabs = [...services.querySelectorAll(".services-tab")];
+  const panels = [...services.querySelectorAll(".services-panel")];
+
+  function activateTab(tab, moveFocus = false) {
+    const targetId = tab.getAttribute("aria-controls");
+    const targetPanel = services.querySelector(`#${targetId}`);
+
     if (!targetPanel) return;
 
     tabs.forEach((item) => {
-      item.classList.remove("active");
-      item.setAttribute("aria-selected", false);
-      item.setAttribute("tabindex", "0");
-    });
+      const isActive = item === tab;
 
-    tab.classList.add("active");
-    tab.setAttribute("aria-selected", "true");
-    tab.setAttribute("tabindex", "0");
+      item.classList.toggle("active", isActive);
+      item.setAttribute("aria-selected", String(isActive));
+      item.setAttribute("tabindex", isActive ? "0" : "-1");
+    });
 
     panels.forEach((panel) => {
-      panel.classList.remove("active");
-      panel.hidden = true;
+      const isActive = panel === targetPanel;
+
+      panel.classList.toggle("active", isActive);
+      panel.hidden = !isActive;
     });
 
-    targetPanel.hidden = false;
-    targetPanel.classList.add("active");
+    if (moveFocus) {
+      tab.focus();
+    }
+  }
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => {
+      activateTab(tab);
+    });
+
+    tab.addEventListener("keydown", (event) => {
+      let nextIndex = index;
+
+      switch (event.key) {
+        case "ArrowDown":
+          nextIndex = (index + 1) % tabs.length;
+          break;
+
+        case "ArrowUp":
+          nextIndex = (index - 1 + tabs.length) % tabs.length;
+          break;
+
+        case "Home":
+          nextIndex = 0;
+          break;
+
+        case "End":
+          nextIndex = tabs.length - 1;
+          break;
+
+        default:
+          return;
+      }
+
+      event.preventDefault();
+      activateTab(tabs[nextIndex], true);
+    });
   });
-});
+}

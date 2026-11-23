@@ -1,49 +1,49 @@
 const faqItems = document.querySelectorAll(".faq-item");
 
-const openAnswer = (details) => {
+const animateAnswer = (details, shouldOpen) => {
   const answer = details.querySelector(".faq-answer");
 
   if (!answer) return;
 
-  details.open = true;
+  // Скасовуємо попередню анімацію, якщо вона ще триває.
+  answer.getAnimations().forEach((animation) => animation.cancel());
 
-  answer.style.height = "0px";
+  if (shouldOpen) {
+    details.open = true;
 
-  requestAnimationFrame(() => {
-    answer.style.height = `${answer.scrollHeight}px`;
-  });
+    answer.style.height = "0px";
 
-  answer.addEventListener(
-    "transitionend",
-    (event) => {
+    requestAnimationFrame(() => {
+      answer.style.height = `${answer.scrollHeight}px`;
+    });
+
+    const onTransitionEnd = (event) => {
       if (event.propertyName !== "height") return;
 
       answer.style.height = "auto";
-    },
-    { once: true },
-  );
-};
+      answer.removeEventListener("transitionend", onTransitionEnd);
+    };
 
-const closeAnswer = (details) => {
-  const answer = details.querySelector(".faq-answer");
+    answer.addEventListener("transitionend", onTransitionEnd);
 
-  if (!answer) return;
+    return;
+  }
 
   answer.style.height = `${answer.scrollHeight}px`;
 
+  // Фіксуємо початкову висоту перед закриттям.
   answer.offsetHeight;
 
   answer.style.height = "0px";
 
-  answer.addEventListener(
-    "transitionend",
-    (event) => {
-      if (event.propertyName !== "height") return;
+  const onTransitionEnd = (event) => {
+    if (event.propertyName !== "height") return;
 
-      details.open = false;
-    },
-    { once: true },
-  );
+    details.open = false;
+    answer.removeEventListener("transitionend", onTransitionEnd);
+  };
+
+  answer.addEventListener("transitionend", onTransitionEnd);
 };
 
 faqItems.forEach((details) => {
@@ -52,22 +52,21 @@ faqItems.forEach((details) => {
 
   if (!summary || !answer) return;
 
-  answer.style.height = details.open ? "auto" : "0px";
+  answer.style.height = details.open ? `${answer.scrollHeight}px` : "0px";
 
   summary.addEventListener("click", (event) => {
     event.preventDefault();
 
-    if (details.open) {
-      closeAnswer(details);
-      return;
+    const shouldOpen = !details.open;
+
+    if (shouldOpen) {
+      faqItems.forEach((item) => {
+        if (item !== details && item.open) {
+          animateAnswer(item, false);
+        }
+      });
     }
 
-    faqItems.forEach((item) => {
-      if (item !== details && item.open) {
-        closeAnswer(item);
-      }
-    });
-
-    openAnswer(details);
+    animateAnswer(details, shouldOpen);
   });
 });
