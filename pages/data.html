@@ -88,20 +88,13 @@
         &times;
       </button>
     </div>
-    <header class="header">
+    <header class="header" id="top">
       <div class="container">
-        <div class="header-brand">
-          <a href="../index.html" class="header-company-name" data-logo>
-            NEXORA
-          </a>
-          <p class="header-subtitle">COMPUTER SERVICE</p>
-        </div>
-
-        <a href="../index.html" class="header-logo" aria-label="Nexora home">
+        <a href="./index.html" class="header-brand" aria-label="Nexora home">
           <svg
             class="header-logo-icon"
-            width="140"
-            height="140"
+            width="64"
+            height="64"
             viewBox="0 0 140 140"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -109,40 +102,36 @@
           >
             <path
               d="M70 8L124 39V101L70 132L16 101V39L70 8Z"
-              stroke="url(#logo-gradient)"
+              stroke="url(#header-logo-gradient)"
               stroke-width="3"
             />
-
             <rect
               x="39"
               y="39"
               width="62"
               height="62"
               rx="8"
-              stroke="url(#logo-gradient)"
+              stroke="url(#header-logo-gradient)"
               stroke-width="4"
             />
-
             <path
               d="M70 24V39M70 101V116M24 70H39M101 70H116
-             M39 48L29 38M101 48L111 38
-             M39 92L29 102M101 92L111 102"
+          M39 48L29 38M101 48L111 38
+          M39 92L29 102M101 92L111 102"
               stroke="#FFC400"
               stroke-width="3"
               stroke-linecap="round"
             />
-
             <path
               d="M54 85V55L86 85V55"
-              stroke="url(#logo-gradient)"
+              stroke="url(#header-logo-gradient)"
               stroke-width="6"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
-
             <defs>
               <linearGradient
-                id="logo-gradient"
+                id="header-logo-gradient"
                 x1="16"
                 y1="8"
                 x2="124"
@@ -154,16 +143,19 @@
               </linearGradient>
             </defs>
           </svg>
+
+          <span class="header-brand-info">
+            <span class="header-company-name" data-logo>NEXORA</span>
+            <span class="header-subtitle">COMPUTER SERVICE</span>
+          </span>
         </a>
 
-        <nav
-          class="header-nav"
-          aria-label="Main navigation"
-          data-animation="title"
-        >
+        <nav class="header-nav" aria-label="Main navigation">
           <ul class="header-list">
             <li>
-              <a href="../index.html" class="header-link">Home</a>
+              <a href="../index.html" class="header-link" aria-current="page">
+                Home
+              </a>
             </li>
             <li>
               <a href="../index.html#services" class="header-link active"
@@ -174,12 +166,13 @@
               <a href="../index.html#about" class="header-link">About Us</a>
             </li>
             <li>
-              <a href="./contact.html" class="header-link" active>Contact</a>
+              <a href="./contact.html" class="header-link">Contact</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
+
     <main class="service-page" id="main">
       <section data-animation="section">
         <div class="container">
@@ -192,18 +185,19 @@
               </nav>
 
               <p class="service-label" data-animation="label">
-                04 — DATA RECOVERY & RESTORATION
+                01 — DATA RECOVERY & RESTORATION
               </p>
 
               <h1 class="service-hero-title" data-animation="title">
-                Lost Your Important Files?
-                <span>Let's Explore Recovery.</span>
+                Lost Your Files?
+                <span>Let's Try to Recover Them.</span>
               </h1>
 
               <p class="service-hero-description" data-animation="description">
                 From accidentally deleted files to inaccessible storage devices,
-                we help investigate data loss and identify possible recovery
-                solutions for your important information.
+                we help investigate data loss issues and explore possible
+                recovery solutions to help you get your important information
+                back.
               </p>
 
               <div class="service-hero-actions">
@@ -213,13 +207,13 @@
                 </a>
 
                 <a href="#common-problems" class="service-text-link">
-                  Explore Our Services
+                  Explore Data Recovery
                 </a>
               </div>
 
               <div class="service-hero-note">
                 <span class="service-status-dot"></span>
-                Data Recovery & Storage Diagnostics
+                Data Recovery & Storage Device Diagnostics
               </div>
             </div>
 
@@ -231,7 +225,7 @@
               />
 
               <div class="service-image-caption">
-                <span>04</span>
+                <span>01</span>
                 <p>Your Data Matters</p>
               </div>
             </div>
@@ -239,50 +233,70 @@
         </div>
       </section>
 
-      <section class="service-overview">
+      <section class="service-overview" id="common-problems">
         <div class="container">
-          <div class="service-section-heading">
-            <p class="service-label" data-animation="label">WHAT WE DO</p>
+          <div class="service-overview-header">
+            <div class="service-section-heading">
+              <p class="service-label" data-animation="label">
+                02 — WHAT WE DO
+              </p>
 
-            <h2 class="service-section-title" data-animation="title">
-              Important Files.
-              <span>Possible Recovery Solutions.</span>
-            </h2>
+              <h2 class="service-section-title" data-animation="title">
+                Your Lost Data.
+                <span>Possible Recovery Solutions.</span>
+              </h2>
+            </div>
 
             <p class="service-section-description" data-animation="description">
-              Losing important documents, photos or work files can be stressful.
-              Data loss may happen because of accidental deletion, formatting,
-              software errors or storage device failure. We help identify the
-              problem and assess available recovery options.
+              Whether files have been accidentally deleted, a storage device has
+              become inaccessible or data has been lost due to a system issue,
+              we help investigate the problem and explore possible recovery
+              options.
             </p>
           </div>
 
-          <div class="overview-grid">
-            <article class="overview-card" data-animation="card">
+          <div class="overview-list">
+            <article class="overview-item" data-animation="card">
               <span class="overview-number">01</span>
-              <h3>Deleted File Recovery</h3>
-              <p>
-                Exploring recovery options for accidentally deleted documents,
-                photos and other important files.
-              </p>
+
+              <div class="overview-content">
+                <h3>Deleted File Recovery</h3>
+                <p>
+                  Exploring recovery options for accidentally deleted files,
+                  documents, photos and other important information.
+                </p>
+              </div>
+
+              <span class="overview-arrow" aria-hidden="true">↗</span>
             </article>
 
-            <article class="overview-card" data-animation="card">
+            <article class="overview-item" data-animation="card">
               <span class="overview-number">02</span>
-              <h3>Storage Diagnostics</h3>
-              <p>
-                Checking hard drives, SSDs and external storage devices for
-                possible failures and errors.
-              </p>
+
+              <div class="overview-content">
+                <h3>Inaccessible Storage Devices</h3>
+                <p>
+                  Investigating hard drives, SSDs and external storage devices
+                  that are not detected, cannot be opened or have become
+                  inaccessible.
+                </p>
+              </div>
+
+              <span class="overview-arrow" aria-hidden="true">↗</span>
             </article>
 
-            <article class="overview-card" data-animation="card">
+            <article class="overview-item" data-animation="card">
               <span class="overview-number">03</span>
-              <h3>Data Restoration</h3>
-              <p>
-                Attempting to restore accessible information and transfer
-                recovered files to suitable storage.
-              </p>
+
+              <div class="overview-content">
+                <h3>Data Loss Diagnostics</h3>
+                <p>
+                  Assessing storage and file system issues to identify possible
+                  causes of data loss and determine suitable recovery options.
+                </p>
+              </div>
+
+              <span class="overview-arrow" aria-hidden="true">↗</span>
             </article>
           </div>
         </div>
@@ -291,111 +305,294 @@
       <section
         class="common-problems"
         id="common-problems"
-        data-animation="section"
+        aria-labelledby="common-problems-title"
       >
         <div class="container">
-          <div class="service-section-heading">
-            <p class="service-label" data-animation="label">
-              COMMON DATA LOSS ISSUES
-            </p>
+          <div class="common-problems-header">
+            <div class="common-problems-heading">
+              <p class="service-label">03 — COMMON DATA ISSUES</p>
 
-            <h2 class="service-section-title" data-animation="title">
-              Lost Access to
-              <span>Your Important Data?</span>
-            </h2>
+              <h2 class="service-section-title" id="common-problems-title">
+                Lost Access to
+                <span>Your Important Files?</span>
+              </h2>
+            </div>
 
-            <p class="service-section-description" data-animation="description">
-              Data can become inaccessible for different reasons. Here are some
-              common situations where recovery may help.
+            <p class="common-problems-description">
+              Data loss can happen unexpectedly, whether files are deleted,
+              storage devices become inaccessible or file systems get damaged.
+              We help identify the issue and explore possible recovery options.
             </p>
           </div>
 
-          <div class="problems-slider" data-slider>
-            <div
-              class="problems-grid"
-              data-slider-track
-              tabindex="0"
-              aria-label="Common computer issues"
-            >
-              <article class="problem-card">
-                <span class="problem-number">01 / 06</span>
-                <div class="problem-icon" aria-hidden="true">🗑</div>
+          <div
+            class="problems-slider"
+            data-slider
+            role="region"
+            aria-roledescription="carousel"
+            aria-label="Common data loss issues"
+          >
+            <div class="problems-track" data-slider-track>
+              <article
+                class="problem-card"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="1 of 6"
+              >
+                <span class="problem-number">01</span>
+                <div class="problem-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none">
+                    <path
+                      d="M13 7H28L37 16V39C37 40.7 35.7 42 34 42H13C11.3 42 10 40.7 10 39V10C10 8.3 11.3 7 13 7Z"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M27 7V17H37M17 25L30 36M30 25L17 36"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
                 <h3>Deleted Files</h3>
                 <p>
-                  Important documents, photos or folders were accidentally
-                  deleted from your device.
+                  Accidentally deleted documents, photos and other important
+                  files that you need to recover.
                 </p>
               </article>
 
-              <article class="problem-card">
-                <span class="problem-number">02 / 06</span>
-                <div class="problem-icon" aria-hidden="true">💽</div>
-                <h3>Formatted Drive</h3>
+              <article
+                class="problem-card"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="2 of 6"
+              >
+                <span class="problem-number">02</span>
+                <div class="problem-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none">
+                    <rect
+                      x="7"
+                      y="7"
+                      width="34"
+                      height="34"
+                      rx="4"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                    <path
+                      d="M16 16H32M16 23H32M16 30H26"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M34 28L39 33L34 38"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <h3>Inaccessible Drives</h3>
                 <p>
-                  A hard drive, memory card or USB device was formatted and
-                  important files disappeared.
+                  Hard drives, SSDs or external storage devices that are no
+                  longer detected or cannot be opened.
                 </p>
               </article>
 
-              <article class="problem-card">
-                <span class="problem-number">03 / 06</span>
-                <div class="problem-icon" aria-hidden="true">⚠</div>
-                <h3>Hard Drive Failure</h3>
-                <p>
-                  Your storage device makes unusual noises, is not detected or
-                  fails to load stored information.
-                </p>
-              </article>
-
-              <article class="problem-card">
-                <span class="problem-number">04 / 06</span>
-                <div class="problem-icon" aria-hidden="true">📁</div>
+              <article
+                class="problem-card"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="3 of 6"
+              >
+                <span class="problem-number">03</span>
+                <div class="problem-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none">
+                    <rect
+                      x="6"
+                      y="9"
+                      width="36"
+                      height="30"
+                      rx="3"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                    <path
+                      d="M6 17H42M14 13H14.5M19 13H19.5"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M18 24L23 29L30 22"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M15 34H33"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
                 <h3>Corrupted Files</h3>
                 <p>
-                  Files cannot be opened, appear damaged or show unexpected
-                  errors when accessed.
+                  Documents, photos or other files that appear damaged,
+                  unreadable or fail to open correctly.
                 </p>
               </article>
 
-              <article class="problem-card">
-                <span class="problem-number">05 / 06</span>
-                <div class="problem-icon" aria-hidden="true">🔌</div>
-                <h3>Inaccessible USB Drive</h3>
+              <article
+                class="problem-card"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="4 of 6"
+              >
+                <span class="problem-number">04</span>
+                <div class="problem-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none">
+                    <rect
+                      x="7"
+                      y="8"
+                      width="34"
+                      height="32"
+                      rx="4"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                    <path
+                      d="M7 17H41M16 12.5H16.5M22 12.5H22.5"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M18 25H30M24 19V31M18 36H30"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+                <h3>Formatted Storage</h3>
                 <p>
-                  Your USB flash drive or external storage device is no longer
-                  recognized or cannot be accessed.
+                  Data loss after accidentally formatting a drive, memory card
+                  or external storage device.
                 </p>
               </article>
 
-              <article class="problem-card">
-                <span class="problem-number">06 / 06</span>
-                <div class="problem-icon" aria-hidden="true">💻</div>
-                <h3>System Failure</h3>
+              <article
+                class="problem-card"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="5 of 6"
+              >
+                <span class="problem-number">05</span>
+                <div class="problem-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none">
+                    <rect
+                      x="6"
+                      y="10"
+                      width="36"
+                      height="28"
+                      rx="4"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                    <path
+                      d="M12 17H36M12 31H36"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                    />
+                    <circle
+                      cx="24"
+                      cy="24"
+                      r="5"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                    <path
+                      d="M24 21V24L27 26"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+                <h3>Drive Errors</h3>
                 <p>
-                  An operating system crash or computer failure has made your
-                  important information inaccessible.
+                  Read errors, unusual drive behavior and warnings that may
+                  indicate storage or file system problems.
+                </p>
+              </article>
+
+              <article
+                class="problem-card"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="6 of 6"
+              >
+                <span class="problem-number">06</span>
+                <div class="problem-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none">
+                    <path
+                      d="M24 5L8 12V22C8 32 15 39 24 43C33 39 40 32 40 22V12L24 5Z"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M24 16V27M24 32V32.5"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+                <h3>Lost Partitions</h3>
+                <p>
+                  Missing or inaccessible disk partitions that may contain
+                  important files and folders.
                 </p>
               </article>
             </div>
-            <div class="problems-controls">
-              <button
-                class="problems-control"
-                type="button"
-                data-slider-prev
-                aria-label="Previous cards"
-                disabled
-              >
-                &#8592;
-              </button>
 
-              <button
-                class="problems-control"
-                type="button"
-                data-slider-next
-                aria-label="Next cards"
-              >
-                &#8594;
-              </button>
+            <div class="problems-footer">
+              <p class="problems-counter" aria-live="polite">
+                <span data-slider-current>01</span>
+                <span class="problems-counter-divider">/</span>
+                <span>06</span>
+              </p>
+
+              <div class="problems-controls">
+                <button
+                  class="problems-control"
+                  type="button"
+                  data-slider-prev
+                  aria-label="Previous issue"
+                  disabled
+                >
+                  <span aria-hidden="true">←</span>
+                </button>
+
+                <button
+                  class="problems-control"
+                  type="button"
+                  data-slider-next
+                  aria-label="Next issue"
+                >
+                  <span aria-hidden="true">→</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -406,131 +603,160 @@
           <div class="included-grid">
             <div class="included-content">
               <p class="service-label" data-animation="label">
-                OUR RECOVERY APPROACH
+                04 — OUR APPROACH
               </p>
 
               <h2 class="service-section-title" data-animation="title">
-                More Than Just
-                <span>Finding Lost Files.</span>
+                Every File Matters.
+                <span>Every Step Counts.</span>
               </h2>
 
               <p
                 class="service-section-description"
                 data-animation="description"
               >
-                Successful data recovery starts with understanding what
-                happened. We assess the storage device, investigate the cause of
-                data loss and determine which recovery options are appropriate.
+                Data recovery requires a careful and methodical approach. We
+                start by understanding what happened to your files, assess the
+                storage device and explore suitable recovery options while
+                minimizing the risk of further data loss.
               </p>
 
               <a href="./contact.html" class="service-button">
                 Discuss Your Data Loss
-                <span aria-hidden="true">→</span>
+                <span aria-hidden="true">↗</span>
               </a>
+
+              <p class="included-note">
+                <span aria-hidden="true"></span>
+                A careful approach to every recovery case
+              </p>
             </div>
 
             <div class="included-list">
               <article class="included-item">
                 <span class="included-index">01</span>
-                <div>
-                  <h3>Storage Inspection</h3>
+
+                <div class="included-item-content">
+                  <h3>Storage Assessment</h3>
                   <p>
-                    Checking the condition of your drive and identifying
-                    possible causes of data loss.
+                    Reviewing the storage device, its condition and the
+                    circumstances surrounding the data loss.
                   </p>
                 </div>
+
+                <span class="included-arrow" aria-hidden="true">↗</span>
               </article>
 
               <article class="included-item">
                 <span class="included-index">02</span>
-                <div>
-                  <h3>Recovery Assessment</h3>
+
+                <div class="included-item-content">
+                  <h3>Data Loss Diagnosis</h3>
                   <p>
-                    Evaluating the storage device and determining whether
-                    recovery may be possible.
+                    Investigating file system errors, accidental deletion and
+                    other possible causes of inaccessible data.
                   </p>
                 </div>
+
+                <span class="included-arrow" aria-hidden="true">↗</span>
               </article>
 
               <article class="included-item">
                 <span class="included-index">03</span>
-                <div>
-                  <h3>File Recovery</h3>
+
+                <div class="included-item-content">
+                  <h3>Recovery Process</h3>
                   <p>
-                    Attempting to recover accessible deleted, formatted or
-                    corrupted data.
+                    Exploring suitable recovery methods based on the device
+                    condition and type of data loss.
                   </p>
                 </div>
+
+                <span class="included-arrow" aria-hidden="true">↗</span>
               </article>
 
               <article class="included-item">
                 <span class="included-index">04</span>
-                <div>
-                  <h3>Data Transfer</h3>
+
+                <div class="included-item-content">
+                  <h3>File Verification</h3>
                   <p>
-                    Transferring successfully recovered files to an appropriate
-                    storage device.
+                    Checking recovered files for accessibility and integrity
+                    before returning the available data.
                   </p>
                 </div>
+
+                <span class="included-arrow" aria-hidden="true">↗</span>
               </article>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="service-why" data-animation="section">
+      <section class="service-why">
         <div class="container">
-          <div class="service-section-heading">
-            <p class="service-label" data-animation="label">
-              WHY <span data-logo>NEXORA</span>
-            </p>
+          <div class="service-why-header">
+            <div class="service-section-heading">
+              <p class="service-label">
+                05 — WHY <span data-logo>NEXORA</span>
+              </p>
 
-            <h2 class="service-section-title" data-animation="title">
-              A Careful Approach
-              <span>To Your Data.</span>
-            </h2>
+              <h2 class="service-section-title">
+                Data Recovery
+                <span>Handled With Care.</span>
+              </h2>
+            </div>
 
-            <p class="service-section-description" data-animation="description">
-              We understand how valuable personal and business files can be. Our
-              priority is to assess the situation carefully and explain
-              realistic recovery options.
+            <p class="service-section-description">
+              Recovering lost data requires patience, careful assessment and an
+              honest understanding of what may be possible. We focus on
+              protecting your remaining data and explaining every available
+              option.
             </p>
           </div>
 
           <div class="why-grid">
-            <article class="why-card" data-animation="card">
-              <div class="why-icon" aria-hidden="true">⌕</div>
+            <article class="why-item">
+              <span class="why-number">01</span>
+
               <h3>Careful Assessment</h3>
+
               <p>
-                We inspect the storage device before recommending an appropriate
-                recovery approach.
+                We evaluate the storage device and circumstances of data loss
+                before deciding on the next steps.
               </p>
             </article>
 
-            <article class="why-card" data-animation="card">
-              <div class="why-icon" aria-hidden="true">🔒</div>
-              <h3>Data Privacy</h3>
-              <p>
-                We understand the importance of handling your personal and
-                business files responsibly.
-              </p>
-            </article>
+            <article class="why-item">
+              <span class="why-number">02</span>
 
-            <article class="why-card" data-animation="card">
-              <div class="why-icon" aria-hidden="true">◇</div>
-              <h3>Honest Expectations</h3>
+              <h3>Realistic Expectations</h3>
+
               <p>
                 We explain possible recovery outcomes without promising results
                 that cannot be guaranteed.
               </p>
             </article>
 
-            <article class="why-card" data-animation="card">
-              <div class="why-icon" aria-hidden="true">✓</div>
-              <h3>Careful Handling</h3>
+            <article class="why-item">
+              <span class="why-number">03</span>
+
+              <h3>Clear Communication</h3>
+
               <p>
-                We aim to minimize unnecessary operations that could make data
-                loss worse.
+                We explain the issue, available recovery options and any
+                limitations in understandable language.
+              </p>
+            </article>
+
+            <article class="why-item">
+              <span class="why-number">04</span>
+
+              <h3>Data Integrity Focus</h3>
+
+              <p>
+                We prioritize careful handling of storage devices and checking
+                the accessibility of recovered files.
               </p>
             </article>
           </div>
@@ -552,8 +778,8 @@
                 class="service-section-description"
                 data-animation="description"
               >
-                Find answers to common questions about deleted files, damaged
-                storage devices and data recovery.
+                Find answers to common questions about data recovery, lost files
+                and storage device issues.
               </p>
 
               <a href="./contact.html" class="service-text-link">
@@ -564,66 +790,70 @@
             <div class="faq-list">
               <details class="faq-item" open>
                 <summary class="faq-question">
-                  Can you recover permanently deleted files?
+                  What types of data can you help recover?
                   <span class="faq-toggle" aria-hidden="true"></span>
                 </summary>
 
                 <p class="faq-answer">
-                  Recovery may be possible if the deleted data has not been
-                  overwritten. The chances depend on the storage device, file
-                  system and time since deletion.
+                  We can assess recovery options for documents, photos, videos
+                  and other files lost due to accidental deletion, formatting or
+                  storage device issues. Available options depend on the device
+                  condition and cause of data loss.
                 </p>
               </details>
 
               <details class="faq-item">
                 <summary class="faq-question">
-                  Can data be recovered from a damaged hard drive?
+                  Can you recover data from a damaged hard drive or SSD?
                   <span class="faq-toggle" aria-hidden="true"></span>
                 </summary>
 
                 <p class="faq-answer">
-                  It depends on the type and severity of the damage. Some
-                  logical problems may be recoverable, while serious physical
-                  failures can require specialized equipment.
+                  It depends on the type and severity of the damage. We can
+                  assess the device and determine whether recovery may be
+                  possible. Physically damaged drives may require specialized
+                  recovery equipment or services.
                 </p>
               </details>
 
               <details class="faq-item">
                 <summary class="faq-question">
-                  What should I do after losing important files?
+                  How long does data recovery take?
                   <span class="faq-toggle" aria-hidden="true"></span>
                 </summary>
 
                 <p class="faq-answer">
-                  Stop using the affected storage device. Avoid saving new
-                  files, installing recovery software or formatting the drive,
-                  as these actions may overwrite recoverable data.
+                  Recovery time depends on the storage device, the amount of
+                  data involved and the complexity of the issue. We can provide
+                  a more realistic estimate after assessing the device.
                 </p>
               </details>
 
               <details class="faq-item">
                 <summary class="faq-question">
-                  Can you recover data from a USB flash drive?
+                  Is it possible to recover accidentally deleted files?
                   <span class="faq-toggle" aria-hidden="true"></span>
                 </summary>
 
                 <p class="faq-answer">
-                  Recovery may be possible from USB flash drives, memory cards
-                  and external storage devices. The result depends on the
-                  device's condition and the cause of data loss.
+                  In some cases, yes. Recovery may be possible if the deleted
+                  data has not been overwritten. Stop using the affected drive
+                  and avoid saving new files to it, as this can reduce the
+                  chances of recovery.
                 </p>
               </details>
 
               <details class="faq-item">
                 <summary class="faq-question">
-                  Is data recovery always successful?
+                  What should I do if my storage device stops working?
                   <span class="faq-toggle" aria-hidden="true"></span>
                 </summary>
 
                 <p class="faq-answer">
-                  No. Recovery cannot be guaranteed. Success depends on the type
-                  of damage, whether data has been overwritten and the condition
-                  of the storage device.
+                  Stop using the device and avoid formatting it, running repair
+                  utilities or repeatedly reconnecting it. If the drive makes
+                  unusual noises or shows signs of physical damage, power it
+                  down and seek professional assessment.
                 </p>
               </details>
             </div>
@@ -631,26 +861,29 @@
         </div>
       </section>
 
-      <section class="service-cta" data-animation="section">
+      <section
+        class="service-cta"
+        id="contact"
+        aria-labelledby="service-cta-title"
+      >
         <div class="container">
           <div class="service-cta-content">
-            <p class="service-label" data-animation="label">
-              YOUR DATA MATTERS
-            </p>
+            <p class="service-label">08 — LET'S GET STARTED</p>
 
-            <h2 data-animation="title">
-              Lost Important Files?
-              <span>Let's Find a Solution.</span>
+            <h2 id="service-cta-title">
+              Lost Your Important Files?
+              <span>Let's Explore Your Options.</span>
             </h2>
 
-            <p data-animation="description">
-              Stop using the affected device and contact us. We'll help assess
-              your data recovery options.
+            <p class="service-cta-description">
+              Tell us what happened to your data and which storage device is
+              affected. We'll help assess the situation and explore possible
+              recovery solutions.
             </p>
 
             <a href="./contact.html" class="service-button">
               Request Data Recovery
-              <span aria-hidden="true">→</span>
+              <span aria-hidden="true">↗</span>
             </a>
           </div>
         </div>
@@ -660,190 +893,174 @@
         <div class="container">
           <div class="related-header">
             <div>
-              <p class="service-label" data-animation="label">EXPLORE MORE</p>
-              <h2 class="service-section-title" data-animation="title">
-                Other Services
+              <p class="service-label">09 — EXPLORE MORE</p>
+
+              <h2 class="service-section-title">
+                Other Services<span>.</span>
               </h2>
             </div>
 
             <a href="../index.html#services" class="service-text-link">
-              All Services →
+              All Services <span aria-hidden="true">↗</span>
             </a>
           </div>
 
           <div class="related-grid">
             <a href="./computer-repair.html" class="related-card">
-              <span>01 — COMPUTER REPAIR</span>
+              <span class="related-number">01 — COMPUTER REPAIR</span>
               <h3>Computer Repair</h3>
-              <span class="related-arrow">↗</span>
+              <span class="related-arrow" aria-hidden="true">↗</span>
             </a>
 
             <a href="./hardware-upgrade.html" class="related-card">
-              <span>02 — HARDWARE UPGRADE</span>
+              <span class="related-number">02 — HARDWARE UPGRADE</span>
               <h3>Hardware Upgrade</h3>
-              <span class="related-arrow">↗</span>
+              <span class="related-arrow" aria-hidden="true">↗</span>
             </a>
 
             <a href="./security.html" class="related-card">
-              <span>03 — SYSTEM SECURITY</span>
+              <span class="related-number">03 — SYSTEM SECURITY</span>
               <h3>Virus & Security</h3>
-              <span class="related-arrow">↗</span>
+              <span class="related-arrow" aria-hidden="true">↗</span>
             </a>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer" data-animation="section">
+    <footer class="footer">
       <div class="container">
-        <div class="footer-brand">
-          <div data-animation="title">
-            <a
-              href="../index.html"
-              class="footer-logo"
-              aria-label="Nexora home"
-            >
-              <svg
-                class="footer-logo-icon"
-                width="100"
-                height="100"
-                viewBox="0 0 140 140"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
+        <div class="footer-main">
+          <div class="footer-brand">
+            <div class="footer-brand-top">
+              <a
+                href="../index.html"
+                class="footer-logo"
+                aria-label="Nexora home"
               >
-                <path
-                  d="M70 8L124 39V101L70 132L16 101V39L70 8Z"
-                  stroke="url(#logo-gradient)"
-                  stroke-width="3"
-                />
-                <rect
-                  x="39"
-                  y="39"
-                  width="62"
-                  height="62"
-                  rx="8"
-                  stroke="url(#logo-gradient)"
-                  stroke-width="4"
-                />
-                <path
-                  d="M70 24V39M70 101V116M24 70H39M101 70H116
-               M39 48L29 38M101 48L111 38
-               M39 92L29 102M101 92L111 102"
-                  stroke="#FFC400"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M54 85V55L86 85V55"
-                  stroke="url(#logo-gradient)"
-                  stroke-width="6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <defs>
-                  <linearGradient
-                    id="logo-gradient"
-                    x1="16"
-                    y1="8"
-                    x2="124"
-                    y2="132"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#FFC400" />
-                    <stop offset="1" stop-color="#FF7A00" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </a>
-            <div class="footer-brand-info">
-              <a href="../index.html" class="footer-company-name" data-logo>
-                NEXORA
+                <svg
+                  class="header-logo-icon"
+                  width="140"
+                  height="140"
+                  viewBox="0 0 140 140"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M70 8L124 39V101L70 132L16 101V39L70 8Z"
+                    stroke="url(#logo-gradient)"
+                    stroke-width="3"
+                  />
+
+                  <rect
+                    x="39"
+                    y="39"
+                    width="62"
+                    height="62"
+                    rx="8"
+                    stroke="url(#logo-gradient)"
+                    stroke-width="4"
+                  />
+
+                  <path
+                    d="M70 24V39M70 101V116M24 70H39M101 70H116
+             M39 48L29 38M101 48L111 38
+             M39 92L29 102M101 92L111 102"
+                    stroke="#FFC400"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+
+                  <path
+                    d="M54 85V55L86 85V55"
+                    stroke="url(#logo-gradient)"
+                    stroke-width="6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+
+                  <defs>
+                    <linearGradient
+                      id="logo-gradient"
+                      x1="16"
+                      y1="8"
+                      x2="124"
+                      y2="132"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#FFC400" />
+                      <stop offset="1" stop-color="#FF7A00" />
+                    </linearGradient>
+                  </defs>
+                </svg>
               </a>
-              <p class="footer-subtitle">COMPUTER SERVICE</p>
+
+              <div class="footer-brand-info">
+                <a href="../index.html" class="footer-company-name" data-logo>
+                  NEXORA
+                </a>
+                <p class="footer-subtitle">COMPUTER SERVICE</p>
+              </div>
             </div>
+
+            <p class="footer-brand-description">
+              Reliable computer repair and technical support for the technology
+              you depend on.
+            </p>
           </div>
 
-          <p class="footer-brand-description" data-animation="label">
-            Reliable computer repair and technical support for your devices.
-          </p>
+          <div class="footer-contact">
+            <span class="footer-eyebrow">HAVE A QUESTION?</span>
+            <a href="mailto:info@nexora.com" class="footer-email" data-email>
+              info@nexora.com
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
         </div>
 
-        <nav
-          class="footer-navigation"
-          aria-label="Footer navigation"
-          data-animation="title"
-        >
+        <div class="footer-navigation">
           <div class="footer-column">
-            <h3 class="footer-heading">Home</h3>
-
+            <h3 class="footer-heading">Explore</h3>
             <ul class="footer-list">
               <li><a href="../index.html">Home</a></li>
               <li><a href="../index.html#about">About Us</a></li>
-              <li><a href="../index.html#services">Our Services</a></li>
-              <li><a href="../index.html#our-work">Our Works</a></li>
+              <li><a href="../index.html#services">Services</a></li>
+              <li><a href="../index.html#our-work">Our Work</a></li>
               <li><a href="../index.html#testimonials">Testimonials</a></li>
               <li><a href="../index.html#faq">FAQ</a></li>
             </ul>
           </div>
 
           <div class="footer-column">
-            <h3 class="footer-heading">Our Services</h3>
-
+            <h3 class="footer-heading">Services</h3>
             <ul class="footer-list">
               <li>
-                <a href="./computer-repair.html"> Computer & Laptop Repair </a>
+                <a href="./computer-repair.html">Computer & Laptop Repair</a>
               </li>
               <li>
-                <a href="./hardware-upgrade.html"> Hardware Upgrade </a>
+                <a href="./hardware-upgrade.html">Hardware Upgrade</a>
               </li>
+              <li><a href="./security.html">Virus & Security</a></li>
               <li>
-                <a href="./security.html">Virus & Security</a>
-              </li>
-              <li>
-                <a href="#main"> Data Recovery & Diagnostics </a>
+                <a href="./data.html">Data Recovery & Diagnostics</a>
               </li>
             </ul>
           </div>
 
           <div class="footer-column">
-            <h3 class="footer-heading">Quick Links</h3>
-
+            <h3 class="footer-heading">Information</h3>
             <ul class="footer-list">
-              <li><a href="../index.html#about">About Us</a></li>
-              <li><a href="../index.html#services">Services</a></li>
-              <li><a href="../index.html#stats">Our Achievements</a></li>
-              <li><a href="./contact.html#contact">Contact Us</a></li>
-              <li><a href="./contact.html#contact">Request a Repair</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-column">
-            <h3 class="footer-heading">Support</h3>
-
-            <ul class="footer-list">
+              <li><a href="./contact.html">Contact Us</a></li>
               <li>
-                <a href="../index.html#faq">Frequently Asked Questions</a>
+                <a href="./contact.html#contact">Request a Repair</a>
               </li>
-              <li><a href="./contact.html#contact">Contact Support</a></li>
-              <li><a href="../index.html#service">Service Information</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-column">
-            <h3 class="footer-heading">Legal</h3>
-
-            <ul class="footer-list">
               <li><a href="./privacy-policy.html">Privacy Policy</a></li>
               <li><a href="./terms.html">Terms of Service</a></li>
               <li><a href="./cookies.html">Cookie Policy</a></li>
             </ul>
           </div>
-        </nav>
-        <div class="emailwrapper">
-          <a href="mailto:info@nexora.com" class="email-link" data-email>
-            info@nexora.com
-          </a>
         </div>
+
         <div class="footer-bottom">
           <p class="footer-copyright">
             © 2026 <span data-logo>NEXORA</span>. All rights reserved.
@@ -854,7 +1071,9 @@
             recovery results are not guaranteed.
           </p>
 
-          <a href="#top" class="footer-back-to-top">Back to top ↑</a>
+          <a href="#top" class="footer-back-to-top">
+            Back to top <span aria-hidden="true">↑</span>
+          </a>
         </div>
       </div>
     </footer>

@@ -1,44 +1,59 @@
-document.querySelectorAll("[data-slider]").forEach((slider) => {
+const slider = document.querySelector("[data-slider]");
+
+if (slider) {
   const track = slider.querySelector("[data-slider-track]");
   const prevButton = slider.querySelector("[data-slider-prev]");
   const nextButton = slider.querySelector("[data-slider-next]");
+  const currentCounter = slider.querySelector("[data-slider-current]");
 
-  if (!track || !prevButton || !nextButton) return;
+  if (track && prevButton && nextButton && currentCounter) {
+    const cards = [...track.children];
 
-  const getScrollStep = () => {
-    const card = track.querySelector(".problem-card");
+    const getStep = () => {
+      if (cards.length < 2) {
+        return cards[0]?.getBoundingClientRect().width ?? 0;
+      }
 
-    if (!card) return 0;
+      return cards[1].offsetLeft - cards[0].offsetLeft;
+    };
 
-    const gap = parseFloat(getComputedStyle(track).gap) || 0;
+    const updateSlider = () => {
+      const maxScroll = track.scrollWidth - track.clientWidth;
+      const currentScroll = track.scrollLeft;
 
-    return card.getBoundingClientRect().width + gap;
-  };
+      prevButton.disabled = currentScroll <= 1;
+      nextButton.disabled = currentScroll >= maxScroll - 1;
 
-  const updateButtons = () => {
-    const maxScroll = track.scrollWidth - track.clientWidth;
+      const step = getStep();
 
-    prevButton.disabled = track.scrollLeft <= 1;
-    nextButton.disabled = track.scrollLeft >= maxScroll - 1;
-  };
+      if (step > 0) {
+        const currentIndex = Math.round(currentScroll / step);
+        const currentCard = Math.min(currentIndex + 1, cards.length);
 
-  prevButton.addEventListener("click", () => {
-    track.scrollBy({
-      left: -getScrollStep(),
-      behavior: "smooth",
+        currentCounter.textContent = String(currentCard).padStart(2, "0");
+      }
+    };
+
+    prevButton.addEventListener("click", () => {
+      track.scrollBy({
+        left: -getStep(),
+        behavior: "smooth",
+      });
     });
-  });
 
-  nextButton.addEventListener("click", () => {
-    track.scrollBy({
-      left: getScrollStep(),
-      behavior: "smooth",
+    nextButton.addEventListener("click", () => {
+      track.scrollBy({
+        left: getStep(),
+        behavior: "smooth",
+      });
     });
-  });
 
-  track.addEventListener("scroll", updateButtons, { passive: true });
+    track.addEventListener("scroll", updateSlider, {
+      passive: true,
+    });
 
-  window.addEventListener("resize", updateButtons);
+    window.addEventListener("resize", updateSlider);
 
-  updateButtons();
-});
+    updateSlider();
+  }
+}

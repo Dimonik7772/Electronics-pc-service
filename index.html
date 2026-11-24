@@ -971,44 +971,70 @@
             </p>
           </div>
 
-          <div class="brands-grid">
-            <div class="brand-card" data-animation="card">
-              <span class="brand-logo apple">Apple</span>
-            </div>
+          <div class="brands-carousel">
+            <div class="brands-grid" id="brands-track">
+              <div class="brand-card" data-animation="card">
+                <span class="brand-logo apple">Apple</span>
+              </div>
 
-            <div class="brand-card" data-animation="card">
-              <span class="brand-logo asus">ASUS</span>
-            </div>
+              <div class="brand-card" data-animation="card">
+                <span class="brand-logo asus">ASUS</span>
+              </div>
 
-            <div class="brand-card" data-animation="card">
-              <span class="brand-logo dell">DELL</span>
-            </div>
+              <div class="brand-card" data-animation="card">
+                <span class="brand-logo dell">DELL</span>
+              </div>
 
-            <div class="brand-card" data-animation="card">
-              <span class="brand-logo hp">HP</span>
-            </div>
+              <div class="brand-card" data-animation="card">
+                <span class="brand-logo hp">HP</span>
+              </div>
 
-            <div class="brand-card" data-animation="card">
-              <span class="brand-logo lenovo">Lenovo</span>
-            </div>
+              <div class="brand-card" data-animation="card">
+                <span class="brand-logo lenovo">Lenovo</span>
+              </div>
 
-            <div class="brand-card" data-animation="card">
-              <span class="brand-logo acer">acer</span>
-            </div>
+              <div class="brand-card" data-animation="card">
+                <span class="brand-logo acer">acer</span>
+              </div>
 
-            <div class="brand-card" data-animation="card">
-              <span class="brand-logo msi">MSI</span>
-            </div>
+              <div class="brand-card" data-animation="card">
+                <span class="brand-logo msi">MSI</span>
+              </div>
 
-            <div class="brand-card" data-animation="card">
-              <span class="brand-logo samsung">SAMSUNG</span>
+              <div class="brand-card" data-animation="card">
+                <span class="brand-logo samsung">SAMSUNG</span>
+              </div>
             </div>
           </div>
 
-          <p class="brands-footer">
-            Don't see your brand?
-            <a href="./pages/contact.html">Contact us</a> — we're happy to help.
-          </p>
+          <div class="brands-bottom">
+            <p class="brands-footer">
+              Don't see your brand?
+              <a href="./pages/contact.html">Contact us</a> — we're happy to
+              help.
+            </p>
+
+            <div class="brands-controls">
+              <button
+                class="brands-arrow"
+                type="button"
+                data-direction="prev"
+                aria-label="Previous brands"
+                disabled
+              >
+                <span aria-hidden="true">←</span>
+              </button>
+
+              <button
+                class="brands-arrow"
+                type="button"
+                data-direction="next"
+                aria-label="Next brands"
+              >
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -1309,6 +1335,8 @@
     <script src="./js/faq.js"></script>
     <script src="./js/animation.js"></script>
     <script src="./js/stats.js"></script>
+    <script src="./js/brand.js"></script>
+
     <script src="./js/cookie.js"></script>
     <script src="./js/loader.js"></script>
   </body>

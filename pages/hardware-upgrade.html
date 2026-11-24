@@ -89,20 +89,13 @@
       </button>
     </div>
 
-    <header class="header">
+    <header class="header" id="top">
       <div class="container">
-        <div class="header-brand">
-          <a href="../index.html" class="header-company-name" data-logo>
-            NEXORA
-          </a>
-          <p class="header-subtitle">COMPUTER SERVICE</p>
-        </div>
-
-        <a href="../index.html" class="header-logo" aria-label="Nexora home">
+        <a href="./index.html" class="header-brand" aria-label="Nexora home">
           <svg
             class="header-logo-icon"
-            width="140"
-            height="140"
+            width="64"
+            height="64"
             viewBox="0 0 140 140"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -110,40 +103,36 @@
           >
             <path
               d="M70 8L124 39V101L70 132L16 101V39L70 8Z"
-              stroke="url(#logo-gradient)"
+              stroke="url(#header-logo-gradient)"
               stroke-width="3"
             />
-
             <rect
               x="39"
               y="39"
               width="62"
               height="62"
               rx="8"
-              stroke="url(#logo-gradient)"
+              stroke="url(#header-logo-gradient)"
               stroke-width="4"
             />
-
             <path
               d="M70 24V39M70 101V116M24 70H39M101 70H116
-             M39 48L29 38M101 48L111 38
-             M39 92L29 102M101 92L111 102"
+          M39 48L29 38M101 48L111 38
+          M39 92L29 102M101 92L111 102"
               stroke="#FFC400"
               stroke-width="3"
               stroke-linecap="round"
             />
-
             <path
               d="M54 85V55L86 85V55"
-              stroke="url(#logo-gradient)"
+              stroke="url(#header-logo-gradient)"
               stroke-width="6"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
-
             <defs>
               <linearGradient
-                id="logo-gradient"
+                id="header-logo-gradient"
                 x1="16"
                 y1="8"
                 x2="124"
@@ -155,16 +144,19 @@
               </linearGradient>
             </defs>
           </svg>
+
+          <span class="header-brand-info">
+            <span class="header-company-name" data-logo>NEXORA</span>
+            <span class="header-subtitle">COMPUTER SERVICE</span>
+          </span>
         </a>
 
-        <nav
-          class="header-nav"
-          aria-label="Main navigation"
-          data-animation="title"
-        >
+        <nav class="header-nav" aria-label="Main navigation">
           <ul class="header-list">
             <li>
-              <a href="../index.html" class="header-link">Home</a>
+              <a href="../index.html" class="header-link" aria-current="page">
+                Home
+              </a>
             </li>
             <li>
               <a href="../index.html#services" class="header-link active"
@@ -175,12 +167,13 @@
               <a href="../index.html#about" class="header-link">About Us</a>
             </li>
             <li>
-              <a href="./contact.html" class="header-link" active>Contact</a>
+              <a href="./contact.html" class="header-link">Contact</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
+
     <main class="service-page" id="main">
       <section data-animation="section">
         <div class="container">
@@ -193,97 +186,118 @@
               </nav>
 
               <p class="service-label" data-animation="label">
-                02 — HARDWARE UPGRADE
+                01 — HARDWARE UPGRADE
               </p>
 
               <h1 class="service-hero-title" data-animation="title">
-                Need More Power?
-                <span>Upgrade Your Computer.</span>
+                Give Your Computer
+                <span>A Powerful Upgrade.</span>
               </h1>
 
               <p class="service-hero-description" data-animation="description">
-                Improve your computer's speed, performance and capabilities with
-                professional hardware upgrades. From faster SSD storage to
-                memory and graphics improvements, we help your device reach its
-                potential.
+                Improve your computer's speed, performance, and capabilities
+                with carefully selected hardware upgrades. From additional
+                memory to faster storage, we'll help your device work better for
+                your needs.
               </p>
 
               <div class="service-hero-actions">
                 <a href="#contact" class="service-button">
-                  Upgrade Your Device
+                  Request an Upgrade
                   <span aria-hidden="true">→</span>
                 </a>
 
-                <a href="#upgrade-options" class="service-text-link">
+                <a href="#common-problems" class="service-text-link">
                   Explore Upgrade Options
                 </a>
               </div>
 
               <div class="service-hero-note">
                 <span class="service-status-dot"></span>
-                Professional PC & Laptop Hardware Upgrades
+                Hardware Upgrades & Performance Improvements
               </div>
             </div>
 
             <div class="service-hero-visual">
               <img
                 src="../image/hardwear-update.jpg"
-                alt="Technician upgrading computer hardware components"
+                alt="Technician upgrading computer hardware"
                 class="service-hero-image"
               />
 
               <div class="service-image-caption">
-                <span>02</span>
-                <p>Performance Without Limits</p>
+                <span>01</span>
+                <p>Better Performance Starts Here</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="service-overview">
+      <section class="service-overview" id="common-problems">
         <div class="container">
-          <div class="service-section-heading">
-            <p class="service-label" data-animation="label">WHAT WE DO</p>
+          <div class="service-overview-header">
+            <div class="service-section-heading">
+              <p class="service-label" data-animation="label">
+                02 — WHAT WE DO
+              </p>
 
-            <h2 class="service-section-title" data-animation="title">
-              Give Your Computer
-              <span>A Performance Boost.</span>
-            </h2>
+              <h2 class="service-section-title" data-animation="title">
+                Upgrade Your Hardware.
+                <span>Unlock Better Performance.</span>
+              </h2>
+            </div>
 
             <p class="service-section-description" data-animation="description">
-              You don't always need a new computer to get better performance.
-              Upgrading selected components can improve speed, increase storage
-              and make your device more capable for everyday tasks.
+              Get more out of your computer with hardware upgrades tailored to
+              your needs. Whether you want faster performance, more storage or
+              improved multitasking, we'll help you choose the right components.
             </p>
           </div>
 
-          <div class="overview-grid">
-            <article class="overview-card" data-animation="card">
+          <div class="overview-list">
+            <article class="overview-item" data-animation="card">
               <span class="overview-number">01</span>
-              <h3>Memory Upgrade</h3>
-              <p>
-                Increase RAM capacity to improve multitasking and help your
-                computer handle demanding applications.
-              </p>
+
+              <div class="overview-content">
+                <h3>Memory (RAM) Upgrade</h3>
+                <p>
+                  Increase your computer's memory to improve multitasking,
+                  reduce slowdowns and handle demanding applications more
+                  smoothly.
+                </p>
+              </div>
+
+              <span class="overview-arrow" aria-hidden="true">↗</span>
             </article>
 
-            <article class="overview-card" data-animation="card">
+            <article class="overview-item" data-animation="card">
               <span class="overview-number">02</span>
-              <h3>SSD Installation</h3>
-              <p>
-                Replace traditional hard drives with faster SSD storage for
-                quicker startup times and improved system responsiveness.
-              </p>
+
+              <div class="overview-content">
+                <h3>SSD & Storage Upgrade</h3>
+                <p>
+                  Replace traditional hard drives with faster SSD storage or
+                  expand your available space for quicker boot times and faster
+                  file access.
+                </p>
+              </div>
+
+              <span class="overview-arrow" aria-hidden="true">↗</span>
             </article>
 
-            <article class="overview-card" data-animation="card">
+            <article class="overview-item" data-animation="card">
               <span class="overview-number">03</span>
-              <h3>Graphics & Processor</h3>
-              <p>
-                Upgrade compatible graphics cards and processors to improve
-                computing capabilities and overall performance.
-              </p>
+
+              <div class="overview-content">
+                <h3>Graphics & Component Upgrade</h3>
+                <p>
+                  Improve graphics performance and overall capabilities with
+                  compatible component upgrades selected for your system.
+                </p>
+              </div>
+
+              <span class="overview-arrow" aria-hidden="true">↗</span>
             </article>
           </div>
         </div>
@@ -291,111 +305,297 @@
 
       <section
         class="common-problems"
-        id="upgrade-options"
-        data-animation="section"
+        id="common-problems"
+        aria-labelledby="common-problems-title"
       >
         <div class="container">
-          <div class="service-section-heading">
-            <p class="service-label" data-animation="label">UPGRADE OPTIONS</p>
+          <div class="common-problems-header">
+            <div class="common-problems-heading">
+              <p class="service-label">03 — UPGRADE OPTIONS</p>
 
-            <h2 class="service-section-title" data-animation="title">
-              Choose the Right
-              <span>Upgrade for Your Device.</span>
-            </h2>
+              <h2 class="service-section-title" id="common-problems-title">
+                Ready to Improve
+                <span>Your Computer?</span>
+              </h2>
+            </div>
 
-            <p class="service-section-description" data-animation="description">
-              Every computer has different capabilities and limitations. We help
-              identify which hardware improvements make the most sense for your
-              device and your needs.
+            <p class="common-problems-description">
+              From faster storage to improved graphics, the right hardware
+              upgrades can extend your computer's capabilities and make everyday
+              tasks smoother.
             </p>
           </div>
 
-          <div class="problems-slider" data-slider>
-            <div
-              class="problems-grid"
-              data-slider-track
-              tabindex="0"
-              aria-label="Common computer issues"
-            >
-              <article class="problem-card">
-                <span class="problem-number">01 / 06</span>
-                <div class="problem-icon" aria-hidden="true">⚡</div>
+          <div
+            class="problems-slider"
+            data-slider
+            role="region"
+            aria-roledescription="carousel"
+            aria-label="Available hardware upgrades"
+          >
+            <div class="problems-track" data-slider-track>
+              <article
+                class="problem-card"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="1 of 6"
+              >
+                <span class="problem-number">01</span>
+                <div class="problem-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none">
+                    <rect
+                      x="6"
+                      y="10"
+                      width="36"
+                      height="28"
+                      rx="3"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                    <path
+                      d="M15 17H33M15 24H33M15 31H24"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M30 28V35M26.5 31.5H33.5"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
                 <h3>RAM Upgrade</h3>
                 <p>
-                  Add more memory to improve multitasking, reduce slowdowns and
-                  support demanding applications.
+                  Add more memory to improve multitasking, handle demanding
+                  applications and keep your system running smoothly.
                 </p>
               </article>
 
-              <article class="problem-card">
-                <span class="problem-number">02 / 06</span>
-                <div class="problem-icon" aria-hidden="true">💾</div>
+              <article
+                class="problem-card"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="2 of 6"
+              >
+                <span class="problem-number">02</span>
+                <div class="problem-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none">
+                    <rect
+                      x="7"
+                      y="9"
+                      width="34"
+                      height="30"
+                      rx="3"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                    <path
+                      d="M14 16H34M14 22H34M14 28H25"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                    />
+                    <circle cx="33" cy="32" r="2" fill="currentColor" />
+                  </svg>
+                </div>
                 <h3>SSD Upgrade</h3>
                 <p>
-                  Improve loading times and system responsiveness with modern
-                  SSD storage solutions.
+                  Replace a traditional hard drive with faster SSD storage for
+                  quicker startup, shorter loading times and responsive
+                  performance.
                 </p>
               </article>
 
-              <article class="problem-card">
-                <span class="problem-number">03 / 06</span>
-                <div class="problem-icon" aria-hidden="true">🎮</div>
-                <h3>Graphics Card</h3>
+              <article
+                class="problem-card"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="3 of 6"
+              >
+                <span class="problem-number">03</span>
+                <div class="problem-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none">
+                    <rect
+                      x="6"
+                      y="9"
+                      width="36"
+                      height="25"
+                      rx="2"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                    <path
+                      d="M18 40H30M24 34V40"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M13 27L20 20L25 25L34 16"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <h3>Graphics Card Upgrade</h3>
                 <p>
-                  Upgrade your GPU for better graphics performance, gaming and
-                  creative applications.
+                  Improve visual performance for gaming, creative applications
+                  and graphics-intensive workloads with a compatible GPU.
                 </p>
               </article>
 
-              <article class="problem-card">
-                <span class="problem-number">04 / 06</span>
-                <div class="problem-icon" aria-hidden="true">⚙</div>
-                <h3>Processor Upgrade</h3>
+              <article
+                class="problem-card"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="4 of 6"
+              >
+                <span class="problem-number">04</span>
+                <div class="problem-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none">
+                    <rect
+                      x="6"
+                      y="13"
+                      width="36"
+                      height="22"
+                      rx="3"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                    <path
+                      d="M12 19H36M12 25H36M12 30H22"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M30 29L34 25L38 29"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <h3>Storage Expansion</h3>
                 <p>
-                  Improve processing capabilities with a compatible CPU upgrade
-                  for your computer.
+                  Increase available storage space with an additional drive for
+                  files, applications, projects and media.
                 </p>
               </article>
 
-              <article class="problem-card">
-                <span class="problem-number">05 / 06</span>
-                <div class="problem-icon" aria-hidden="true">🔌</div>
-                <h3>Power Supply</h3>
+              <article
+                class="problem-card"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="5 of 6"
+              >
+                <span class="problem-number">05</span>
+                <div class="problem-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none">
+                    <circle
+                      cx="24"
+                      cy="24"
+                      r="16"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                    <circle
+                      cx="24"
+                      cy="24"
+                      r="6"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                    <path
+                      d="M24 8V18M24 30V40M8 24H18M30 24H40"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+                <h3>Cooling Improvements</h3>
                 <p>
-                  Install a suitable power supply to support upgraded components
-                  and stable system operation.
+                  Upgrade cooling components to support better airflow, manage
+                  temperatures and maintain stable system operation.
                 </p>
               </article>
 
-              <article class="problem-card">
-                <span class="problem-number">06 / 06</span>
-                <div class="problem-icon" aria-hidden="true">❄</div>
-                <h3>Cooling Solutions</h3>
+              <article
+                class="problem-card"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="6 of 6"
+              >
+                <span class="problem-number">06</span>
+                <div class="problem-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none">
+                    <rect
+                      x="7"
+                      y="7"
+                      width="34"
+                      height="34"
+                      rx="3"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                    <rect
+                      x="15"
+                      y="15"
+                      width="18"
+                      height="18"
+                      rx="2"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                    <path
+                      d="M18 3V7M24 3V7M30 3V7M18 41V45M24 41V45M30 41V45M3 18H7M3 24H7M3 30H7M41 18H45M41 24H45M41 30H45"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+                <h3>Component Upgrades</h3>
                 <p>
-                  Improve thermal performance with suitable cooling components
-                  and better airflow.
+                  Replace or improve compatible hardware components to better
+                  match your computer's performance needs.
                 </p>
               </article>
             </div>
-            <div class="problems-controls">
-              <button
-                class="problems-control"
-                type="button"
-                data-slider-prev
-                aria-label="Previous cards"
-                disabled
-              >
-                &#8592;
-              </button>
 
-              <button
-                class="problems-control"
-                type="button"
-                data-slider-next
-                aria-label="Next cards"
-              >
-                &#8594;
-              </button>
+            <div class="problems-footer">
+              <p class="problems-counter" aria-live="polite">
+                <span data-slider-current>01</span>
+                <span class="problems-counter-divider">/</span>
+                <span>06</span>
+              </p>
+
+              <div class="problems-controls">
+                <button
+                  class="problems-control"
+                  type="button"
+                  data-slider-prev
+                  aria-label="Previous upgrade option"
+                  disabled
+                >
+                  <span aria-hidden="true">←</span>
+                </button>
+
+                <button
+                  class="problems-control"
+                  type="button"
+                  data-slider-next
+                  aria-label="Next upgrade option"
+                >
+                  <span aria-hidden="true">→</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -406,11 +606,11 @@
           <div class="included-grid">
             <div class="included-content">
               <p class="service-label" data-animation="label">
-                OUR UPGRADE PROCESS
+                04 — OUR APPROACH
               </p>
 
               <h2 class="service-section-title" data-animation="title">
-                Smart Upgrades.
+                The Right Upgrades.
                 <span>Better Performance.</span>
               </h2>
 
@@ -419,118 +619,146 @@
                 data-animation="description"
               >
                 A successful hardware upgrade starts with understanding your
-                current system. We check component compatibility, recommend
-                practical improvements and test everything after installation.
+                computer's capabilities and your performance goals. We help
+                identify compatible components and choose upgrades that make
+                practical sense for your system.
               </p>
 
               <a href="./contact.html" class="service-button">
                 Discuss Your Upgrade
-                <span aria-hidden="true">→</span>
+                <span aria-hidden="true">↗</span>
               </a>
+
+              <p class="included-note">
+                <span aria-hidden="true"></span>
+                Smarter upgrades for your computer
+              </p>
             </div>
 
             <div class="included-list">
               <article class="included-item">
                 <span class="included-index">01</span>
-                <div>
+
+                <div class="included-item-content">
                   <h3>System Assessment</h3>
                   <p>
-                    Inspecting your current hardware and identifying
-                    opportunities for improvement.
+                    Reviewing your computer's specifications, current hardware
+                    and performance requirements.
                   </p>
                 </div>
+
+                <span class="included-arrow" aria-hidden="true">↗</span>
               </article>
 
               <article class="included-item">
                 <span class="included-index">02</span>
-                <div>
-                  <h3>Compatibility Check</h3>
+
+                <div class="included-item-content">
+                  <h3>Component Compatibility</h3>
                   <p>
-                    Checking motherboard support, available connections, power
-                    requirements and component compatibility.
+                    Checking whether new RAM, storage, graphics cards and other
+                    components are compatible with your system.
                   </p>
                 </div>
+
+                <span class="included-arrow" aria-hidden="true">↗</span>
               </article>
 
               <article class="included-item">
                 <span class="included-index">03</span>
-                <div>
+
+                <div class="included-item-content">
                   <h3>Hardware Installation</h3>
                   <p>
-                    Installing selected components and ensuring everything is
-                    properly connected.
+                    Installing selected components and connecting them properly
+                    to ensure reliable operation.
                   </p>
                 </div>
+
+                <span class="included-arrow" aria-hidden="true">↗</span>
               </article>
 
               <article class="included-item">
                 <span class="included-index">04</span>
-                <div>
-                  <h3>Performance Testing</h3>
+
+                <div class="included-item-content">
+                  <h3>Post-Upgrade Testing</h3>
                   <p>
-                    Testing upgraded components and checking system stability
-                    after installation.
+                    Checking component recognition, system stability and overall
+                    performance after the upgrade.
                   </p>
                 </div>
+
+                <span class="included-arrow" aria-hidden="true">↗</span>
               </article>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="service-why" data-animation="section">
+      <section class="service-why">
         <div class="container">
-          <div class="service-section-heading">
-            <p class="service-label" data-animation="label">
-              WHY <span data-logo>NEXORA</span>
-            </p>
+          <div class="service-why-header">
+            <div class="service-section-heading">
+              <p class="service-label">
+                05 — WHY <span data-logo>NEXORA</span>
+              </p>
 
-            <h2 class="service-section-title" data-animation="title">
-              Upgrade With
-              <span>Confidence.</span>
-            </h2>
+              <h2 class="service-section-title">
+                Hardware Upgrades
+                <span>Done Right.</span>
+              </h2>
+            </div>
 
-            <p class="service-section-description" data-animation="description">
-              Hardware upgrades should improve your experience, not create new
-              problems. We focus on compatibility, careful installation and
-              reliable results.
+            <p class="service-section-description">
+              The right components can make a real difference. We focus on
+              compatibility, practical improvements and upgrades that match your
+              computer and your needs.
             </p>
           </div>
 
           <div class="why-grid">
-            <article class="why-card" data-animation="card">
-              <div class="why-icon" aria-hidden="true">⌕</div>
+            <article class="why-item">
+              <span class="why-number">01</span>
+
               <h3>Compatibility First</h3>
+
               <p>
-                We check whether selected components are suitable for your
-                existing hardware.
+                We check your system specifications before recommending new
+                components.
               </p>
             </article>
 
-            <article class="why-card" data-animation="card">
-              <div class="why-icon" aria-hidden="true">⚙</div>
-              <h3>Practical Recommendations</h3>
+            <article class="why-item">
+              <span class="why-number">02</span>
+
+              <h3>Upgrades That Make Sense</h3>
+
               <p>
-                We focus on upgrades that provide meaningful improvements for
-                your needs.
+                We focus on components that can deliver practical improvements
+                for your everyday tasks and workload.
               </p>
             </article>
 
-            <article class="why-card" data-animation="card">
-              <div class="why-icon" aria-hidden="true">◇</div>
-              <h3>Careful Installation</h3>
+            <article class="why-item">
+              <span class="why-number">03</span>
+
+              <h3>Clear Recommendations</h3>
+
               <p>
-                Hardware components are handled and installed with attention to
-                detail.
+                We explain your upgrade options, component differences and
+                compatibility considerations.
               </p>
             </article>
 
-            <article class="why-card" data-animation="card">
-              <div class="why-icon" aria-hidden="true">✓</div>
-              <h3>Quality Testing</h3>
+            <article class="why-item">
+              <span class="why-number">04</span>
+
+              <h3>Reliable Installation</h3>
+
               <p>
-                We check component operation and system stability after
-                completing the upgrade.
+                We install selected components carefully and check that your
+                system recognizes and operates with the new hardware.
               </p>
             </article>
           </div>
@@ -552,8 +780,9 @@
                 class="service-section-description"
                 data-animation="description"
               >
-                Find answers to common questions about computer and laptop
-                hardware upgrades.
+                Find answers to common questions about hardware upgrades,
+                component compatibility and improving your computer's
+                performance.
               </p>
 
               <a href="./contact.html" class="service-text-link">
@@ -564,67 +793,69 @@
             <div class="faq-list">
               <details class="faq-item" open>
                 <summary class="faq-question">
-                  Is it better to upgrade my computer or buy a new one?
+                  What hardware components can you upgrade?
                   <span class="faq-toggle" aria-hidden="true"></span>
                 </summary>
 
                 <p class="faq-answer">
-                  It depends on your computer's age, condition and hardware. In
-                  many cases, upgrading RAM or installing an SSD can noticeably
-                  improve performance without replacing the entire device.
+                  Depending on your computer, we can help upgrade components
+                  such as RAM, SSDs, graphics cards and cooling systems.
+                  Available options depend on your device's specifications and
+                  compatibility.
                 </p>
               </details>
 
               <details class="faq-item">
                 <summary class="faq-question">
-                  Can I upgrade the RAM in my laptop?
+                  How do I know which upgrades my computer needs?
                   <span class="faq-toggle" aria-hidden="true"></span>
                 </summary>
 
                 <p class="faq-answer">
-                  Some laptops support RAM upgrades, while others have memory
-                  soldered directly to the motherboard. We can check your device
-                  specifications and available options.
+                  It depends on how you use your computer and what performance
+                  improvements you need. We can review your current hardware and
+                  recommend suitable upgrade options.
                 </p>
               </details>
 
               <details class="faq-item">
                 <summary class="faq-question">
-                  Will upgrading to an SSD make my computer faster?
+                  How can I check if a component is compatible?
                   <span class="faq-toggle" aria-hidden="true"></span>
                 </summary>
 
                 <p class="faq-answer">
-                  Yes, replacing a traditional hard drive with an SSD can
-                  significantly improve startup times, application loading and
-                  general system responsiveness.
+                  Compatibility depends on factors such as your motherboard,
+                  processor, available slots, power supply and device model. We
+                  check these specifications before recommending an upgrade.
                 </p>
               </details>
 
               <details class="faq-item">
                 <summary class="faq-question">
-                  How do I know which components are compatible?
+                  How long does a hardware upgrade take?
                   <span class="faq-toggle" aria-hidden="true"></span>
                 </summary>
 
                 <p class="faq-answer">
-                  Compatibility depends on your motherboard, processor,
-                  available slots, power supply and device specifications. We
-                  check these requirements before recommending an upgrade.
+                  The time depends on the type of component, your computer's
+                  configuration and whether additional setup is required. We can
+                  provide a more accurate estimate after reviewing your upgrade
+                  requirements.
                 </p>
               </details>
 
               <details class="faq-item">
                 <summary class="faq-question">
-                  Will I lose my files during a hardware upgrade?
+                  Will upgrading my hardware delete my files?
                   <span class="faq-toggle" aria-hidden="true"></span>
                 </summary>
 
                 <p class="faq-answer">
                   Most hardware upgrades do not require deleting your files.
-                  However, operations involving storage replacement or system
-                  migration can carry risks. We recommend backing up important
-                  data before any upgrade.
+                  However, storage replacements or system-related changes can
+                  involve data risks. We recommend backing up important files
+                  before any hardware work.
                 </p>
               </details>
             </div>
@@ -632,26 +863,29 @@
         </div>
       </section>
 
-      <section class="service-cta" data-animation="section">
+      <section
+        class="service-cta"
+        id="contact"
+        aria-labelledby="service-cta-title"
+      >
         <div class="container">
           <div class="service-cta-content">
-            <p class="service-label" data-animation="label">
-              READY FOR AN UPGRADE?
-            </p>
+            <p class="service-label">08 — LET'S GET STARTED</p>
 
-            <h2 data-animation="title">
-              Give Your Computer
-              <span>the Performance It Deserves.</span>
+            <h2 id="service-cta-title">
+              Ready to Upgrade Your
+              <span>Computer's Performance?</span>
             </h2>
 
-            <p data-animation="description">
-              Tell us what you want to improve. We'll help you find the right
-              hardware upgrade for your device.
+            <p class="service-cta-description">
+              Tell us what you want to improve. We'll help you explore
+              compatible hardware upgrades and find the right solution for your
+              system.
             </p>
 
             <a href="./contact.html" class="service-button">
-              Start Your Upgrade
-              <span aria-hidden="true">→</span>
+              Discuss Your Upgrade
+              <span aria-hidden="true">↗</span>
             </a>
           </div>
         </div>
@@ -661,190 +895,174 @@
         <div class="container">
           <div class="related-header">
             <div>
-              <p class="service-label" data-animation="label">EXPLORE MORE</p>
-              <h2 class="service-section-title" data-animation="title">
-                Other Services
+              <p class="service-label">09 — EXPLORE MORE</p>
+
+              <h2 class="service-section-title">
+                Other Services<span>.</span>
               </h2>
             </div>
 
             <a href="../index.html#services" class="service-text-link">
-              All Services →
+              All Services <span aria-hidden="true">↗</span>
             </a>
           </div>
 
           <div class="related-grid">
             <a href="./computer-repair.html" class="related-card">
-              <span>01 — COMPUTER REPAIR</span>
+              <span class="related-number">01 — COMPUTER REPAIR</span>
               <h3>Computer Repair</h3>
-              <span class="related-arrow">↗</span>
+              <span class="related-arrow" aria-hidden="true">↗</span>
             </a>
 
             <a href="./security.html" class="related-card">
-              <span>03 — SYSTEM SECURITY</span>
+              <span class="related-number">03 — SYSTEM SECURITY</span>
               <h3>Virus & Security</h3>
-              <span class="related-arrow">↗</span>
+              <span class="related-arrow" aria-hidden="true">↗</span>
             </a>
 
             <a href="./data.html" class="related-card">
-              <span>04 — DATA & DIAGNOSTICS</span>
+              <span class="related-number">04 — DATA & DIAGNOSTICS</span>
               <h3>Data Recovery</h3>
-              <span class="related-arrow">↗</span>
+              <span class="related-arrow" aria-hidden="true">↗</span>
             </a>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer" data-animation="section">
+    <footer class="footer">
       <div class="container">
-        <div class="footer-brand">
-          <div data-animation="title">
-            <a
-              href="../index.html"
-              class="footer-logo"
-              aria-label="Nexora home"
-            >
-              <svg
-                class="footer-logo-icon"
-                width="100"
-                height="100"
-                viewBox="0 0 140 140"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
+        <div class="footer-main">
+          <div class="footer-brand">
+            <div class="footer-brand-top">
+              <a
+                href="../index.html"
+                class="footer-logo"
+                aria-label="Nexora home"
               >
-                <path
-                  d="M70 8L124 39V101L70 132L16 101V39L70 8Z"
-                  stroke="url(#logo-gradient)"
-                  stroke-width="3"
-                />
-                <rect
-                  x="39"
-                  y="39"
-                  width="62"
-                  height="62"
-                  rx="8"
-                  stroke="url(#logo-gradient)"
-                  stroke-width="4"
-                />
-                <path
-                  d="M70 24V39M70 101V116M24 70H39M101 70H116
-               M39 48L29 38M101 48L111 38
-               M39 92L29 102M101 92L111 102"
-                  stroke="#FFC400"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M54 85V55L86 85V55"
-                  stroke="url(#logo-gradient)"
-                  stroke-width="6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <defs>
-                  <linearGradient
-                    id="logo-gradient"
-                    x1="16"
-                    y1="8"
-                    x2="124"
-                    y2="132"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#FFC400" />
-                    <stop offset="1" stop-color="#FF7A00" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </a>
-            <div class="footer-brand-info">
-              <a href="../index.html" class="footer-company-name" data-logo>
-                NEXORA
+                <svg
+                  class="header-logo-icon"
+                  width="140"
+                  height="140"
+                  viewBox="0 0 140 140"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M70 8L124 39V101L70 132L16 101V39L70 8Z"
+                    stroke="url(#logo-gradient)"
+                    stroke-width="3"
+                  />
+
+                  <rect
+                    x="39"
+                    y="39"
+                    width="62"
+                    height="62"
+                    rx="8"
+                    stroke="url(#logo-gradient)"
+                    stroke-width="4"
+                  />
+
+                  <path
+                    d="M70 24V39M70 101V116M24 70H39M101 70H116
+             M39 48L29 38M101 48L111 38
+             M39 92L29 102M101 92L111 102"
+                    stroke="#FFC400"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+
+                  <path
+                    d="M54 85V55L86 85V55"
+                    stroke="url(#logo-gradient)"
+                    stroke-width="6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+
+                  <defs>
+                    <linearGradient
+                      id="logo-gradient"
+                      x1="16"
+                      y1="8"
+                      x2="124"
+                      y2="132"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#FFC400" />
+                      <stop offset="1" stop-color="#FF7A00" />
+                    </linearGradient>
+                  </defs>
+                </svg>
               </a>
-              <p class="footer-subtitle">COMPUTER SERVICE</p>
+
+              <div class="footer-brand-info">
+                <a href="../index.html" class="footer-company-name" data-logo>
+                  NEXORA
+                </a>
+                <p class="footer-subtitle">COMPUTER SERVICE</p>
+              </div>
             </div>
+
+            <p class="footer-brand-description">
+              Reliable computer repair and technical support for the technology
+              you depend on.
+            </p>
           </div>
 
-          <p class="footer-brand-description" data-animation="description">
-            Reliable computer repair and technical support for your devices.
-          </p>
+          <div class="footer-contact">
+            <span class="footer-eyebrow">HAVE A QUESTION?</span>
+            <a href="mailto:info@nexora.com" class="footer-email" data-email>
+              info@nexora.com
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
         </div>
 
-        <nav
-          class="footer-navigation"
-          aria-label="Footer navigation"
-          data-animation="title"
-        >
+        <div class="footer-navigation">
           <div class="footer-column">
-            <h3 class="footer-heading">Home</h3>
-
+            <h3 class="footer-heading">Explore</h3>
             <ul class="footer-list">
               <li><a href="../index.html">Home</a></li>
               <li><a href="../index.html#about">About Us</a></li>
-              <li><a href="../index.html#services">Our Services</a></li>
-              <li><a href="../index.html#our-work">Our Works</a></li>
+              <li><a href="../index.html#services">Services</a></li>
+              <li><a href="../index.html#our-work">Our Work</a></li>
               <li><a href="../index.html#testimonials">Testimonials</a></li>
               <li><a href="../index.html#faq">FAQ</a></li>
             </ul>
           </div>
 
           <div class="footer-column">
-            <h3 class="footer-heading">Our Services</h3>
-
+            <h3 class="footer-heading">Services</h3>
             <ul class="footer-list">
               <li>
-                <a href="./computer-repair.html"> Computer & Laptop Repair </a>
+                <a href="./computer-repair.html">Computer & Laptop Repair</a>
               </li>
               <li>
-                <a href="#main"> Hardware Upgrade </a>
+                <a href="./hardware-upgrade.html">Hardware Upgrade</a>
               </li>
+              <li><a href="./security.html">Virus & Security</a></li>
               <li>
-                <a href="./security.html">Virus & Security</a>
-              </li>
-              <li>
-                <a href="./data.html"> Data Recovery & Diagnostics </a>
+                <a href="./data.html">Data Recovery & Diagnostics</a>
               </li>
             </ul>
           </div>
 
           <div class="footer-column">
-            <h3 class="footer-heading">Quick Links</h3>
-
+            <h3 class="footer-heading">Information</h3>
             <ul class="footer-list">
-              <li><a href="../index.html#about">About Us</a></li>
-              <li><a href="../index.html#services">Services</a></li>
-              <li><a href="../index.html#stats">Our Achievements</a></li>
-              <li><a href="./contact.html#contact">Contact Us</a></li>
-              <li><a href="./contact.html#contact">Request a Repair</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-column">
-            <h3 class="footer-heading">Support</h3>
-
-            <ul class="footer-list">
+              <li><a href="./contact.html">Contact Us</a></li>
               <li>
-                <a href="../index.html#faq">Frequently Asked Questions</a>
+                <a href="./contact.html#contact">Request a Repair</a>
               </li>
-              <li><a href="./contact.html#contact">Contact Support</a></li>
-              <li><a href="../index.html#service">Service Information</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-column">
-            <h3 class="footer-heading">Legal</h3>
-
-            <ul class="footer-list">
               <li><a href="./privacy-policy.html">Privacy Policy</a></li>
               <li><a href="./terms.html">Terms of Service</a></li>
               <li><a href="./cookies.html">Cookie Policy</a></li>
             </ul>
           </div>
-        </nav>
-        <div class="emailwrapper">
-          <a href="mailto:info@nexora.com" class="email-link" data-email>
-            info@nexora.com
-          </a>
         </div>
+
         <div class="footer-bottom">
           <p class="footer-copyright">
             © 2026 <span data-logo>NEXORA</span>. All rights reserved.
@@ -855,7 +1073,9 @@
             recovery results are not guaranteed.
           </p>
 
-          <a href="#top" class="footer-back-to-top">Back to top ↑</a>
+          <a href="#top" class="footer-back-to-top">
+            Back to top <span aria-hidden="true">↑</span>
+          </a>
         </div>
       </div>
     </footer>

@@ -1,49 +1,56 @@
 const faqItems = document.querySelectorAll(".faq-item");
 
+const animations = new WeakMap();
+const targetStates = new WeakMap();
+
+const ANIMATION_DURATION = 300;
+const ANIMATION_EASING = "ease-in-out";
+
 const animateAnswer = (details, shouldOpen) => {
   const answer = details.querySelector(".faq-answer");
 
   if (!answer) return;
 
-  // Скасовуємо попередню анімацію, якщо вона ще триває.
-  answer.getAnimations().forEach((animation) => animation.cancel());
+  const currentHeight = answer.getBoundingClientRect().height;
+
+  const previousAnimation = animations.get(details);
+
+  if (previousAnimation) {
+    previousAnimation.cancel();
+    animations.delete(details);
+  }
 
   if (shouldOpen) {
     details.open = true;
-
-    answer.style.height = "0px";
-
-    requestAnimationFrame(() => {
-      answer.style.height = `${answer.scrollHeight}px`;
-    });
-
-    const onTransitionEnd = (event) => {
-      if (event.propertyName !== "height") return;
-
-      answer.style.height = "auto";
-      answer.removeEventListener("transitionend", onTransitionEnd);
-    };
-
-    answer.addEventListener("transitionend", onTransitionEnd);
-
-    return;
   }
 
-  answer.style.height = `${answer.scrollHeight}px`;
+  answer.style.height = `${currentHeight}px`;
 
-  // Фіксуємо початкову висоту перед закриттям.
-  answer.offsetHeight;
+  const targetHeight = shouldOpen ? answer.scrollHeight : 0;
 
-  answer.style.height = "0px";
+  const animation = answer.animate(
+    [{ height: `${currentHeight}px` }, { height: `${targetHeight}px` }],
+    {
+      duration: ANIMATION_DURATION,
+      easing: ANIMATION_EASING,
+      fill: "forwards",
+    },
+  );
 
-  const onTransitionEnd = (event) => {
-    if (event.propertyName !== "height") return;
+  animations.set(details, animation);
 
-    details.open = false;
-    answer.removeEventListener("transitionend", onTransitionEnd);
+  animation.onfinish = () => {
+    if (animations.get(details) !== animation) return;
+
+    if (shouldOpen) {
+      answer.style.height = "auto";
+    } else {
+      details.open = false;
+      answer.style.height = "0px";
+    }
+
+    animations.delete(details);
   };
-
-  answer.addEventListener("transitionend", onTransitionEnd);
 };
 
 faqItems.forEach((details) => {
@@ -52,16 +59,25 @@ faqItems.forEach((details) => {
 
   if (!summary || !answer) return;
 
-  answer.style.height = details.open ? `${answer.scrollHeight}px` : "0px";
+  targetStates.set(details, details.open);
+
+  answer.style.height = details.open ? "auto" : "0px";
 
   summary.addEventListener("click", (event) => {
     event.preventDefault();
 
-    const shouldOpen = !details.open;
+    const shouldOpen = !(targetStates.get(details) ?? details.open);
+
+    targetStates.set(details, shouldOpen);
 
     if (shouldOpen) {
       faqItems.forEach((item) => {
-        if (item !== details && item.open) {
+        if (item === details) return;
+
+        const isTargetOpen = targetStates.get(item) ?? item.open;
+
+        if (isTargetOpen) {
+          targetStates.set(item, false);
           animateAnswer(item, false);
         }
       });
