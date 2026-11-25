@@ -4,6 +4,18 @@ if (services) {
   const tabs = [...services.querySelectorAll(".services-tab")];
   const panels = [...services.querySelectorAll(".services-panel")];
 
+  function animatePanelImages(panel) {
+    const images = panel.querySelectorAll('[data-animation="image"]');
+
+    images.forEach((image) => {
+      image.classList.remove("is-visible");
+
+      void image.offsetWidth;
+
+      image.classList.add("is-visible");
+    });
+  }
+
   function activateTab(tab, moveFocus = false) {
     const targetId = tab.getAttribute("aria-controls");
     const targetPanel = services.querySelector(`#${targetId}`);
@@ -25,12 +37,20 @@ if (services) {
       panel.hidden = !isActive;
     });
 
+    // Запускаємо анімацію зображення активної панелі
+    animatePanelImages(targetPanel);
+
     if (moveFocus) {
       tab.focus();
     }
   }
 
   tabs.forEach((tab, index) => {
+    const initialPanel = panels.find((panel) => !panel.hidden);
+
+    if (initialPanel) {
+      animatePanelImages(initialPanel);
+    }
     tab.addEventListener("click", () => {
       activateTab(tab);
     });

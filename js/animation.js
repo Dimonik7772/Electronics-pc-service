@@ -1,4 +1,61 @@
-const animatedElements = document.querySelectorAll("[data-animation]");
+function splitTextIntoLetters(element) {
+  const textNodes = [];
+  const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
+
+  while (walker.nextNode()) {
+    if (walker.currentNode.textContent.trim()) {
+      textNodes.push(walker.currentNode);
+    }
+  }
+
+  let charIndex = 0;
+
+  const segmenter =
+    typeof Intl.Segmenter === "function"
+      ? new Intl.Segmenter(undefined, {
+          granularity: "grapheme",
+        })
+      : null;
+
+  textNodes.forEach((textNode) => {
+    const fragment = document.createDocumentFragment();
+    const parts = textNode.textContent.match(/\s+|[^\s]+/gu) || [];
+
+    parts.forEach((part) => {
+      if (/^\s+$/u.test(part)) {
+        fragment.append(document.createTextNode(part));
+        return;
+      }
+
+      const word = document.createElement("span");
+      word.className = "letter-word";
+
+      const characters = segmenter
+        ? [...segmenter.segment(part)].map(({ segment }) => segment)
+        : Array.from(part);
+
+      characters.forEach((character) => {
+        const char = document.createElement("span");
+
+        char.className = "letter-char";
+        char.textContent = character;
+        char.style.setProperty("--char-index", charIndex++);
+
+        word.append(char);
+      });
+
+      fragment.append(word);
+    });
+
+    textNode.replaceWith(fragment);
+  });
+}
+
+document
+  .querySelectorAll(
+    '[data-animation="title"] .title-line-inner, [data-animation="description"] .letter-animation',
+  )
+  .forEach(splitTextIntoLetters);
 
 const cardGroups = new Map();
 
@@ -19,15 +76,22 @@ cardGroups.forEach((cards) => {
     card.style.setProperty("--animation-delay", `${delay}ms`);
   });
 });
+const animatedElements = document.querySelectorAll(
+  '[data-animation]:not([data-animation="image"])',
+);
 
 const prefersReducedMotion = window.matchMedia(
   "(prefers-reduced-motion: reduce)",
 );
 
-if (prefersReducedMotion.matches) {
+function revealAllElements() {
   animatedElements.forEach((element) => {
     element.classList.add("is-visible");
   });
+}
+
+if (prefersReducedMotion.matches || !("IntersectionObserver" in window)) {
+  revealAllElements();
 } else {
   const observer = new IntersectionObserver(
     (entries, observer) => {
@@ -39,8 +103,8 @@ if (prefersReducedMotion.matches) {
       });
     },
     {
-      threshold: 0,
-      rootMargin: "0px",
+      threshold: 0.05,
+      rootMargin: "0px 0px -5% 0px",
     },
   );
 
