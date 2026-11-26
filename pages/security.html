@@ -90,7 +90,7 @@
     </div>
     <header class="header" id="top">
       <div class="container">
-        <a href="./index.html" class="header-brand" aria-label="Nexora home">
+        <a href="../index.html" class="header-brand" aria-label="Nexora home">
           <svg
             class="header-logo-icon"
             width="64"
@@ -174,7 +174,7 @@
     </header>
 
     <main class="service-page" id="main">
-      <section data-animation="section">
+      <section class="service-hero-section">
         <div class="container">
           <div class="service-hero">
             <div class="service-hero-content">
@@ -189,17 +189,23 @@
               </p>
 
               <h1 class="service-hero-title" data-animation="title">
-                Protect Your Computer.
-                <span>Stay Safe Online.</span>
+                <span class="title-line">
+                  <span class="title-line-inner">Protect Your Computer.</span>
+                </span>
+                <span class="title-line">
+                  <span class="title-line-inner">Stay Safe Online.</span>
+                </span>
               </h1>
 
               <p class="service-hero-description" data-animation="description">
-                From malware infections to suspicious system activity, we help
-                identify security threats, remove malicious software and improve
-                your computer's protection.
+                <span class="letter-animation">
+                  From malware infections to suspicious system activity, we help
+                  identify security threats, remove malicious software and
+                  improve your computer's protection.
+                </span>
               </p>
 
-              <div class="service-hero-actions">
+              <div class="service-hero-actions" data-animation="hero-actions">
                 <a href="#contact" class="service-button">
                   Request Security Support
                   <span aria-hidden="true">→</span>
@@ -210,7 +216,7 @@
                 </a>
               </div>
 
-              <div class="service-hero-note">
+              <div class="service-hero-note" data-animation="hero-actions">
                 <span class="service-status-dot"></span>
                 Malware Removal & Computer Security Support
               </div>
@@ -241,15 +247,22 @@
               </p>
 
               <h2 class="service-section-title" data-animation="title">
-                Keep Your System Safe.
-                <span>Stay Protected.</span>
+                <span class="title-line">
+                  <span class="title-line-inner">Keep Your System Safe.</span>
+                </span>
+                <span class="title-line">
+                  <span class="title-line-inner">Stay Protected.</span>
+                </span>
               </h2>
             </div>
 
             <p class="service-section-description" data-animation="description">
-              From malware infections to suspicious activity, we help identify
-              security risks, remove unwanted software and improve your
-              computer's protection against common digital threats.
+              <span class="letter-animation">
+                From malware infections to suspicious activity, we help identify
+                security risks, remove unwanted software where possible and
+                improve your computer's protection against common digital
+                threats.
+              </span>
             </p>
           </div>
 
@@ -302,24 +315,36 @@
 
       <section
         class="common-problems"
-        id="common-problems"
+        id="common-issues"
         aria-labelledby="common-problems-title"
       >
         <div class="container">
           <div class="common-problems-header">
             <div class="common-problems-heading">
-              <p class="service-label">03 — COMMON SECURITY ISSUES</p>
+              <p class="service-label" data-animation="label">
+                03 — COMMON SECURITY ISSUES
+              </p>
 
-              <h2 class="service-section-title" id="common-problems-title">
-                Is Your Computer
-                <span>Under Threat?</span>
+              <h2
+                class="service-section-title"
+                id="common-problems-title"
+                data-animation="title"
+              >
+                <span class="title-line">
+                  <span class="title-line-inner">Is Your Computer</span>
+                </span>
+                <span class="title-line">
+                  <span class="title-line-inner">Under Threat?</span>
+                </span>
               </h2>
             </div>
 
-            <p class="common-problems-description">
-              Unexpected pop-ups, suspicious activity and unusual system
-              behavior can be signs of malware or other security threats.
-              Recognizing them early can help protect your device and data.
+            <p class="common-problems-description" data-animation="description">
+              <span class="letter-animation">
+                Unexpected pop-ups, suspicious activity and unusual system
+                behavior can be signs of malware or other security threats.
+                Recognizing them early can help protect your device and data.
+              </span>
             </p>
           </div>
 
@@ -338,6 +363,7 @@
                 aria-label="1 of 6"
               >
                 <span class="problem-number">01</span>
+
                 <div class="problem-icon" aria-hidden="true">
                   <svg viewBox="0 0 48 48" fill="none">
                     <path
@@ -354,6 +380,7 @@
                     />
                   </svg>
                 </div>
+
                 <h3>Virus Infections</h3>
                 <p>
                   Unexpected system behavior, damaged files and unusual activity
@@ -368,6 +395,7 @@
                 aria-label="2 of 6"
               >
                 <span class="problem-number">02</span>
+
                 <div class="problem-icon" aria-hidden="true">
                   <svg viewBox="0 0 48 48" fill="none">
                     <path
@@ -391,6 +419,7 @@
                     />
                   </svg>
                 </div>
+
                 <h3>Malware Activity</h3>
                 <p>
                   Suspicious programs running in the background, unusual
@@ -405,6 +434,7 @@
                 aria-label="3 of 6"
               >
                 <span class="problem-number">03</span>
+
                 <div class="problem-icon" aria-hidden="true">
                   <svg viewBox="0 0 48 48" fill="none">
                     <rect
@@ -437,6 +467,7 @@
                     />
                   </svg>
                 </div>
+
                 <h3>Constant Pop-Ups</h3>
                 <p>
                   Unwanted advertisements, browser redirects and suspicious
@@ -451,6 +482,7 @@
                 aria-label="4 of 6"
               >
                 <span class="problem-number">04</span>
+
                 <div class="problem-icon" aria-hidden="true">
                   <svg viewBox="0 0 48 48" fill="none">
                     <rect
@@ -483,6 +515,7 @@
                     />
                   </svg>
                 </div>
+
                 <h3>Security Warnings</h3>
                 <p>
                   Repeated security alerts, disabled protection features or
@@ -497,6 +530,7 @@
                 aria-label="5 of 6"
               >
                 <span class="problem-number">05</span>
+
                 <div class="problem-icon" aria-hidden="true">
                   <svg viewBox="0 0 48 48" fill="none">
                     <rect
@@ -523,6 +557,7 @@
                     />
                   </svg>
                 </div>
+
                 <h3>Browser Hijacking</h3>
                 <p>
                   Changed homepage or search settings, unfamiliar extensions and
@@ -537,6 +572,7 @@
                 aria-label="6 of 6"
               >
                 <span class="problem-number">06</span>
+
                 <div class="problem-icon" aria-hidden="true">
                   <svg viewBox="0 0 48 48" fill="none">
                     <path
@@ -554,6 +590,7 @@
                     />
                   </svg>
                 </div>
+
                 <h3>Weak System Protection</h3>
                 <p>
                   Outdated security software, missing updates and improperly
@@ -603,33 +640,41 @@
               </p>
 
               <h2 class="service-section-title" data-animation="title">
-                Security Starts With
-                <span>The Right Approach.</span>
+                <span class="title-line">
+                  <span class="title-line-inner">Security Starts With</span>
+                </span>
+                <span class="title-line">
+                  <span class="title-line-inner">The Right Approach.</span>
+                </span>
               </h2>
 
               <p
                 class="service-section-description"
                 data-animation="description"
               >
-                Effective computer protection starts with understanding the
-                security risks your device may face. We identify suspicious
-                activity, address detected threats and help strengthen your
-                system's protection.
+                <span class="letter-animation">
+                  Effective computer protection starts with understanding the
+                  security risks your device may face. We identify suspicious
+                  activity, address detected threats and help strengthen your
+                  system's protection.
+                </span>
               </p>
 
-              <a href="./contact.html" class="service-button">
-                Discuss Your Security
-                <span aria-hidden="true">↗</span>
-              </a>
+              <div data-animation="hero-actions">
+                <a href="./contact.html" class="service-button">
+                  Discuss Your Security
+                  <span aria-hidden="true">↗</span>
+                </a>
 
-              <p class="included-note">
-                <span aria-hidden="true"></span>
-                A careful approach to computer security
-              </p>
+                <p class="included-note">
+                  <span aria-hidden="true"></span>
+                  A careful approach to computer security
+                </p>
+              </div>
             </div>
 
             <div class="included-list">
-              <article class="included-item">
+              <article class="included-item" data-animation="card">
                 <span class="included-index">01</span>
 
                 <div class="included-item-content">
@@ -643,7 +688,7 @@
                 <span class="included-arrow" aria-hidden="true">↗</span>
               </article>
 
-              <article class="included-item">
+              <article class="included-item" data-animation="card">
                 <span class="included-index">02</span>
 
                 <div class="included-item-content">
@@ -657,7 +702,7 @@
                 <span class="included-arrow" aria-hidden="true">↗</span>
               </article>
 
-              <article class="included-item">
+              <article class="included-item" data-animation="card">
                 <span class="included-index">03</span>
 
                 <div class="included-item-content">
@@ -671,7 +716,7 @@
                 <span class="included-arrow" aria-hidden="true">↗</span>
               </article>
 
-              <article class="included-item">
+              <article class="included-item" data-animation="card">
                 <span class="included-index">04</span>
 
                 <div class="included-item-content">
@@ -693,25 +738,31 @@
         <div class="container">
           <div class="service-why-header">
             <div class="service-section-heading">
-              <p class="service-label">
+              <p class="service-label" data-animation="label">
                 05 — WHY <span data-logo>NEXORA</span>
               </p>
 
-              <h2 class="service-section-title">
-                Computer Security
-                <span>You Can Trust.</span>
+              <h2 class="service-section-title" data-animation="title">
+                <span class="title-line">
+                  <span class="title-line-inner">Computer Security</span>
+                </span>
+                <span class="title-line">
+                  <span class="title-line-inner">You Can Trust.</span>
+                </span>
               </h2>
             </div>
 
-            <p class="service-section-description">
-              Protecting your computer requires more than removing suspicious
-              software. We focus on identifying potential threats, improving
-              system protection and explaining how to stay safer online.
+            <p class="service-section-description" data-animation="description">
+              <span class="letter-animation">
+                Protecting your computer requires more than removing suspicious
+                software. We focus on identifying potential threats, improving
+                system protection and explaining how to stay safer online.
+              </span>
             </p>
           </div>
 
           <div class="why-grid">
-            <article class="why-item">
+            <article class="why-item" data-animation="card">
               <span class="why-number">01</span>
 
               <h3>Thorough Security Checks</h3>
@@ -722,7 +773,7 @@
               </p>
             </article>
 
-            <article class="why-item">
+            <article class="why-item" data-animation="card">
               <span class="why-number">02</span>
 
               <h3>Targeted Threat Removal</h3>
@@ -733,7 +784,7 @@
               </p>
             </article>
 
-            <article class="why-item">
+            <article class="why-item" data-animation="card">
               <span class="why-number">03</span>
 
               <h3>Clear Security Advice</h3>
@@ -744,7 +795,7 @@
               </p>
             </article>
 
-            <article class="why-item">
+            <article class="why-item" data-animation="card">
               <span class="why-number">04</span>
 
               <h3>Protection Verification</h3>
@@ -765,19 +816,29 @@
               <p class="service-label" data-animation="label">GOT QUESTIONS?</p>
 
               <h2 class="service-section-title" data-animation="title">
-                Frequently Asked
-                <span>Questions.</span>
+                <span class="title-line">
+                  <span class="title-line-inner">Frequently Asked</span>
+                </span>
+                <span class="title-line">
+                  <span class="title-line-inner">Questions.</span>
+                </span>
               </h2>
 
               <p
                 class="service-section-description"
                 data-animation="description"
               >
-                Find answers to common questions about virus removal, malware
-                detection and computer security.
+                <span class="letter-animation">
+                  Find answers to common questions about virus removal, malware
+                  detection and computer security.
+                </span>
               </p>
 
-              <a href="./contact.html" class="service-text-link">
+              <a
+                href="./contact.html"
+                class="service-text-link"
+                data-animation="hero-actions"
+              >
                 Still have questions? Contact us →
               </a>
             </div>
@@ -864,20 +925,32 @@
       >
         <div class="container">
           <div class="service-cta-content">
-            <p class="service-label">08 — LET'S GET STARTED</p>
-
-            <h2 id="service-cta-title">
-              Concerned About Your
-              <span>Computer's Security?</span>
-            </h2>
-
-            <p class="service-cta-description">
-              Tell us about suspicious activity or security concerns. We'll help
-              you identify the problem and explore the right protection
-              solution.
+            <p class="service-label" data-animation="label">
+              08 — LET'S GET STARTED
             </p>
 
-            <a href="./contact.html" class="service-button">
+            <h2 id="service-cta-title" data-animation="title">
+              <span class="title-line">
+                <span class="title-line-inner">Concerned About Your</span>
+              </span>
+              <span class="title-line">
+                <span class="title-line-inner">Computer's Security?</span>
+              </span>
+            </h2>
+
+            <p class="service-cta-description" data-animation="description">
+              <span class="letter-animation">
+                Tell us about suspicious activity or security concerns. We'll
+                help you identify the problem and explore the right protection
+                solution.
+              </span>
+            </p>
+
+            <a
+              href="./contact.html"
+              class="service-button"
+              data-animation="hero-actions"
+            >
               Request Security Support
               <span aria-hidden="true">↗</span>
             </a>
@@ -889,33 +962,49 @@
         <div class="container">
           <div class="related-header">
             <div>
-              <p class="service-label">09 — EXPLORE MORE</p>
+              <p class="service-label" data-animation="label">
+                09 — EXPLORE MORE
+              </p>
 
-              <h2 class="service-section-title">
-                Other Services<span>.</span>
+              <h2 class="service-section-title" data-animation="title">
+                <span class="title-line">
+                  <span class="title-line-inner">Other Services.</span>
+                </span>
               </h2>
             </div>
 
-            <a href="../index.html#services" class="service-text-link">
+            <a
+              href="../index.html#services"
+              class="service-text-link"
+              data-animation="hero-actions"
+            >
               All Services <span aria-hidden="true">↗</span>
             </a>
           </div>
 
           <div class="related-grid">
-            <a href="./computer-repair.html" class="related-card">
+            <a
+              href="./computer-repair.html"
+              class="related-card"
+              data-animation="card"
+            >
               <span class="related-number">01 — COMPUTER REPAIR</span>
               <h3>Computer Repair</h3>
               <span class="related-arrow" aria-hidden="true">↗</span>
             </a>
 
-            <a href="./hardware-upgrade.html" class="related-card">
+            <a
+              href="./hardware-upgrade.html"
+              class="related-card"
+              data-animation="card"
+            >
               <span class="related-number">02 — HARDWARE UPGRADE</span>
               <h3>Hardware Upgrade</h3>
               <span class="related-arrow" aria-hidden="true">↗</span>
             </a>
 
-            <a href="./data.html" class="related-card">
-              <span class="related-number">04 — DATA & DIAGNOSTICS</span>
+            <a href="./data.html" class="related-card" data-animation="card">
+              <span class="related-number">03 — DATA & DIAGNOSTICS</span>
               <h3>Data Recovery</h3>
               <span class="related-arrow" aria-hidden="true">↗</span>
             </a>
@@ -923,10 +1012,11 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="container">
         <div class="footer-main">
-          <div class="footer-brand">
+          <div class="footer-brand" data-animation="card">
             <div class="footer-brand-top">
               <a
                 href="../index.html"
@@ -944,7 +1034,7 @@
                 >
                   <path
                     d="M70 8L124 39V101L70 132L16 101V39L70 8Z"
-                    stroke="url(#logo-gradient)"
+                    stroke="url(#footer-logo-gradient)"
                     stroke-width="3"
                   />
 
@@ -954,14 +1044,14 @@
                     width="62"
                     height="62"
                     rx="8"
-                    stroke="url(#logo-gradient)"
+                    stroke="url(#footer-logo-gradient)"
                     stroke-width="4"
                   />
 
                   <path
                     d="M70 24V39M70 101V116M24 70H39M101 70H116
-             M39 48L29 38M101 48L111 38
-             M39 92L29 102M101 92L111 102"
+                   M39 48L29 38M101 48L111 38
+                   M39 92L29 102M101 92L111 102"
                     stroke="#FFC400"
                     stroke-width="3"
                     stroke-linecap="round"
@@ -969,7 +1059,7 @@
 
                   <path
                     d="M54 85V55L86 85V55"
-                    stroke="url(#logo-gradient)"
+                    stroke="url(#footer-logo-gradient)"
                     stroke-width="6"
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -977,7 +1067,7 @@
 
                   <defs>
                     <linearGradient
-                      id="logo-gradient"
+                      id="footer-logo-gradient"
                       x1="16"
                       y1="8"
                       x2="124"
@@ -992,8 +1082,8 @@
               </a>
 
               <div class="footer-brand-info">
-                <a href="../index.html" class="footer-company-name" data-logo>
-                  NEXORA
+                <a href="../index.html" class="footer-company-name">
+                  <span data-logo>NEXORA</span>
                 </a>
                 <p class="footer-subtitle">COMPUTER SERVICE</p>
               </div>
@@ -1005,7 +1095,7 @@
             </p>
           </div>
 
-          <div class="footer-contact">
+          <div class="footer-contact" data-animation="card">
             <span class="footer-eyebrow">HAVE A QUESTION?</span>
             <a href="mailto:info@nexora.com" class="footer-email" data-email>
               info@nexora.com
@@ -1015,7 +1105,7 @@
         </div>
 
         <div class="footer-navigation">
-          <div class="footer-column">
+          <div class="footer-column" data-animation="card">
             <h3 class="footer-heading">Explore</h3>
             <ul class="footer-list">
               <li><a href="../index.html">Home</a></li>
@@ -1027,7 +1117,7 @@
             </ul>
           </div>
 
-          <div class="footer-column">
+          <div class="footer-column" data-animation="card">
             <h3 class="footer-heading">Services</h3>
             <ul class="footer-list">
               <li>
@@ -1043,7 +1133,7 @@
             </ul>
           </div>
 
-          <div class="footer-column">
+          <div class="footer-column" data-animation="card">
             <h3 class="footer-heading">Information</h3>
             <ul class="footer-list">
               <li><a href="./contact.html">Contact Us</a></li>
@@ -1073,6 +1163,7 @@
         </div>
       </div>
     </footer>
+
     <script src="../js/faq.js"></script>
     <script src="../js/service-problem.js"></script>
     <script src="../js/cookie.js"></script>

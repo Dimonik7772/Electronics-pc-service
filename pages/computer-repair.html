@@ -91,7 +91,7 @@
 
     <header class="header" id="top">
       <div class="container">
-        <a href="./index.html" class="header-brand" aria-label="Nexora home">
+        <a href="../index.html" class="header-brand" aria-label="Nexora home">
           <svg
             class="header-logo-icon"
             width="64"
@@ -175,7 +175,7 @@
     </header>
 
     <main class="service-page" id="main">
-      <section data-animation="section">
+      <section class="service-hero-section">
         <div class="container">
           <div class="service-hero">
             <div class="service-hero-content">
@@ -190,17 +190,23 @@
               </p>
 
               <h1 class="service-hero-title" data-animation="title">
-                Computer Problems?
-                <span>We've Got You Covered.</span>
+                <span class="title-line">
+                  <span class="title-line-inner">Computer Problems?</span>
+                </span>
+                <span class="title-line">
+                  <span class="title-line-inner">We've Got You Covered.</span>
+                </span>
               </h1>
 
               <p class="service-hero-description" data-animation="description">
-                From unexpected shutdowns to hardware failures, we provide
-                professional computer and laptop repair solutions to get your
-                device working again.
+                <span class="letter-animation">
+                  From unexpected shutdowns to hardware failures, we provide
+                  professional computer and laptop repair solutions to get your
+                  device working again.
+                </span>
               </p>
 
-              <div class="service-hero-actions">
+              <div class="service-hero-actions" data-animation="hero-actions">
                 <a href="#contact" class="service-button">
                   Request a Repair
                   <span aria-hidden="true">→</span>
@@ -211,7 +217,7 @@
                 </a>
               </div>
 
-              <div class="service-hero-note">
+              <div class="service-hero-note" data-animation="hero-actions">
                 <span class="service-status-dot"></span>
                 Professional Computer Repair & Technical Support
               </div>
@@ -242,15 +248,21 @@
               </p>
 
               <h2 class="service-section-title" data-animation="title">
-                Reliable Solutions for
-                <span>Everyday Tech Problems.</span>
+                <span class="title-line">
+                  <span class="title-line-inner">Reliable Solutions for</span>
+                </span>
+                <span class="title-line">
+                  <span class="title-line-inner">Everyday Tech Problems.</span>
+                </span>
               </h2>
             </div>
 
             <p class="service-section-description" data-animation="description">
-              Whether your computer is running slowly, experiencing hardware
-              problems or refusing to start, our repair service helps identify
-              the issue and find the right solution.
+              <span class="letter-animation">
+                Whether your computer is running slowly, experiencing hardware
+                problems or refusing to start, our repair service helps identify
+                the issue and find the right solution.
+              </span>
             </p>
           </div>
 
@@ -302,248 +314,39 @@
 
       <section
         class="common-problems"
-        id="common-problems"
+        id="common-issues"
         aria-labelledby="common-problems-title"
       >
         <div class="container">
           <div class="common-problems-header">
             <div class="common-problems-heading">
-              <p class="service-label">03 — COMMON ISSUES</p>
+              <p class="service-label" data-animation="label">
+                03 — COMMON ISSUES
+              </p>
 
-              <h2 class="service-section-title" id="common-problems-title">
-                What's Wrong With
-                <span>Your Computer?</span>
+              <h2
+                class="service-section-title"
+                id="common-problems-title"
+                data-animation="title"
+              >
+                <span class="title-line">
+                  <span class="title-line-inner">What's Wrong With</span>
+                </span>
+                <span class="title-line">
+                  <span class="title-line-inner">Your Computer?</span>
+                </span>
               </h2>
             </div>
 
-            <p class="common-problems-description">
-              From unexpected shutdowns to slow performance, we help identify
-              what's wrong and find the right solution for your computer.
+            <p class="common-problems-description" data-animation="description">
+              <span class="letter-animation">
+                From unexpected shutdowns to slow performance, we help identify
+                what's wrong and find the right solution for your computer.
+              </span>
             </p>
           </div>
 
-          <div
-            class="problems-slider"
-            data-slider
-            role="region"
-            aria-roledescription="carousel"
-            aria-label="Common computer issues"
-          >
-            <div class="problems-track" data-slider-track>
-              <article
-                class="problem-card"
-                role="group"
-                aria-roledescription="slide"
-                aria-label="1 of 6"
-              >
-                <span class="problem-number">01</span>
-                <div class="problem-icon" aria-hidden="true">
-                  <svg viewBox="0 0 48 48" fill="none">
-                    <path
-                      d="M24 5L9 25H21L18 43L39 19H26L29 5H24Z"
-                      stroke="currentColor"
-                      stroke-width="1.7"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <h3>Won't Start</h3>
-                <p>
-                  Your computer won't turn on, shows no display or shuts down
-                  unexpectedly.
-                </p>
-              </article>
-
-              <article
-                class="problem-card"
-                role="group"
-                aria-roledescription="slide"
-                aria-label="2 of 6"
-              >
-                <span class="problem-number">02</span>
-                <div class="problem-icon" aria-hidden="true">
-                  <svg viewBox="0 0 48 48" fill="none">
-                    <path
-                      d="M24 5V9M24 39V43M5 24H9M39 24H43M10.5 10.5L13.5 13.5M34.5 34.5L37.5 37.5M37.5 10.5L34.5 13.5M13.5 34.5L10.5 37.5"
-                      stroke="currentColor"
-                      stroke-width="1.7"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      d="M24 15V27M24 33V34"
-                      stroke="currentColor"
-                      stroke-width="1.7"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                </div>
-                <h3>Overheating</h3>
-                <p>
-                  Excessive heat, noisy fans and sudden shutdowns while using
-                  your computer.
-                </p>
-              </article>
-
-              <article
-                class="problem-card"
-                role="group"
-                aria-roledescription="slide"
-                aria-label="3 of 6"
-              >
-                <span class="problem-number">03</span>
-                <div class="problem-icon" aria-hidden="true">
-                  <svg viewBox="0 0 48 48" fill="none">
-                    <path
-                      d="M7 36H41M11 30L19 22L25 27L37 13"
-                      stroke="currentColor"
-                      stroke-width="1.7"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M29 13H37V21"
-                      stroke="currentColor"
-                      stroke-width="1.7"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <h3>Slow Performance</h3>
-                <p>
-                  Long loading times, frequent freezing and frustratingly slow
-                  everyday tasks.
-                </p>
-              </article>
-
-              <article
-                class="problem-card"
-                role="group"
-                aria-roledescription="slide"
-                aria-label="4 of 6"
-              >
-                <span class="problem-number">04</span>
-                <div class="problem-icon" aria-hidden="true">
-                  <svg viewBox="0 0 48 48" fill="none">
-                    <path
-                      d="M18 8L22 4L26 8L30 7L33 12L38 14L37 20L41 24L37 28L38 34L33 36L30 41L24 40L20 44L16 40L10 41L8 35L3 32L5 26L2 22L6 17L5 11L11 9L14 4L18 8Z"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linejoin="round"
-                      transform="translate(3 0) scale(.9)"
-                    />
-                    <path
-                      d="M19 19L29 29M29 19L19 29"
-                      stroke="currentColor"
-                      stroke-width="1.7"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                </div>
-                <h3>Hardware Failure</h3>
-                <p>
-                  Failing components, loose connections and hardware-related
-                  malfunctions.
-                </p>
-              </article>
-
-              <article
-                class="problem-card"
-                role="group"
-                aria-roledescription="slide"
-                aria-label="5 of 6"
-              >
-                <span class="problem-number">05</span>
-                <div class="problem-icon" aria-hidden="true">
-                  <svg viewBox="0 0 48 48" fill="none">
-                    <rect
-                      x="5"
-                      y="8"
-                      width="38"
-                      height="27"
-                      rx="2"
-                      stroke="currentColor"
-                      stroke-width="1.7"
-                    />
-                    <path
-                      d="M18 41H30M24 35V41M13 15L18 20L14 25"
-                      stroke="currentColor"
-                      stroke-width="1.7"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <h3>Display Problems</h3>
-                <p>
-                  Flickering screens, distorted images and problems with
-                  external displays.
-                </p>
-              </article>
-
-              <article
-                class="problem-card"
-                role="group"
-                aria-roledescription="slide"
-                aria-label="6 of 6"
-              >
-                <span class="problem-number">06</span>
-                <div class="problem-icon" aria-hidden="true">
-                  <svg viewBox="0 0 48 48" fill="none">
-                    <rect
-                      x="5"
-                      y="10"
-                      width="38"
-                      height="27"
-                      rx="3"
-                      stroke="currentColor"
-                      stroke-width="1.7"
-                    />
-                    <path
-                      d="M11 17H15M20 17H24M29 17H33M11 24H15M20 24H24M29 24H37M13 31H35"
-                      stroke="currentColor"
-                      stroke-width="1.7"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                </div>
-                <h3>Keyboard & Ports</h3>
-                <p>
-                  Unresponsive keys, damaged connectors and unreliable
-                  peripheral connections.
-                </p>
-              </article>
-            </div>
-
-            <div class="problems-footer">
-              <p class="problems-counter" aria-live="polite">
-                <span data-slider-current>01</span>
-                <span class="problems-counter-divider">/</span>
-                <span>06</span>
-              </p>
-
-              <div class="problems-controls">
-                <button
-                  class="problems-control"
-                  type="button"
-                  data-slider-prev
-                  aria-label="Previous issue"
-                  disabled
-                >
-                  <span aria-hidden="true">←</span>
-                </button>
-
-                <button
-                  class="problems-control"
-                  type="button"
-                  data-slider-next
-                  aria-label="Next issue"
-                >
-                  <span aria-hidden="true">→</span>
-                </button>
-              </div>
-            </div>
-          </div>
+          <!-- Нижче залишаєш свій problems-slider без змін -->
         </div>
       </section>
 
@@ -556,32 +359,40 @@
               </p>
 
               <h2 class="service-section-title" data-animation="title">
-                More Than Just
-                <span>Fixing Computers.</span>
+                <span class="title-line">
+                  <span class="title-line-inner">More Than Just</span>
+                </span>
+                <span class="title-line">
+                  <span class="title-line-inner">Fixing Computers.</span>
+                </span>
               </h2>
 
               <p
                 class="service-section-description"
                 data-animation="description"
               >
-                We focus on identifying the actual cause of the problem instead
-                of simply treating the symptoms. Every repair starts with
-                understanding what your device needs.
+                <span class="letter-animation">
+                  We focus on identifying the actual cause of the problem
+                  instead of simply treating the symptoms. Every repair starts
+                  with understanding what your device needs.
+                </span>
               </p>
 
-              <a href="./contact.html" class="service-button">
-                Discuss Your Repair
-                <span aria-hidden="true">↗</span>
-              </a>
+              <div data-animation="hero-actions">
+                <a href="./contact.html" class="service-button">
+                  Discuss Your Repair
+                  <span aria-hidden="true">↗</span>
+                </a>
 
-              <p class="included-note">
-                <span aria-hidden="true"></span>
-                A thoughtful approach to every repair
-              </p>
+                <p class="included-note">
+                  <span aria-hidden="true"></span>
+                  A thoughtful approach to every repair
+                </p>
+              </div>
             </div>
 
             <div class="included-list">
-              <article class="included-item">
+              <article class="included-item" data-animation="card">
                 <span class="included-index">01</span>
 
                 <div class="included-item-content">
@@ -595,7 +406,7 @@
                 <span class="included-arrow" aria-hidden="true">↗</span>
               </article>
 
-              <article class="included-item">
+              <article class="included-item" data-animation="card">
                 <span class="included-index">02</span>
 
                 <div class="included-item-content">
@@ -609,7 +420,7 @@
                 <span class="included-arrow" aria-hidden="true">↗</span>
               </article>
 
-              <article class="included-item">
+              <article class="included-item" data-animation="card">
                 <span class="included-index">03</span>
 
                 <div class="included-item-content">
@@ -623,7 +434,7 @@
                 <span class="included-arrow" aria-hidden="true">↗</span>
               </article>
 
-              <article class="included-item">
+              <article class="included-item" data-animation="card">
                 <span class="included-index">04</span>
 
                 <div class="included-item-content">
@@ -642,24 +453,30 @@
         <div class="container">
           <div class="service-why-header">
             <div class="service-section-heading">
-              <p class="service-label">
+              <p class="service-label" data-animation="label">
                 05 — WHY <span data-logo>NEXORA</span>
               </p>
 
-              <h2 class="service-section-title">
-                Computer Repair
-                <span>You Can Rely On.</span>
+              <h2 class="service-section-title" data-animation="title">
+                <span class="title-line">
+                  <span class="title-line-inner">Computer Repair</span>
+                </span>
+                <span class="title-line">
+                  <span class="title-line-inner">You Can Rely On.</span>
+                </span>
               </h2>
             </div>
 
-            <p class="service-section-description">
-              We believe technical support should be straightforward,
-              transparent and focused on solving the real problem.
+            <p class="service-section-description" data-animation="description">
+              <span class="letter-animation">
+                We believe technical support should be straightforward,
+                transparent and focused on solving the real problem.
+              </span>
             </p>
           </div>
 
           <div class="why-grid">
-            <article class="why-item">
+            <article class="why-item" data-animation="card">
               <span class="why-number">01</span>
 
               <h3>Careful Diagnostics</h3>
@@ -670,7 +487,7 @@
               </p>
             </article>
 
-            <article class="why-item">
+            <article class="why-item" data-animation="card">
               <span class="why-number">02</span>
 
               <h3>Practical Solutions</h3>
@@ -681,7 +498,7 @@
               </p>
             </article>
 
-            <article class="why-item">
+            <article class="why-item" data-animation="card">
               <span class="why-number">03</span>
 
               <h3>Clear Communication</h3>
@@ -692,7 +509,7 @@
               </p>
             </article>
 
-            <article class="why-item">
+            <article class="why-item" data-animation="card">
               <span class="why-number">04</span>
 
               <h3>Quality Testing</h3>
@@ -710,19 +527,29 @@
               <p class="service-label" data-animation="label">GOT QUESTIONS?</p>
 
               <h2 class="service-section-title" data-animation="title">
-                Frequently Asked
-                <span>Questions.</span>
+                <span class="title-line">
+                  <span class="title-line-inner">Frequently Asked</span>
+                </span>
+                <span class="title-line">
+                  <span class="title-line-inner">Questions.</span>
+                </span>
               </h2>
 
               <p
                 class="service-section-description"
                 data-animation="description"
               >
-                Find answers to common questions about our computer and laptop
-                repair services.
+                <span class="letter-animation">
+                  Find answers to common questions about our computer and laptop
+                  repair services.
+                </span>
               </p>
 
-              <a href="./contact.html" class="service-text-link">
+              <a
+                href="./contact.html"
+                class="service-text-link"
+                data-animation="hero-actions"
+              >
                 Still have questions? Contact us →
               </a>
             </div>
@@ -804,19 +631,31 @@
       >
         <div class="container">
           <div class="service-cta-content">
-            <p class="service-label">08 — LET'S GET STARTED</p>
-
-            <h2 id="service-cta-title">
-              Ready to Get Your
-              <span>Computer Working Again?</span>
-            </h2>
-
-            <p class="service-cta-description">
-              Tell us what's happening with your device. We'll help you find the
-              right repair solution.
+            <p class="service-label" data-animation="label">
+              08 — LET'S GET STARTED
             </p>
 
-            <a href="./contact.html" class="service-button">
+            <h2 id="service-cta-title" data-animation="title">
+              <span class="title-line">
+                <span class="title-line-inner">Ready to Get Your</span>
+              </span>
+              <span class="title-line">
+                <span class="title-line-inner">Computer Working Again?</span>
+              </span>
+            </h2>
+
+            <p class="service-cta-description" data-animation="description">
+              <span class="letter-animation">
+                Tell us what's happening with your device. We'll help you find
+                the right repair solution.
+              </span>
+            </p>
+
+            <a
+              href="./contact.html"
+              class="service-button"
+              data-animation="hero-actions"
+            >
               Get in Touch
               <span aria-hidden="true">↗</span>
             </a>
@@ -828,32 +667,49 @@
         <div class="container">
           <div class="related-header">
             <div>
-              <p class="service-label">09 — EXPLORE MORE</p>
+              <p class="service-label" data-animation="label">
+                09 — EXPLORE MORE
+              </p>
 
-              <h2 class="service-section-title">
-                Other Services<span>.</span>
+              <h2 class="service-section-title" data-animation="title">
+                <span class="title-line">
+                  <span class="title-line-inner">Other Services.</span>
+                </span>
               </h2>
             </div>
 
-            <a href="../index.html#services" class="service-text-link">
-              All Services <span aria-hidden="true">↗</span>
+            <a
+              href="../index.html#services"
+              class="service-text-link"
+              data-animation="hero-actions"
+            >
+              All Services
+              <span aria-hidden="true">↗</span>
             </a>
           </div>
 
           <div class="related-grid">
-            <a href="./hardware-upgrade.html" class="related-card">
+            <a
+              href="./hardware-upgrade.html"
+              class="related-card"
+              data-animation="card"
+            >
               <span class="related-number">02 — HARDWARE UPGRADE</span>
               <h3>Hardware Upgrade</h3>
               <span class="related-arrow" aria-hidden="true">↗</span>
             </a>
 
-            <a href="./security.html" class="related-card">
+            <a
+              href="./security.html"
+              class="related-card"
+              data-animation="card"
+            >
               <span class="related-number">03 — SYSTEM SECURITY</span>
               <h3>Virus & Security</h3>
               <span class="related-arrow" aria-hidden="true">↗</span>
             </a>
 
-            <a href="./data.html" class="related-card">
+            <a href="./data.html" class="related-card" data-animation="card">
               <span class="related-number">04 — DATA & DIAGNOSTICS</span>
               <h3>Data Recovery</h3>
               <span class="related-arrow" aria-hidden="true">↗</span>
@@ -862,10 +718,11 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="container">
         <div class="footer-main">
-          <div class="footer-brand">
+          <div class="footer-brand" data-animation="card">
             <div class="footer-brand-top">
               <a
                 href="../index.html"
@@ -883,7 +740,7 @@
                 >
                   <path
                     d="M70 8L124 39V101L70 132L16 101V39L70 8Z"
-                    stroke="url(#logo-gradient)"
+                    stroke="url(#footer-logo-gradient)"
                     stroke-width="3"
                   />
 
@@ -893,14 +750,14 @@
                     width="62"
                     height="62"
                     rx="8"
-                    stroke="url(#logo-gradient)"
+                    stroke="url(#footer-logo-gradient)"
                     stroke-width="4"
                   />
 
                   <path
                     d="M70 24V39M70 101V116M24 70H39M101 70H116
-             M39 48L29 38M101 48L111 38
-             M39 92L29 102M101 92L111 102"
+                   M39 48L29 38M101 48L111 38
+                   M39 92L29 102M101 92L111 102"
                     stroke="#FFC400"
                     stroke-width="3"
                     stroke-linecap="round"
@@ -908,7 +765,7 @@
 
                   <path
                     d="M54 85V55L86 85V55"
-                    stroke="url(#logo-gradient)"
+                    stroke="url(#footer-logo-gradient)"
                     stroke-width="6"
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -916,7 +773,7 @@
 
                   <defs>
                     <linearGradient
-                      id="logo-gradient"
+                      id="footer-logo-gradient"
                       x1="16"
                       y1="8"
                       x2="124"
@@ -931,8 +788,8 @@
               </a>
 
               <div class="footer-brand-info">
-                <a href="../index.html" class="footer-company-name" data-logo>
-                  NEXORA
+                <a href="../index.html" class="footer-company-name">
+                  <span data-logo>NEXORA</span>
                 </a>
                 <p class="footer-subtitle">COMPUTER SERVICE</p>
               </div>
@@ -944,7 +801,7 @@
             </p>
           </div>
 
-          <div class="footer-contact">
+          <div class="footer-contact" data-animation="card">
             <span class="footer-eyebrow">HAVE A QUESTION?</span>
             <a href="mailto:info@nexora.com" class="footer-email" data-email>
               info@nexora.com
@@ -954,7 +811,7 @@
         </div>
 
         <div class="footer-navigation">
-          <div class="footer-column">
+          <div class="footer-column" data-animation="card">
             <h3 class="footer-heading">Explore</h3>
             <ul class="footer-list">
               <li><a href="../index.html">Home</a></li>
@@ -966,7 +823,7 @@
             </ul>
           </div>
 
-          <div class="footer-column">
+          <div class="footer-column" data-animation="card">
             <h3 class="footer-heading">Services</h3>
             <ul class="footer-list">
               <li>
@@ -982,7 +839,7 @@
             </ul>
           </div>
 
-          <div class="footer-column">
+          <div class="footer-column" data-animation="card">
             <h3 class="footer-heading">Information</h3>
             <ul class="footer-list">
               <li><a href="./contact.html">Contact Us</a></li>
@@ -1012,6 +869,7 @@
         </div>
       </div>
     </footer>
+
     <script src="../js/faq.js"></script>
     <script src="../js/service-problem.js"></script>
     <script src="../js/cookie.js"></script>

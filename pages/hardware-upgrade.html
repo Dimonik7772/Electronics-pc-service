@@ -91,7 +91,7 @@
 
     <header class="header" id="top">
       <div class="container">
-        <a href="./index.html" class="header-brand" aria-label="Nexora home">
+        <a href="../index.html" class="header-brand" aria-label="Nexora home">
           <svg
             class="header-logo-icon"
             width="64"
@@ -175,7 +175,7 @@
     </header>
 
     <main class="service-page" id="main">
-      <section data-animation="section">
+      <section>
         <div class="container">
           <div class="service-hero">
             <div class="service-hero-content">
@@ -190,18 +190,24 @@
               </p>
 
               <h1 class="service-hero-title" data-animation="title">
-                Give Your Computer
-                <span>A Powerful Upgrade.</span>
+                <span class="title-line">
+                  <span class="title-line-inner">Give Your Computer</span>
+                </span>
+                <span class="title-line">
+                  <span class="title-line-inner">A Powerful Upgrade.</span>
+                </span>
               </h1>
 
               <p class="service-hero-description" data-animation="description">
-                Improve your computer's speed, performance, and capabilities
-                with carefully selected hardware upgrades. From additional
-                memory to faster storage, we'll help your device work better for
-                your needs.
+                <span class="letter-animation">
+                  Improve your computer's speed, performance, and capabilities
+                  with carefully selected hardware upgrades. From additional
+                  memory to faster storage, we'll help your device work better
+                  for your needs.
+                </span>
               </p>
 
-              <div class="service-hero-actions">
+              <div class="service-hero-actions" data-animation="hero-actions">
                 <a href="#contact" class="service-button">
                   Request an Upgrade
                   <span aria-hidden="true">→</span>
@@ -212,7 +218,7 @@
                 </a>
               </div>
 
-              <div class="service-hero-note">
+              <div class="service-hero-note" data-animation="hero-actions">
                 <span class="service-status-dot"></span>
                 Hardware Upgrades & Performance Improvements
               </div>
@@ -243,15 +249,24 @@
               </p>
 
               <h2 class="service-section-title" data-animation="title">
-                Upgrade Your Hardware.
-                <span>Unlock Better Performance.</span>
+                <span class="title-line">
+                  <span class="title-line-inner">Upgrade Your Hardware.</span>
+                </span>
+                <span class="title-line">
+                  <span class="title-line-inner"
+                    >Unlock Better Performance.</span
+                  >
+                </span>
               </h2>
             </div>
 
             <p class="service-section-description" data-animation="description">
-              Get more out of your computer with hardware upgrades tailored to
-              your needs. Whether you want faster performance, more storage or
-              improved multitasking, we'll help you choose the right components.
+              <span class="letter-animation">
+                Get more out of your computer with hardware upgrades tailored to
+                your needs. Whether you want faster performance, more storage or
+                improved multitasking, we'll help you choose the right
+                components.
+              </span>
             </p>
           </div>
 
@@ -305,24 +320,36 @@
 
       <section
         class="common-problems"
-        id="common-problems"
+        id="upgrade-options"
         aria-labelledby="common-problems-title"
       >
         <div class="container">
           <div class="common-problems-header">
             <div class="common-problems-heading">
-              <p class="service-label">03 — UPGRADE OPTIONS</p>
+              <p class="service-label" data-animation="label">
+                03 — UPGRADE OPTIONS
+              </p>
 
-              <h2 class="service-section-title" id="common-problems-title">
-                Ready to Improve
-                <span>Your Computer?</span>
+              <h2
+                class="service-section-title"
+                id="common-problems-title"
+                data-animation="title"
+              >
+                <span class="title-line">
+                  <span class="title-line-inner">Ready to Improve</span>
+                </span>
+                <span class="title-line">
+                  <span class="title-line-inner">Your Computer?</span>
+                </span>
               </h2>
             </div>
 
-            <p class="common-problems-description">
-              From faster storage to improved graphics, the right hardware
-              upgrades can extend your computer's capabilities and make everyday
-              tasks smoother.
+            <p class="common-problems-description" data-animation="description">
+              <span class="letter-animation">
+                From faster storage to improved graphics, the right hardware
+                upgrades can extend your computer's capabilities and make
+                everyday tasks smoother.
+              </span>
             </p>
           </div>
 
@@ -341,6 +368,7 @@
                 aria-label="1 of 6"
               >
                 <span class="problem-number">01</span>
+
                 <div class="problem-icon" aria-hidden="true">
                   <svg viewBox="0 0 48 48" fill="none">
                     <rect
@@ -366,6 +394,7 @@
                     />
                   </svg>
                 </div>
+
                 <h3>RAM Upgrade</h3>
                 <p>
                   Add more memory to improve multitasking, handle demanding
@@ -380,6 +409,7 @@
                 aria-label="2 of 6"
               >
                 <span class="problem-number">02</span>
+
                 <div class="problem-icon" aria-hidden="true">
                   <svg viewBox="0 0 48 48" fill="none">
                     <rect
@@ -400,6 +430,7 @@
                     <circle cx="33" cy="32" r="2" fill="currentColor" />
                   </svg>
                 </div>
+
                 <h3>SSD Upgrade</h3>
                 <p>
                   Replace a traditional hard drive with faster SSD storage for
@@ -415,6 +446,7 @@
                 aria-label="3 of 6"
               >
                 <span class="problem-number">03</span>
+
                 <div class="problem-icon" aria-hidden="true">
                   <svg viewBox="0 0 48 48" fill="none">
                     <rect
@@ -441,6 +473,7 @@
                     />
                   </svg>
                 </div>
+
                 <h3>Graphics Card Upgrade</h3>
                 <p>
                   Improve visual performance for gaming, creative applications
@@ -455,6 +488,7 @@
                 aria-label="4 of 6"
               >
                 <span class="problem-number">04</span>
+
                 <div class="problem-icon" aria-hidden="true">
                   <svg viewBox="0 0 48 48" fill="none">
                     <rect
@@ -481,6 +515,7 @@
                     />
                   </svg>
                 </div>
+
                 <h3>Storage Expansion</h3>
                 <p>
                   Increase available storage space with an additional drive for
@@ -495,6 +530,7 @@
                 aria-label="5 of 6"
               >
                 <span class="problem-number">05</span>
+
                 <div class="problem-icon" aria-hidden="true">
                   <svg viewBox="0 0 48 48" fill="none">
                     <circle
@@ -519,6 +555,7 @@
                     />
                   </svg>
                 </div>
+
                 <h3>Cooling Improvements</h3>
                 <p>
                   Upgrade cooling components to support better airflow, manage
@@ -533,6 +570,7 @@
                 aria-label="6 of 6"
               >
                 <span class="problem-number">06</span>
+
                 <div class="problem-icon" aria-hidden="true">
                   <svg viewBox="0 0 48 48" fill="none">
                     <rect
@@ -561,6 +599,7 @@
                     />
                   </svg>
                 </div>
+
                 <h3>Component Upgrades</h3>
                 <p>
                   Replace or improve compatible hardware components to better
@@ -610,33 +649,41 @@
               </p>
 
               <h2 class="service-section-title" data-animation="title">
-                The Right Upgrades.
-                <span>Better Performance.</span>
+                <span class="title-line">
+                  <span class="title-line-inner">The Right Upgrades.</span>
+                </span>
+                <span class="title-line">
+                  <span class="title-line-inner">Better Performance.</span>
+                </span>
               </h2>
 
               <p
                 class="service-section-description"
                 data-animation="description"
               >
-                A successful hardware upgrade starts with understanding your
-                computer's capabilities and your performance goals. We help
-                identify compatible components and choose upgrades that make
-                practical sense for your system.
+                <span class="letter-animation">
+                  A successful hardware upgrade starts with understanding your
+                  computer's capabilities and your performance goals. We help
+                  identify compatible components and choose upgrades that make
+                  practical sense for your system.
+                </span>
               </p>
 
-              <a href="./contact.html" class="service-button">
-                Discuss Your Upgrade
-                <span aria-hidden="true">↗</span>
-              </a>
+              <div data-animation="hero-actions">
+                <a href="./contact.html" class="service-button">
+                  Discuss Your Upgrade
+                  <span aria-hidden="true">↗</span>
+                </a>
 
-              <p class="included-note">
-                <span aria-hidden="true"></span>
-                Smarter upgrades for your computer
-              </p>
+                <p class="included-note">
+                  <span aria-hidden="true"></span>
+                  Smarter upgrades for your computer
+                </p>
+              </div>
             </div>
 
             <div class="included-list">
-              <article class="included-item">
+              <article class="included-item" data-animation="card">
                 <span class="included-index">01</span>
 
                 <div class="included-item-content">
@@ -650,7 +697,7 @@
                 <span class="included-arrow" aria-hidden="true">↗</span>
               </article>
 
-              <article class="included-item">
+              <article class="included-item" data-animation="card">
                 <span class="included-index">02</span>
 
                 <div class="included-item-content">
@@ -664,7 +711,7 @@
                 <span class="included-arrow" aria-hidden="true">↗</span>
               </article>
 
-              <article class="included-item">
+              <article class="included-item" data-animation="card">
                 <span class="included-index">03</span>
 
                 <div class="included-item-content">
@@ -678,7 +725,7 @@
                 <span class="included-arrow" aria-hidden="true">↗</span>
               </article>
 
-              <article class="included-item">
+              <article class="included-item" data-animation="card">
                 <span class="included-index">04</span>
 
                 <div class="included-item-content">
@@ -700,25 +747,31 @@
         <div class="container">
           <div class="service-why-header">
             <div class="service-section-heading">
-              <p class="service-label">
+              <p class="service-label" data-animation="label">
                 05 — WHY <span data-logo>NEXORA</span>
               </p>
 
-              <h2 class="service-section-title">
-                Hardware Upgrades
-                <span>Done Right.</span>
+              <h2 class="service-section-title" data-animation="title">
+                <span class="title-line">
+                  <span class="title-line-inner">Hardware Upgrades</span>
+                </span>
+                <span class="title-line">
+                  <span class="title-line-inner">Done Right.</span>
+                </span>
               </h2>
             </div>
 
-            <p class="service-section-description">
-              The right components can make a real difference. We focus on
-              compatibility, practical improvements and upgrades that match your
-              computer and your needs.
+            <p class="service-section-description" data-animation="description">
+              <span class="letter-animation">
+                The right components can make a real difference. We focus on
+                compatibility, practical improvements and upgrades that match
+                your computer and your needs.
+              </span>
             </p>
           </div>
 
           <div class="why-grid">
-            <article class="why-item">
+            <article class="why-item" data-animation="card">
               <span class="why-number">01</span>
 
               <h3>Compatibility First</h3>
@@ -729,7 +782,7 @@
               </p>
             </article>
 
-            <article class="why-item">
+            <article class="why-item" data-animation="card">
               <span class="why-number">02</span>
 
               <h3>Upgrades That Make Sense</h3>
@@ -740,7 +793,7 @@
               </p>
             </article>
 
-            <article class="why-item">
+            <article class="why-item" data-animation="card">
               <span class="why-number">03</span>
 
               <h3>Clear Recommendations</h3>
@@ -751,7 +804,7 @@
               </p>
             </article>
 
-            <article class="why-item">
+            <article class="why-item" data-animation="card">
               <span class="why-number">04</span>
 
               <h3>Reliable Installation</h3>
@@ -772,20 +825,30 @@
               <p class="service-label" data-animation="label">GOT QUESTIONS?</p>
 
               <h2 class="service-section-title" data-animation="title">
-                Frequently Asked
-                <span>Questions.</span>
+                <span class="title-line">
+                  <span class="title-line-inner">Frequently Asked</span>
+                </span>
+                <span class="title-line">
+                  <span class="title-line-inner">Questions.</span>
+                </span>
               </h2>
 
               <p
                 class="service-section-description"
                 data-animation="description"
               >
-                Find answers to common questions about hardware upgrades,
-                component compatibility and improving your computer's
-                performance.
+                <span class="letter-animation">
+                  Find answers to common questions about hardware upgrades,
+                  component compatibility and improving your computer's
+                  performance.
+                </span>
               </p>
 
-              <a href="./contact.html" class="service-text-link">
+              <a
+                href="./contact.html"
+                class="service-text-link"
+                data-animation="hero-actions"
+              >
                 Still have questions? Contact us →
               </a>
             </div>
@@ -870,20 +933,32 @@
       >
         <div class="container">
           <div class="service-cta-content">
-            <p class="service-label">08 — LET'S GET STARTED</p>
-
-            <h2 id="service-cta-title">
-              Ready to Upgrade Your
-              <span>Computer's Performance?</span>
-            </h2>
-
-            <p class="service-cta-description">
-              Tell us what you want to improve. We'll help you explore
-              compatible hardware upgrades and find the right solution for your
-              system.
+            <p class="service-label" data-animation="label">
+              08 — LET'S GET STARTED
             </p>
 
-            <a href="./contact.html" class="service-button">
+            <h2 id="service-cta-title" data-animation="title">
+              <span class="title-line">
+                <span class="title-line-inner">Ready to Upgrade Your</span>
+              </span>
+              <span class="title-line">
+                <span class="title-line-inner">Computer's Performance?</span>
+              </span>
+            </h2>
+
+            <p class="service-cta-description" data-animation="description">
+              <span class="letter-animation">
+                Tell us what you want to improve. We'll help you explore
+                compatible hardware upgrades and find the right solution for
+                your system.
+              </span>
+            </p>
+
+            <a
+              href="./contact.html"
+              class="service-button"
+              data-animation="hero-actions"
+            >
               Discuss Your Upgrade
               <span aria-hidden="true">↗</span>
             </a>
@@ -895,32 +970,48 @@
         <div class="container">
           <div class="related-header">
             <div>
-              <p class="service-label">09 — EXPLORE MORE</p>
+              <p class="service-label" data-animation="label">
+                09 — EXPLORE MORE
+              </p>
 
-              <h2 class="service-section-title">
-                Other Services<span>.</span>
+              <h2 class="service-section-title" data-animation="title">
+                <span class="title-line">
+                  <span class="title-line-inner">Other Services.</span>
+                </span>
               </h2>
             </div>
 
-            <a href="../index.html#services" class="service-text-link">
+            <a
+              href="../index.html#services"
+              class="service-text-link"
+              data-animation="hero-actions"
+            >
               All Services <span aria-hidden="true">↗</span>
             </a>
           </div>
 
           <div class="related-grid">
-            <a href="./computer-repair.html" class="related-card">
+            <a
+              href="./computer-repair.html"
+              class="related-card"
+              data-animation="card"
+            >
               <span class="related-number">01 — COMPUTER REPAIR</span>
               <h3>Computer Repair</h3>
               <span class="related-arrow" aria-hidden="true">↗</span>
             </a>
 
-            <a href="./security.html" class="related-card">
+            <a
+              href="./security.html"
+              class="related-card"
+              data-animation="card"
+            >
               <span class="related-number">03 — SYSTEM SECURITY</span>
               <h3>Virus & Security</h3>
               <span class="related-arrow" aria-hidden="true">↗</span>
             </a>
 
-            <a href="./data.html" class="related-card">
+            <a href="./data.html" class="related-card" data-animation="card">
               <span class="related-number">04 — DATA & DIAGNOSTICS</span>
               <h3>Data Recovery</h3>
               <span class="related-arrow" aria-hidden="true">↗</span>
@@ -932,7 +1023,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-main">
-          <div class="footer-brand">
+          <div class="footer-brand" data-animation="card">
             <div class="footer-brand-top">
               <a
                 href="../index.html"
@@ -950,7 +1041,7 @@
                 >
                   <path
                     d="M70 8L124 39V101L70 132L16 101V39L70 8Z"
-                    stroke="url(#logo-gradient)"
+                    stroke="url(#footer-logo-gradient)"
                     stroke-width="3"
                   />
 
@@ -960,14 +1051,14 @@
                     width="62"
                     height="62"
                     rx="8"
-                    stroke="url(#logo-gradient)"
+                    stroke="url(#footer-logo-gradient)"
                     stroke-width="4"
                   />
 
                   <path
                     d="M70 24V39M70 101V116M24 70H39M101 70H116
-             M39 48L29 38M101 48L111 38
-             M39 92L29 102M101 92L111 102"
+                   M39 48L29 38M101 48L111 38
+                   M39 92L29 102M101 92L111 102"
                     stroke="#FFC400"
                     stroke-width="3"
                     stroke-linecap="round"
@@ -975,7 +1066,7 @@
 
                   <path
                     d="M54 85V55L86 85V55"
-                    stroke="url(#logo-gradient)"
+                    stroke="url(#footer-logo-gradient)"
                     stroke-width="6"
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -983,7 +1074,7 @@
 
                   <defs>
                     <linearGradient
-                      id="logo-gradient"
+                      id="footer-logo-gradient"
                       x1="16"
                       y1="8"
                       x2="124"
@@ -998,8 +1089,8 @@
               </a>
 
               <div class="footer-brand-info">
-                <a href="../index.html" class="footer-company-name" data-logo>
-                  NEXORA
+                <a href="../index.html" class="footer-company-name">
+                  <span data-logo>NEXORA</span>
                 </a>
                 <p class="footer-subtitle">COMPUTER SERVICE</p>
               </div>
@@ -1011,7 +1102,7 @@
             </p>
           </div>
 
-          <div class="footer-contact">
+          <div class="footer-contact" data-animation="card">
             <span class="footer-eyebrow">HAVE A QUESTION?</span>
             <a href="mailto:info@nexora.com" class="footer-email" data-email>
               info@nexora.com
@@ -1021,7 +1112,7 @@
         </div>
 
         <div class="footer-navigation">
-          <div class="footer-column">
+          <div class="footer-column" data-animation="card">
             <h3 class="footer-heading">Explore</h3>
             <ul class="footer-list">
               <li><a href="../index.html">Home</a></li>
@@ -1033,7 +1124,7 @@
             </ul>
           </div>
 
-          <div class="footer-column">
+          <div class="footer-column" data-animation="card">
             <h3 class="footer-heading">Services</h3>
             <ul class="footer-list">
               <li>
@@ -1049,7 +1140,7 @@
             </ul>
           </div>
 
-          <div class="footer-column">
+          <div class="footer-column" data-animation="card">
             <h3 class="footer-heading">Information</h3>
             <ul class="footer-list">
               <li><a href="./contact.html">Contact Us</a></li>
@@ -1079,6 +1170,7 @@
         </div>
       </div>
     </footer>
+
     <script src="../js/faq.js"></script>
     <script src="../js/service-problem.js"></script>
     <script src="../js/cookie.js"></script>

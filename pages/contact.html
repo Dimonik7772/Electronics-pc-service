@@ -88,9 +88,10 @@
         &times;
       </button>
     </div>
+
     <header class="header" id="top">
       <div class="container">
-        <a href="./index.html" class="header-brand" aria-label="Nexora home">
+        <a href="../index.html" class="header-brand" aria-label="Nexora home">
           <svg
             class="header-logo-icon"
             width="64"
@@ -153,23 +154,29 @@
         <nav class="header-nav" aria-label="Main navigation">
           <ul class="header-list">
             <li>
-              <a href="../index.html" class="header-link" aria-current="page">
-                Home
+              <a href="../index.html" class="header-link"> Home </a>
+            </li>
+
+            <li>
+              <a href="../index.html#services" class="header-link">
+                Services
               </a>
             </li>
+
             <li>
-              <a href="../index.html#services" class="header-link">Services</a>
+              <a href="../index.html#about" class="header-link"> About Us </a>
             </li>
+
             <li>
-              <a href="../index.html#about" class="header-link">About Us</a>
-            </li>
-            <li>
-              <a href="#contact" class="header-link active">Contact</a>
+              <a href="#contact" class="header-link active" aria-current="page">
+                Contact
+              </a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
+
     <main>
       <section class="hero">
         <div class="container">
@@ -178,59 +185,86 @@
             <span>/</span>
             <span aria-current="page">Contact</span>
           </nav>
+
           <div class="hero-wrapper">
-            <p class="hero-label">WE'RE HERE TO HELP</p>
+            <p class="hero-label" data-animation="label">WE'RE HERE TO HELP</p>
 
             <h1 class="hero-title" data-animation="title">
-              Let's Fix Your
-              <span>Tech Problems.</span>
+              <span class="title-line">
+                <span class="title-line-inner">Let's Fix Your</span>
+              </span>
+              <span class="title-line">
+                <span class="title-line-inner">Tech Problems.</span>
+              </span>
             </h1>
 
-            <h2 class="hero-subTitle" data-animation="label">
+            <h2 class="hero-subTitle">
               Get in Touch with <span data-logo>NEXORA</span>
             </h2>
 
             <p class="hero-description" data-animation="description">
-              Have a computer issue or need technical assistance? Reach out to
-              our team and let's find the right solution for your device.
+              <span class="letter-animation">
+                Have a computer issue or need technical assistance? Reach out to
+                our team and let's find the right solution for your device.
+              </span>
             </p>
 
-            <a href="#contact" class="hero-button"> Send Us a Message </a>
+            <a
+              href="#contact"
+              class="hero-button"
+              data-animation="hero-actions"
+            >
+              Send Us a Message
+            </a>
           </div>
         </div>
       </section>
-      <section id="contact" class="contact-page" data-animation="section">
+
+      <section id="contact" class="contact-page">
         <div class="container">
           <p class="contact-label" data-animation="label">GET IN TOUCH</p>
+
           <div class="contact-header">
             <h2 class="contact-title" data-animation="title">
-              Let's Get Your Device Fixed
+              <span class="title-line">
+                <span class="title-line-inner"
+                  >Let's Get Your Device Fixed</span
+                >
+              </span>
             </h2>
 
             <p class="contact-description" data-animation="description">
-              Having trouble with your computer? Tell us what's wrong, and our
-              technicians will help you find the right solution. We're here to
-              get your technology back on track.
+              <span class="letter-animation">
+                Having trouble with your computer? Tell us what's wrong, and our
+                technicians will help you find the right solution. We're here to
+                get your technology back on track.
+              </span>
             </p>
           </div>
 
           <div class="contact-layout">
             <div class="contact-aside">
-              <div class="contact-info">
-                <span class="contact-info-label" data-animation="label"
-                  >NEED TECHNICAL SUPPORT?</span
-                >
+              <div class="contact-info" data-animation="card">
+                <span class="contact-info-label" data-animation="label">
+                  NEED TECHNICAL SUPPORT?
+                </span>
 
                 <h3 class="contact-info-title" data-animation="title">
-                  Let's solve your tech problems together.
+                  <span class="title-line">
+                    <span class="title-line-inner">
+                      Let's solve your tech problems together.
+                    </span>
+                  </span>
                 </h3>
 
                 <p
                   class="contact-info-description"
                   data-animation="description"
                 >
-                  Describe your issue and send us a request. Our team will
-                  review your message and get back to you as soon as possible.
+                  <span class="letter-animation">
+                    Describe your issue and send us a request. Our team will
+                    review your message and get back to you as soon as possible.
+                  </span>
                 </p>
 
                 <div class="contact-email">
@@ -261,7 +295,7 @@
               </div>
             </div>
 
-            <div class="contact-form-card">
+            <div class="contact-form-card" data-animation="card">
               <div class="contact-form-header">
                 <span class="contact-form-label">SEND A REQUEST</span>
 
@@ -273,15 +307,16 @@
               </div>
 
               <form action="./contact.php" method="POST" class="contact-form">
+                <input
+                  type="text"
+                  name="website"
+                  tabindex="-1"
+                  autocomplete="off"
+                  aria-hidden="true"
+                  class="contact-honeypot"
+                />
+
                 <div class="form-row">
-                  <input
-                    type="text"
-                    name="website"
-                    tabindex="-1"
-                    autocomplete="off"
-                    aria-hidden="true"
-                    class="contact-honeypot"
-                  />
                   <div class="form-group">
                     <label for="name" class="form-label">
                       Full Name <span>*</span>
@@ -330,19 +365,14 @@
                     required
                   >
                     <option value="" disabled selected>Select a service</option>
-
                     <option value="computer-repair">
                       Computer & Laptop Repair
                     </option>
-
                     <option value="hardware-upgrade">Hardware Upgrade</option>
-
                     <option value="virus-security">Virus & Security</option>
-
                     <option value="data-recovery">
                       Data Recovery & Diagnostics
                     </option>
-
                     <option value="other">Other / Not Sure</option>
                   </select>
                 </div>
@@ -362,14 +392,17 @@
                     maxlength="2000"
                     required
                   ></textarea>
+
                   <label class="contact-checkbox">
                     <input type="checkbox" name="privacy" required />
 
                     <span class="form-hint">
                       I have read the
-                      <a href="./privacy-policy.html"> privacy policy</a>
-                      and agree to the processing of my enquiry. </span
-                    ><span class="form-span">*</span>
+                      <a href="./privacy-policy.html">privacy policy</a>
+                      and agree to the processing of my enquiry.
+                    </span>
+
+                    <span class="form-span">*</span>
                   </label>
                 </div>
 
@@ -392,7 +425,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-main">
-          <div class="footer-brand">
+          <div class="footer-brand" data-animation="card">
             <div class="footer-brand-top">
               <a
                 href="../index.html"
@@ -410,7 +443,7 @@
                 >
                   <path
                     d="M70 8L124 39V101L70 132L16 101V39L70 8Z"
-                    stroke="url(#logo-gradient)"
+                    stroke="url(#footer-logo-gradient)"
                     stroke-width="3"
                   />
 
@@ -420,14 +453,14 @@
                     width="62"
                     height="62"
                     rx="8"
-                    stroke="url(#logo-gradient)"
+                    stroke="url(#footer-logo-gradient)"
                     stroke-width="4"
                   />
 
                   <path
                     d="M70 24V39M70 101V116M24 70H39M101 70H116
-             M39 48L29 38M101 48L111 38
-             M39 92L29 102M101 92L111 102"
+                M39 48L29 38M101 48L111 38
+                M39 92L29 102M101 92L111 102"
                     stroke="#FFC400"
                     stroke-width="3"
                     stroke-linecap="round"
@@ -435,7 +468,7 @@
 
                   <path
                     d="M54 85V55L86 85V55"
-                    stroke="url(#logo-gradient)"
+                    stroke="url(#footer-logo-gradient)"
                     stroke-width="6"
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -443,7 +476,7 @@
 
                   <defs>
                     <linearGradient
-                      id="logo-gradient"
+                      id="footer-logo-gradient"
                       x1="16"
                       y1="8"
                       x2="124"
@@ -461,6 +494,7 @@
                 <a href="../index.html" class="footer-company-name" data-logo>
                   NEXORA
                 </a>
+
                 <p class="footer-subtitle">COMPUTER SERVICE</p>
               </div>
             </div>
@@ -471,8 +505,9 @@
             </p>
           </div>
 
-          <div class="footer-contact">
+          <div class="footer-contact" data-animation="card">
             <span class="footer-eyebrow">HAVE A QUESTION?</span>
+
             <a href="mailto:info@nexora.com" class="footer-email" data-email>
               info@nexora.com
               <span aria-hidden="true">↗</span>
@@ -481,8 +516,9 @@
         </div>
 
         <div class="footer-navigation">
-          <div class="footer-column">
+          <div class="footer-column" data-animation="card">
             <h3 class="footer-heading">Explore</h3>
+
             <ul class="footer-list">
               <li><a href="../index.html">Home</a></li>
               <li><a href="../index.html#about">About Us</a></li>
@@ -493,8 +529,9 @@
             </ul>
           </div>
 
-          <div class="footer-column">
+          <div class="footer-column" data-animation="card">
             <h3 class="footer-heading">Services</h3>
+
             <ul class="footer-list">
               <li>
                 <a href="./computer-repair.html">Computer & Laptop Repair</a>
@@ -509,8 +546,9 @@
             </ul>
           </div>
 
-          <div class="footer-column">
+          <div class="footer-column" data-animation="card">
             <h3 class="footer-heading">Information</h3>
+
             <ul class="footer-list">
               <li><a href="./contact.html">Contact Us</a></li>
               <li>

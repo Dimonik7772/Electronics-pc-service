@@ -35,20 +35,14 @@
         <p class="preloader-text">Preparing your experience...</p>
       </div>
     </div>
-    <header class="header">
-      <div class="container">
-        <div class="header-brand">
-          <a href="../index.html" class="header-company-name" data-logo>
-            NEXORA
-          </a>
-          <p class="header-subtitle">COMPUTER SERVICE</p>
-        </div>
 
-        <a href="../index.html" class="header-logo" aria-label="Nexora home">
+    <header class="header" id="top">
+      <div class="container">
+        <a href="../index.html" class="header-brand" aria-label="Nexora home">
           <svg
             class="header-logo-icon"
-            width="140"
-            height="140"
+            width="64"
+            height="64"
             viewBox="0 0 140 140"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -56,40 +50,36 @@
           >
             <path
               d="M70 8L124 39V101L70 132L16 101V39L70 8Z"
-              stroke="url(#logo-gradient)"
+              stroke="url(#header-logo-gradient)"
               stroke-width="3"
             />
-
             <rect
               x="39"
               y="39"
               width="62"
               height="62"
               rx="8"
-              stroke="url(#logo-gradient)"
+              stroke="url(#header-logo-gradient)"
               stroke-width="4"
             />
-
             <path
               d="M70 24V39M70 101V116M24 70H39M101 70H116
-             M39 48L29 38M101 48L111 38
-             M39 92L29 102M101 92L111 102"
+          M39 48L29 38M101 48L111 38
+          M39 92L29 102M101 92L111 102"
               stroke="#FFC400"
               stroke-width="3"
               stroke-linecap="round"
             />
-
             <path
               d="M54 85V55L86 85V55"
-              stroke="url(#logo-gradient)"
+              stroke="url(#header-logo-gradient)"
               stroke-width="6"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
-
             <defs>
               <linearGradient
-                id="logo-gradient"
+                id="header-logo-gradient"
                 x1="16"
                 y1="8"
                 x2="124"
@@ -101,16 +91,19 @@
               </linearGradient>
             </defs>
           </svg>
+
+          <span class="header-brand-info">
+            <span class="header-company-name" data-logo>NEXORA</span>
+            <span class="header-subtitle">COMPUTER SERVICE</span>
+          </span>
         </a>
 
-        <nav
-          class="header-nav"
-          aria-label="Main navigation"
-          data-animation="title"
-        >
+        <nav class="header-nav" aria-label="Main navigation">
           <ul class="header-list">
             <li>
-              <a href="../index.html" class="header-link">Home</a>
+              <a href="../index.html" class="header-link" aria-current="page">
+                Home
+              </a>
             </li>
             <li>
               <a href="../index.html#services" class="header-link">Services</a>
@@ -119,7 +112,7 @@
               <a href="../index.html#about" class="header-link">About Us</a>
             </li>
             <li>
-              <a href="./contact.html" class="header-link" active>Contact</a>
+              <a href="./contact.html" class="header-link">Contact</a>
             </li>
           </ul>
         </nav>
@@ -127,20 +120,25 @@
     </header>
 
     <main id="main">
-      <section class="legal-hero" data-animation="section">
+      <section class="legal-hero">
         <div class="container policy-container">
           <div class="legal-hero-content">
-            <p class="legal-hero-label" data-animation="title">
+            <p class="legal-hero-label" data-animation="label">
               Legal Information
             </p>
 
             <h1 class="legal-hero-title" data-animation="title">
-              Cookie Policy
+              <span class="title-line">
+                <span class="title-line-inner">Cookie Policy</span>
+              </span>
             </h1>
 
             <p class="legal-hero-description" data-animation="description">
-              Learn how NEXORA uses cookies and similar technologies to provide
-              a reliable, secure, and user-friendly website experience.
+              <span class="letter-animation">
+                Learn how NEXORA uses cookies and similar technologies to
+                provide a reliable, secure, and user-friendly website
+                experience.
+              </span>
             </p>
           </div>
 
@@ -354,159 +352,141 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="container">
-        <div class="footer-brand">
-          <div data-animation="title">
-            <a
-              href="../index.html"
-              class="footer-logo"
-              aria-label="Nexora home"
-            >
-              <svg
-                class="footer-logo-icon"
-                width="100"
-                height="100"
-                viewBox="0 0 140 140"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
+        <div class="footer-main">
+          <div class="footer-brand" data-animation="card">
+            <div class="footer-brand-top">
+              <a
+                href="../index.html"
+                class="footer-logo"
+                aria-label="Nexora home"
               >
-                <path
-                  d="M70 8L124 39V101L70 132L16 101V39L70 8Z"
-                  stroke="url(#logo-gradient)"
-                  stroke-width="3"
-                />
-                <rect
-                  x="39"
-                  y="39"
-                  width="62"
-                  height="62"
-                  rx="8"
-                  stroke="url(#logo-gradient)"
-                  stroke-width="4"
-                />
-                <path
-                  d="M70 24V39M70 101V116M24 70H39M101 70H116
-               M39 48L29 38M101 48L111 38
-               M39 92L29 102M101 92L111 102"
-                  stroke="#FFC400"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M54 85V55L86 85V55"
-                  stroke="url(#logo-gradient)"
-                  stroke-width="6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <defs>
-                  <linearGradient
-                    id="logo-gradient"
-                    x1="16"
-                    y1="8"
-                    x2="124"
-                    y2="132"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#FFC400" />
-                    <stop offset="1" stop-color="#FF7A00" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </a>
-            <div class="footer-brand-info">
-              <a href="../index.html" class="footer-company-name" data-logo>
-                NEXORA
+                <svg
+                  class="header-logo-icon"
+                  width="140"
+                  height="140"
+                  viewBox="0 0 140 140"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M70 8L124 39V101L70 132L16 101V39L70 8Z"
+                    stroke="url(#footer-logo-gradient)"
+                    stroke-width="3"
+                  />
+
+                  <rect
+                    x="39"
+                    y="39"
+                    width="62"
+                    height="62"
+                    rx="8"
+                    stroke="url(#footer-logo-gradient)"
+                    stroke-width="4"
+                  />
+
+                  <path
+                    d="M70 24V39M70 101V116M24 70H39M101 70H116
+                   M39 48L29 38M101 48L111 38
+                   M39 92L29 102M101 92L111 102"
+                    stroke="#FFC400"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+
+                  <path
+                    d="M54 85V55L86 85V55"
+                    stroke="url(#footer-logo-gradient)"
+                    stroke-width="6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+
+                  <defs>
+                    <linearGradient
+                      id="footer-logo-gradient"
+                      x1="16"
+                      y1="8"
+                      x2="124"
+                      y2="132"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#FFC400" />
+                      <stop offset="1" stop-color="#FF7A00" />
+                    </linearGradient>
+                  </defs>
+                </svg>
               </a>
-              <p class="footer-subtitle" data-animation="label">
-                COMPUTER SERVICE
-              </p>
+
+              <div class="footer-brand-info">
+                <a href="../index.html" class="footer-company-name">
+                  <span data-logo>NEXORA</span>
+                </a>
+                <p class="footer-subtitle">COMPUTER SERVICE</p>
+              </div>
             </div>
+
+            <p class="footer-brand-description">
+              Reliable computer repair and technical support for the technology
+              you depend on.
+            </p>
           </div>
 
-          <p class="footer-brand-description">
-            Reliable computer repair and technical support for your devices.
-          </p>
+          <div class="footer-contact" data-animation="card">
+            <span class="footer-eyebrow">HAVE A QUESTION?</span>
+            <a href="mailto:info@nexora.com" class="footer-email" data-email>
+              info@nexora.com
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
         </div>
 
-        <nav
-          class="footer-navigation"
-          aria-label="Footer navigation"
-          data-animation="title"
-        >
-          <div class="footer-column">
-            <h3 class="footer-heading">Home</h3>
-
+        <div class="footer-navigation">
+          <div class="footer-column" data-animation="card">
+            <h3 class="footer-heading">Explore</h3>
             <ul class="footer-list">
               <li><a href="../index.html">Home</a></li>
               <li><a href="../index.html#about">About Us</a></li>
-              <li><a href="../index.html#services">Our Services</a></li>
-              <li><a href="../index.html#our-work">Our Works</a></li>
+              <li><a href="../index.html#services">Services</a></li>
+              <li><a href="../index.html#our-work">Our Work</a></li>
               <li><a href="../index.html#testimonials">Testimonials</a></li>
               <li><a href="../index.html#faq">FAQ</a></li>
             </ul>
           </div>
 
-          <div class="footer-column">
-            <h3 class="footer-heading">Our Services</h3>
-
+          <div class="footer-column" data-animation="card">
+            <h3 class="footer-heading">Services</h3>
             <ul class="footer-list">
               <li>
-                <a href="./computer-repair.html"> Computer & Laptop Repair </a>
+                <a href="./computer-repair.html">Computer & Laptop Repair</a>
               </li>
               <li>
-                <a href="./hardware-upgrade.html"> Hardware Upgrade </a>
+                <a href="./hardware-upgrade.html">Hardware Upgrade</a>
               </li>
+              <li><a href="./security.html">Virus & Security</a></li>
               <li>
-                <a href="./security.html">Virus & Security</a>
-              </li>
-              <li>
-                <a href="./data.html"> Data Recovery & Diagnostics </a>
+                <a href="./data.html">Data Recovery & Diagnostics</a>
               </li>
             </ul>
           </div>
 
-          <div class="footer-column">
-            <h3 class="footer-heading">Quick Links</h3>
-
+          <div class="footer-column" data-animation="card">
+            <h3 class="footer-heading">Information</h3>
             <ul class="footer-list">
-              <li><a href="../index.html#about">About Us</a></li>
-              <li><a href="../index.html#services">Services</a></li>
-              <li><a href="../index.html#stats">Our Achievements</a></li>
-              <li><a href="./contact.html#contact">Contact Us</a></li>
-              <li><a href="./contact.html#contact">Request a Repair</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-column">
-            <h3 class="footer-heading">Support</h3>
-
-            <ul class="footer-list">
+              <li><a href="./contact.html">Contact Us</a></li>
               <li>
-                <a href="../index.html#faq">Frequently Asked Questions</a>
+                <a href="./contact.html#contact">Request a Repair</a>
               </li>
-              <li><a href="./contact.html#contact">Contact Support</a></li>
-              <li><a href="../index.html#service">Service Information</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-column">
-            <h3 class="footer-heading">Legal</h3>
-
-            <ul class="footer-list">
               <li><a href="./privacy-policy.html">Privacy Policy</a></li>
               <li><a href="./terms.html">Terms of Service</a></li>
-              <li><a href="#main">Cookie Policy</a></li>
+              <li><a href="./cookies.html">Cookie Policy</a></li>
             </ul>
           </div>
-        </nav>
-        <div class="emailwrapper">
-          <a href="mailto:info@nexora.com" class="email-link" data-email>
-            info@nexora.com
-          </a>
         </div>
+
         <div class="footer-bottom">
           <p class="footer-copyright">
             © 2026 <span data-logo>NEXORA</span>. All rights reserved.
@@ -517,7 +497,9 @@
             recovery results are not guaranteed.
           </p>
 
-          <a href="#top" class="footer-back-to-top">Back to top ↑</a>
+          <a href="#top" class="footer-back-to-top">
+            Back to top <span aria-hidden="true">↑</span>
+          </a>
         </div>
       </div>
     </footer>
