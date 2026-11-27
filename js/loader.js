@@ -5,5 +5,5 @@ window.addEventListener("load", () => {
 
   setTimeout(() => {
     document.body.classList.add("is-loaded");
-  }, 250);
+  }, 10);
 });
