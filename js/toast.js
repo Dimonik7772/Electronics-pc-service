@@ -3,14 +3,23 @@ const status = params.get("success");
 
 const toast = document.querySelector(".toast");
 
+let toastTimer;
+
 function showToast(message, type = "success") {
   if (!toast) return;
 
+  clearTimeout(toastTimer);
+
   toast.textContent = message;
-  toast.classList.add(`is-visible${type === "error" ? "-error" : ""}`);
+
+  toast.classList.remove("is-visible", "is-visible-error");
+
+  const toastClass = type === "error" ? "is-visible-error" : "is-visible";
+
+  toast.classList.add(toastClass);
   toast.setAttribute("aria-hidden", "false");
 
-  setTimeout(() => {
+  toastTimer = setTimeout(() => {
     toast.classList.remove("is-visible", "is-visible-error");
     toast.setAttribute("aria-hidden", "true");
   }, 4000);
@@ -26,6 +35,7 @@ if (status === "1" || status === "0") {
   params.delete("success");
 
   const query = params.toString();
+
   const newUrl = query
     ? `${window.location.pathname}?${query}${window.location.hash}`
     : `${window.location.pathname}${window.location.hash}`;
