@@ -23,5 +23,12 @@ if (status === "1") {
 }
 
 if (status === "1" || status === "0") {
-  window.history.replaceState({}, "", window.location.pathname);
+  params.delete("success");
+
+  const query = params.toString();
+  const newUrl = query
+    ? `${window.location.pathname}?${query}${window.location.hash}`
+    : `${window.location.pathname}${window.location.hash}`;
+
+  window.history.replaceState({}, "", newUrl);
 }
